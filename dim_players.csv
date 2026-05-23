@@ -1,0 +1,581 @@
+﻿player_id,username,uuid,rank,first_join_date,total_playtime_hours,total_spent_dollars,total_votes,webstore_visits,last_purchase_date,total_transactions,cart_abandonments,most_expensive_item_purchased,cart_total_value,is_payer
+1,CraftHunter,c13f71aa-4cb6-4fda-b01e-39b95d7763cf,Default,2024-02-01,443.7,25.0,107,23,2026-05-15,2,3,Tier4,25.0,True
+2,CobaltSpark12,49829633-a047-4c88-8a40-3194c344586a,Default,2022-10-14,173.2,20.0,36,56,2026-05-08,1,3,Maximum land size,25.0,True
+3,BlazeEagle,b51da8bb-1f93-4a96-944f-60d355a07c5a,Default,2023-02-13,98.2,20.0,14,11,2026-05-01,1,2,Mythical,20.0,True
+4,xXFireBearXx,9aa855c4-e73f-431f-8cdb-fe27b18d97d5,Default,2025-05-07,58.3,0.0,90,24,,0,2,,20.0,False
+5,xXCobaltSageXx,403d9e80-230e-4d29-bf9d-4080f67421cc,Default,2025-08-30,566.2,35.0,39,52,2026-04-17,1,2,Fly command,15.0,True
+6,EnderWalker,10acf4a2-d75c-419b-8ac0-e3885e805d0c,Default,2022-09-07,69.2,5.0,17,12,2026-04-10,1,2,Random tag,15.0,True
+7,xXPixelKnightXx,624cec10-6ac4-4ec4-bde9-a62c3f4617b2,Default,2025-08-02,14.2,27.5,23,8,2026-04-03,2,0,Unban,0.0,True
+8,xXDarkHunterXx,b7250ae5-a121-4789-97df-06f06ff8fc5d,Default,2025-02-03,79.2,0.0,92,10,,0,0,,0.0,False
+9,EnderWalker42,21664a96-d4a0-47ee-882d-6f23c38b2724,Default,2024-06-05,60.8,0.0,27,1,,0,0,,0.0,False
+10,LightWarrior,128c4283-82d6-44ea-9275-14e8f9c2d54c,MVP,2026-01-11,18.1,25.0,13,0,2026-03-13,1,0,MVP,0.0,True
+11,LavaTitan31,27a05594-a8ca-4f4d-b759-5d9f1a8c3b08,Default,2024-03-13,269.2,15.0,200,31,2026-03-06,1,0,Fix all,0.0,True
+12,xXMegaBaneXx,fb3fb5fb-6a60-4176-9396-ba2e56b9bd1f,Legend,2023-01-12,90.8,60.0,15,7,2026-02-27,2,0,Legend,0.0,True
+13,IceLord,45f5e057-88f0-404f-a654-b7d78c96a0bf,Default,2024-10-09,48.6,0.0,4,0,,0,0,,0.0,False
+14,UltraKing77,c79ca9e7-eb9f-4638-90c2-dc71db4ce211,Default,2024-06-23,116.1,17.5,62,36,2026-02-13,2,0,Tier4,0.0,True
+15,NightFury,8c742601-0cdc-439a-af28-f893d474dfca,Default,2022-02-18,123.9,30.0,54,5,2026-02-06,2,0,Mythical,0.0,True
+16,FrostEagle,61ff7eed-95ac-4513-93ba-97631ad3916c,Default,2022-11-12,260.7,7.5,51,31,2026-01-30,2,0,Tier2,0.0,True
+17,IronTitan,442c505c-0300-4cdc-80e8-f1394841fbb4,Default,2023-11-07,36.9,0.0,23,0,,0,0,,0.0,False
+18,xXPhantomGamerXx,5180bb6f-1d1f-400d-a876-3562d3cfcdaf,Default,2024-08-08,90.8,25.0,24,14,2026-01-16,3,0,Tier3,0.0,True
+19,xXLightWalkerXx,818fec68-0942-42af-8372-551e70c22f71,VIP,2024-09-16,608.2,40.0,58,47,2026-01-09,3,0,Unban,0.0,True
+20,xXCreeperStrikeXx,6eae8643-e9e5-46e9-b39e-50ac7c9cc581,Default,2024-11-21,80.0,25.0,19,10,2026-01-02,2,0,Tier4,0.0,True
+21,xXLightMasterXx,bfa11477-25f5-4656-803f-a69a5a43cae9,Default,2024-06-23,53.6,0.0,6,15,,0,0,,0.0,False
+22,FrostForge45,9f13cfaa-ce70-4fa8-a3a2-71b0c0a720a8,Default,2026-01-24,387.1,20.0,47,33,2025-12-19,1,0,Mythical,0.0,True
+23,BlazeWraith29,77fbb927-aa09-4c21-8427-efdf2e722fe8,Default,2025-06-11,568.2,15.0,143,55,2025-12-12,1,0,Fix all,0.0,True
+24,xXNeonBuilderXx,70e5c3bf-b59b-4b19-8cca-51f2206a12a6,Default,2024-07-20,114.1,35.0,10,0,2025-12-05,1,0,Fly command,0.0,True
+25,UltraRaider,e4d21e6b-1f6a-42cb-8fee-7ba6cb163417,Default,2023-04-08,36.7,0.0,26,2,,0,2,,20.0,False
+26,xXBlazeWizardXx,4adc66dc-0e2f-4f98-8a45-a161cefcf3b0,Default,2023-01-20,219.4,27.5,77,11,2025-11-21,2,2,Unban,15.0,True
+27,FrostBear50,76140391-8f9f-4ebc-a214-32179d0def4d,VIP,2023-04-16,26.2,10.0,27,15,2025-11-14,1,2,VIP,15.0,True
+28,xXVoidBaneXx,1379cd18-4c5d-4e7d-b68e-b16de5824b37,Default,2023-12-12,1072.2,25.0,457,22,2025-11-07,2,3,Maximum land size,50.0,True
+29,xXCraftFoxXx,ecd7a3a7-e5a1-4905-9395-3b0441b49082,Default,2024-07-23,16.9,0.0,14,10,,0,0,,0.0,False
+30,HyperTitan,4ddc7ed7-6579-4b6f-8a59-3743ff10d809,Default,2023-09-28,55.9,0.0,1,1,,0,0,,0.0,False
+31,DragonWarrior30,47421451-0e03-4dfc-96ee-5d1a214599f0,Legend,2025-12-29,117.0,50.0,20,2,2025-10-17,1,0,Legend,0.0,True
+32,MegaMiner29,c9955e53-93d8-48c0-9bf6-32e82f054fdc,Default,2022-08-30,209.4,10.0,91,9,2025-10-10,1,0,Kit oracle,0.0,True
+33,TurboSlayer46,b39f02a3-9f16-49b2-9ebf-d871d44b657c,Default,2024-10-01,908.4,17.5,389,85,2025-10-03,2,2,Tier4,20.0,True
+34,HyperNinja66,a6390319-54f4-487f-bc8b-6371254c58fa,Default,2023-05-21,86.8,0.0,15,6,,0,2,,20.0,False
+35,GoldPro,5d97ec65-c87e-4ca3-9f41-858fad4356f9,Default,2025-02-08,1184.9,7.5,234,94,2025-09-19,2,2,Tier2,15.0,True
+36,FrostEagle46,e497fcd2-b9a0-49ab-ada4-561909e116a1,Default,2022-03-17,35.9,45.0,1,6,2025-09-12,2,2,Fly command,15.0,True
+37,LavaTitan15,284a2e02-1cac-4a8e-8a06-8a148babef89,Default,2023-04-20,62.6,25.0,57,19,2025-09-05,3,3,Tier3,50.0,True
+38,xXFireMasterXx,6b658a09-4832-423c-b51c-4823fde396b0,Default,2022-06-11,66.7,0.0,26,11,,0,3,,35.0,False
+39,SkyRunner,f92ca2c3-3ca9-432c-b851-117892a0132c,Default,2025-07-28,203.9,35.0,67,22,2025-08-22,3,9,Tier4,110.0,True
+40,CobaltHunter21,34fd9a95-dd3c-44a6-9ffe-87aef85b1451,Default,2025-03-29,86.8,20.0,6,5,2025-08-15,1,9,Maximum land size,85.0,True
+41,xXNetherFuryXx,938fd16c-547a-45c8-b564-6f0517859e72,Default,2023-11-14,93.7,22.5,2,10,2025-08-08,2,6,Mythical,50.0,True
+42,xXBlazeProXx,8e047aa9-7a20-4580-8184-445ffbccc501,Default,2023-06-30,319.6,0.0,51,10,,0,5,,45.0,False
+43,CraftBane23,85cea867-d296-4855-bcbe-f7a59c6c1937,Default,2022-01-11,113.2,35.0,14,11,2025-07-25,1,4,Fly command,40.0,True
+44,VoidBane77,079233e4-324d-4567-a4d5-219fc5d8e753,Default,2024-01-25,733.4,15.0,47,58,2025-07-18,2,4,Kit oracle,35.0,True
+45,TurboWalker78,ec505873-6f74-4cfb-88ee-06ca04c83aac,Default,2025-02-15,64.1,25.0,12,7,2025-07-11,1,4,Unban,30.0,True
+46,xXNightKingXx,431b256f-7475-4f1b-a2f4-8e45491501a0,Default,2022-08-16,1012.7,0.0,318,99,,0,5,,65.0,False
+47,xXEnderTitanXx,06c9ca77-470b-4c4d-9cc4-bcbf69d783db,Default,2025-09-02,72.1,25.0,55,19,2025-06-27,2,6,Maximum land size,85.0,True
+48,FrostKnight82,6ec851cf-0ee7-4940-a243-27b2124e70b2,MVP,2023-01-16,426.1,30.0,31,46,2025-06-20,2,6,MVP,60.0,True
+49,LightBuilder,5addb4ba-6f5e-41bb-93fa-8010c595c89b,Default,2024-10-13,367.7,25.0,98,35,2025-06-13,2,6,Fix all,50.0,True
+50,xXSkyForgeXx,d383ba8c-a7ed-468a-a202-d061febcf875,Default,2023-05-01,36.9,0.0,4,7,,0,5,,45.0,False
+51,xXCraftWraithXx,58f5d5ef-4664-4491-becd-d40b2cf7551d,Default,2022-08-21,178.9,0.0,79,23,,0,4,,40.0,False
+52,xXLightBearXx,40c6446b-8ffd-4c6b-9315-a8087020dc61,Default,2024-10-23,19.0,17.5,1,14,2025-05-23,2,4,Tier4,35.0,True
+53,xXLavaEagleXx,93e807ab-3cf4-4e5e-ba1d-3db28e8f9cee,Default,2024-03-15,245.8,10.0,72,14,2025-05-16,1,2,Kit mythic,15.0,True
+54,IceBuilder,ed755267-9274-4dc9-ac96-6d89a0cead56,Default,2025-11-30,86.9,0.0,27,35,,0,2,,15.0,False
+55,FireSpark85,f8ac257e-d42c-4313-9bd5-31417e49138b,Default,2022-03-03,12.1,0.0,7,0,,0,3,,50.0,False
+56,xXLightEagleXx,e1113b0b-bac9-4ba3-9745-63a6befdd72e,Default,2025-11-03,75.4,15.0,39,13,2025-04-25,2,3,Tier3,35.0,True
+57,DragonForge30,7f398cd7-e487-4056-b1cf-7f6226861c81,Default,2024-02-08,97.9,30.0,19,40,2025-04-18,2,3,Unban,25.0,True
+58,HyperRaider,e3e96d8e-f9c8-4f6b-8473-d089b1ad9fc3,Default,2024-11-09,59.7,35.0,24,1,2025-04-11,3,3,Tier4,25.0,True
+59,xXDiamondMinerXx,04d5aade-de0a-442d-8c23-b15784e6e03e,Default,2024-12-20,348.2,0.0,155,35,,0,2,,20.0,False
+60,xXIceSageXx,2a96ceef-d128-47c8-b539-ac67fd6e0f41,Default,2024-12-10,316.3,22.5,83,19,2025-03-28,2,2,Mythical,20.0,True
+61,ShadowWalker28,4fe22c37-33ff-47aa-9913-a29dc332cab3,Default,2025-12-03,381.7,15.0,22,18,2025-03-21,1,2,Fix all,15.0,True
+62,xXCreeperProXx,4f7ebda2-66ea-41ad-bf4c-63ce24c245be,Default,2024-06-02,9.3,35.0,21,10,2025-03-14,1,2,Fly command,15.0,True
+63,xXSkyMasterXx,f3697d42-b30d-4e43-984f-35ea1f2ca178,Default,2024-01-08,241.7,0.0,42,27,,0,3,,50.0,False
+64,TurboRunner,5b3e20ff-9a71-4fb4-b5ff-9c0b13a90c06,Default,2022-07-22,100.2,25.0,19,13,2025-02-28,1,3,Unban,35.0,True
+65,DiamondGamer45,b3257180-77e6-4a79-90a7-52a34ee340c4,VIP,2024-11-13,399.8,10.0,57,40,2025-02-21,1,3,VIP,25.0,True
+66,UltraRunner10,b35c2803-a071-42da-8a75-15cbf6780186,Default,2025-12-30,388.1,25.0,92,22,2025-02-14,2,0,Maximum land size,0.0,True
+67,xXDarkForceXx,cae20257-cc4c-4966-85ed-d04265c7591e,Default,2026-03-16,94.0,0.0,8,11,,0,0,,0.0,False
+68,GoldMiner21,a74731e4-a9ca-48b3-8417-68c7489b9ce4,Default,2025-05-23,26.1,25.0,10,6,2025-01-31,2,0,Fix all,0.0,True
+69,xXIronRaiderXx,0c8977d3-d70c-4fe1-b854-5f47a6b2c130,Legend,2022-07-09,46.2,50.0,11,11,2025-01-24,1,0,Legend,0.0,True
+70,DarkFury54,7d377aa4-59ed-477f-94c5-38ef734e8cd9,Default,2025-03-08,51.7,25.0,87,25,2025-01-17,2,0,Tier4,0.0,True
+71,xXCobaltGamerXx,04134e6a-9577-4939-8d64-cd0d8e6be442,Default,2024-02-05,293.6,0.0,94,30,,0,0,,0.0,False
+72,VoidFox,fae73dd0-da34-436f-848e-3e86e9ef810b,Default,2022-05-31,327.7,10.0,14,23,2025-01-03,1,0,Kit mythic,0.0,True
+73,IceMaster,2b1d886f-21bc-4b9a-b8b6-0ff387bad682,Default,2024-12-09,315.4,7.5,20,11,2024-12-27,2,0,Tier2,0.0,True
+74,FireKnight,32890c95-4286-44f6-8669-33078ccff659,Default,2023-10-22,129.4,10.0,50,22,2024-12-20,1,0,Kit pro,0.0,True
+75,StormWraith78,f83f97f6-1b1d-4d8d-86ab-535f83ed6ef1,Default,2024-06-17,28.9,0.0,6,1,,0,0,,0.0,False
+76,xXCreeperKnightXx,2c7b94bb-5694-4d54-8643-f2ab6a58fcdb,Default,2023-07-14,26.7,0.0,16,15,,0,0,,0.0,False
+77,BlazeRaider,27415951-1d02-4fc2-9a94-6d13ed898f0f,Default,2026-04-08,166.8,35.0,71,31,2024-11-29,3,0,Tier4,0.0,True
+78,FrostSage38,0198fdb5-8f92-443a-95ba-046a75e18bc2,VIP,2024-04-23,96.5,30.0,27,7,2024-11-22,2,0,Maximum land size,0.0,True
+79,FireFox67,5cd87eb6-3e52-434e-b71e-c67963e19e03,Default,2024-03-01,197.8,32.5,63,15,2024-11-15,3,0,Mythical,0.0,True
+80,NetherWalker24,31435ac1-edb7-4c9d-9043-b557684570f5,Default,2022-12-13,792.0,0.0,187,38,,0,0,,0.0,False
+81,xXPhantomForceXx,e780f003-95c8-4487-bade-d10ae6296f79,Default,2024-04-06,15.3,40.0,28,7,2024-11-01,2,0,Fly command,0.0,True
+82,EnderBear,113104ed-67cb-43fc-8918-ea2f7ddf0a89,Default,2023-06-17,762.9,10.0,270,56,2024-10-25,1,0,Kit oracle,0.0,True
+83,SwiftStrike,4dfbaa14-4a83-4e0b-809c-280f238b6853,Default,2025-12-21,61.0,25.0,88,22,2024-10-18,1,0,Unban,0.0,True
+84,PhantomWraith,9e3efdf7-157a-4fa6-b558-c999b1efb5c0,Default,2025-02-11,195.6,0.0,58,17,,0,3,,50.0,False
+85,SkyFox37,5ffffb0a-8d2f-40a4-a2fd-77910afa41a9,Default,2023-04-28,211.5,20.0,20,30,2024-10-04,1,3,Maximum land size,35.0,True
+86,BlazeLord43,6682ca31-1337-41b1-b962-625b43e59049,MVP,2024-03-27,40.1,25.0,27,2,2024-09-27,1,3,MVP,25.0,True
+87,DarkTitan45,2e7b83ff-2653-4feb-8fb0-70ac8bd9b1e9,Default,2025-09-06,646.5,25.0,195,46,2024-09-20,2,0,Fix all,0.0,True
+88,xXNeonTitanXx,f34b54c4-15fa-4639-877f-1a16b16b13de,Default,2024-12-24,178.7,0.0,34,38,,0,0,,0.0,False
+89,NeonMaster,6dc2aabe-f958-41b5-a399-ee280f8cd9c8,Default,2024-09-08,1695.5,25.0,436,32,2024-09-06,2,0,Tier4,0.0,True
+90,NetherGamer,b7533647-2f20-4532-973c-a2ffaeb2e5b9,Default,2024-05-17,84.5,2.5,2,4,2024-08-30,1,0,Tier1,0.0,True
+91,DiamondSpark27,91dee9a5-4d05-4a4a-9ac6-90c3fc67de0d,Default,2024-06-26,265.5,10.0,26,38,2024-08-23,1,0,Kit mythic,0.0,True
+92,xXShadowSageXx,f6aec840-6163-475e-a14f-d6288d83b560,Default,2023-05-18,457.1,0.0,199,52,,0,2,,15.0,False
+93,NetherLord,520cb8e2-5269-43a4-b578-b5630eae886f,Default,2024-12-28,119.2,10.0,60,39,2024-08-09,1,3,Kit pro,50.0,True
+94,FrostStrike72,2f92fef4-acc2-42f9-8129-f0099af1e58f,Default,2026-03-31,225.1,15.0,67,15,2024-08-02,2,3,Tier3,35.0,True
+95,PixelRunner99,0ff664b9-33fc-4cb5-9552-1ae52c5f3124,Default,2022-05-15,16.0,30.0,19,10,2024-07-26,2,3,Unban,25.0,True
+96,MegaKing83,40043eb5-390d-4f4a-9757-7c017bb99b8f,Default,2023-10-04,15.0,0.0,9,3,,0,3,,25.0,False
+97,BlockFury99,f537ba99-9e58-4089-8c9f-dcd700dbf447,Default,2023-01-29,74.8,0.0,8,11,,0,2,,20.0,False
+98,LavaKnight92,68a96fcd-5ac0-4dd5-8f5e-71a1da948473,Default,2022-08-22,595.8,32.5,117,35,2024-07-05,3,7,Mythical,65.0,True
+99,xXFrostRaiderXx,7aed31e3-c36f-457b-b4cd-263087cd2fc1,Legend,2024-08-23,373.3,90.0,65,10,2024-06-28,3,6,Legend,55.0,True
+100,xXDragonBaneXx,dc06b096-953a-4ce7-beae-8abfec3337c3,Default,2022-07-25,50.2,0.0,22,15,,0,4,,35.0,False
+101,LavaSlayer98,575d6225-e163-4592-aab4-4ddd38fef9c9,Default,2024-06-23,150.8,0.0,62,21,,0,4,,30.0,False
+102,MegaSage69,990f8822-218a-4463-b850-aae7ceebf512,Default,2023-05-17,96.8,25.0,21,12,2024-06-07,1,5,Unban,65.0,True
+103,EnderForce,f02e68b8-f58a-4dab-9275-84ac4c7a8de0,Default,2026-03-12,70.6,10.0,22,37,2024-05-31,1,6,Kit mythic,85.0,True
+104,MegaFox,d64f1309-09b2-496b-9a5d-73afc75a30e9,Default,2025-03-25,504.8,20.0,112,60,2024-05-24,1,6,Maximum land size,60.0,True
+105,PixelForce68,57e9162c-c635-4263-a0f7-153beda98d0d,Default,2025-09-27,2.1,0.0,25,14,,0,6,,50.0,False
+106,MegaWolf,0ba18a50-ff02-4e0a-9444-d4d70be28637,Default,2025-02-13,183.0,25.0,51,22,2026-05-10,2,5,Fix all,45.0,True
+107,TurboBuilder,fd2758dd-9a7b-4d71-8265-1e0f7f62dffc,Legend,2023-11-29,298.1,50.0,51,8,2026-05-03,1,4,Legend,40.0,True
+108,IronForce18,ac3d47bc-e578-4390-a6ee-bc08490188f6,Default,2025-02-27,214.1,25.0,41,26,2026-04-26,2,4,Tier4,35.0,True
+109,FireStrike27,95973320-04db-40d4-a462-299890b5d59f,Default,2023-09-21,20.0,0.0,21,9,,0,4,,30.0,False
+110,GoldBane,4112e96c-31ad-48e8-919c-775f14a12b46,Default,2023-02-21,45.1,12.5,13,1,2026-04-12,2,5,Kit mythic,65.0,True
+111,EpicBlade,6f12f915-0314-4b10-8513-8f9537bb8137,Default,2024-09-15,738.2,5.0,69,22,2026-04-05,1,6,Tier2,85.0,True
+112,NeonPro72,909aee81-ded0-4c12-887d-9b2fdd213c33,Default,2023-05-20,322.8,10.0,92,32,2026-03-29,1,3,Kit pro,35.0,True
+113,DragonGamer,b01388b2-dd5a-4d44-8eb6-935b532d2fe4,Default,2025-08-29,240.1,0.0,168,53,,0,3,,25.0,False
+114,xXEnderWizardXx,a926cf4d-857d-41b1-83be-1213b562cdbd,Default,2022-06-27,398.9,5.0,61,27,2026-03-15,1,3,Random tag,25.0,True
+115,CraftBuilder83,200dfd31-ed36-4820-9ec3-e553eed14049,Default,2025-08-14,44.6,25.0,12,1,2026-03-08,2,2,Tier4,20.0,True
+116,MegaForce34,746001b5-9e7a-4e88-a878-3fbc65cd994f,VIP,2023-12-19,252.1,30.0,99,11,2026-03-01,2,2,Maximum land size,20.0,True
+117,CreeperTitan,2a37287c-a1ed-483e-a68a-164f1c208f3d,Default,2024-07-07,93.6,0.0,16,3,,0,2,,15.0,False
+118,PhantomBear60,e9081c42-2799-4444-a528-d5f92485301a,MVP,2023-11-17,52.2,40.0,26,4,2026-02-15,2,2,MVP,15.0,True
+119,UltraWraith,fb261ca0-fe0e-46cb-8dff-04de04f33b58,Default,2024-09-07,53.4,45.0,5,1,2026-02-08,3,3,Fly command,50.0,True
+120,FrostSniper,8587c146-d4f8-442f-b5e7-39bd299bffe9,Default,2023-05-08,25.5,10.0,3,1,2026-02-01,1,3,Kit oracle,35.0,True
+121,BlockWolf,2da78428-ff01-43c7-8758-557a81d05912,Default,2026-01-07,35.7,0.0,22,8,,0,3,,25.0,False
+122,IronGamer79,c1fe0f34-daec-4969-a2c5-6d3fd4c0b1eb,Default,2025-05-25,73.3,0.0,23,7,,0,3,,25.0,False
+123,TurboWalker77,3ad008ca-102d-4da3-98eb-6177fef01db1,Default,2024-07-20,208.6,20.0,112,54,2026-01-11,1,2,Maximum land size,20.0,True
+124,CraftEagle,b38f84da-431f-468e-a799-cda6826def5d,MVP,2025-02-09,175.6,35.0,128,52,2026-01-04,2,2,MVP,20.0,True
+125,xXVoidForceXx,a980cf40-e907-4fa5-a273-625df97dd5ef,Default,2023-08-28,19.1,15.0,10,7,2025-12-28,1,0,Fix all,0.0,True
+126,SwiftFox,5d771b24-7c74-4924-889a-ed3c28448453,Default,2025-06-25,989.0,0.0,424,28,,0,0,,0.0,False
+127,xXLightRunnerXx,04a52735-9237-423a-bb68-01cb85739ab4,Default,2024-09-08,70.3,25.0,17,13,2025-12-14,2,0,Tier4,0.0,True
+128,HyperForce,8f637cd9-49ce-403c-832f-2fdca49059bc,Default,2023-10-08,238.0,22.5,51,28,2025-12-07,2,0,Mythical,0.0,True
+129,CobaltMaster94,bf20d407-15f6-4364-9163-57d0d0264365,Default,2022-07-06,56.9,12.5,13,10,2025-11-30,2,0,Kit mythic,0.0,True
+130,NeonFury,839f62b2-055c-495d-81a8-7d911efef59b,Default,2022-10-24,118.5,0.0,17,8,,0,0,,0.0,False
+131,FireSage58,b9c4037b-ec58-4d12-a12c-e2fd037594ba,Default,2024-09-14,277.4,10.0,87,39,2025-11-16,1,0,Kit pro,0.0,True
+132,DiamondPro,69965dd9-f576-4175-add5-2935132ea479,Default,2024-03-05,93.7,15.0,23,10,2025-11-09,2,0,Tier3,0.0,True
+133,xXFrostForgeXx,0d355220-2438-4225-910d-f415390e5908,Default,2023-09-15,84.3,5.0,30,8,2025-11-02,1,0,Random tag,0.0,True
+134,TurboForce12,e4651c54-1e8d-43b1-9744-8544e5fde8d8,Default,2022-05-19,114.5,0.0,17,0,,0,0,,0.0,False
+135,HyperWizard,f4a48cfc-e666-4d82-b57e-40fb2dfe3b06,VIP,2022-12-08,80.7,30.0,99,8,2025-10-19,2,0,Maximum land size,0.0,True
+136,xXFireSlayerXx,dfccf866-f5d2-40a4-9d7d-13d25865f42b,Default,2024-10-04,380.9,22.5,71,24,2025-10-12,2,0,Mythical,0.0,True
+137,LavaFury45,13ab3c3a-3c90-4d5b-8465-b144185f1d59,MVP,2023-01-01,119.1,40.0,12,4,2025-10-05,2,0,MVP,0.0,True
+138,SwiftGamer56,91a5e689-b94b-4bf6-8292-32944d9b9922,Default,2024-03-17,349.7,0.0,32,34,,0,0,,0.0,False
+139,PhantomSage,1472da2b-4d54-42b3-a79c-551462db059e,Legend,2025-04-03,67.0,62.5,25,1,2025-09-21,3,0,Legend,0.0,True
+140,EpicSniper33,478ff9b3-30cc-43f5-90e9-49d7e15b7c7a,Default,2023-05-05,1436.2,35.0,126,22,2025-09-14,2,0,Unban,0.0,True
+141,TurboMaster37,9a6bbb18-0cf6-434a-badd-3625f8241861,Default,2024-12-02,64.5,10.0,74,15,2025-09-07,1,0,Kit mythic,0.0,True
+142,xXEpicWraithXx,236638dc-6fcb-4c5d-b17f-da26b67b58bd,Default,2024-12-30,48.3,0.0,30,13,,0,0,,0.0,False
+143,MegaHunter,d6e4a10c-8c50-4d1d-a9f1-29a0b3feaab7,Default,2025-10-11,86.6,0.0,13,12,,0,3,,25.0,False
+144,xXCobaltWolfXx,31432c48-6842-45e7-9c6b-cda50930bb8d,Default,2022-01-05,118.3,15.0,8,14,2025-08-17,1,2,Fix all,20.0,True
+145,NeonKnight,b2be039f-9708-4d20-bd30-c033aeb85940,Legend,2025-05-14,154.3,50.0,170,27,2025-08-10,1,2,Legend,20.0,True
+146,VoidFury16,3d189d85-3f99-4353-a42b-f22cd384902a,Default,2024-09-21,245.9,0.0,70,7,,0,0,,0.0,False
+147,IronMiner,407ac066-0d88-414e-9c5f-9ceb386a9253,Default,2025-10-25,90.8,0.0,27,2,,0,0,,0.0,False
+148,HyperWizard38,3b19ff5a-8b15-4e43-9a0a-ea9acd5b53b2,Default,2022-10-06,205.0,12.5,194,36,2025-07-20,2,0,Kit mythic,0.0,True
+149,CreeperEagle,634594f6-be76-4fb2-9f64-2d2514f19f0a,Default,2023-08-25,52.7,5.0,14,0,2025-07-13,1,0,Tier2,0.0,True
+150,TurboRunner21,1f42524e-f8e3-479b-b51e-994d90cbc57d,Default,2025-06-20,36.2,15.0,7,8,2025-07-06,2,0,Kit pro,0.0,True
+151,xXEpicHunterXx,7dfa3c56-0a53-45ff-a923-6662bf4bb767,Default,2023-06-19,276.2,0.0,93,24,,0,3,,25.0,False
+152,xXCraftRaiderXx,99722c99-4421-4316-af97-0bd0a6d1028a,Default,2025-02-18,66.1,5.0,47,26,2025-06-22,1,3,Random tag,25.0,True
+153,FrostPro,bc87fb7d-d05c-4087-9475-70aea22c4360,Default,2024-07-18,483.2,25.0,150,46,2025-06-15,2,2,Tier4,20.0,True
+154,xXSwiftMinerXx,2d9d5283-a7d8-473d-9651-d8a5c18a9aca,VIP,2023-01-25,12.2,10.0,21,13,2025-06-08,1,2,VIP,20.0,True
+155,SkyWraith,12bfebd9-3bb5-474c-8bf1-76f4bd14ee15,Default,2022-10-09,64.0,0.0,12,10,,0,2,,15.0,False
+156,MegaMiner36,7cfc2815-989b-48ba-ab2b-226e078da832,MVP,2023-04-19,46.6,40.0,4,6,2025-05-25,2,4,MVP,30.0,True
+157,xXShadowFoxXx,7870d150-9643-41b8-83a9-618f88e8dd86,Default,2024-11-27,143.0,45.0,14,37,2025-05-18,3,7,Fly command,80.0,True
+158,CobaltBane66,cbfc8e31-8b18-440c-925e-d975aabb99ed,Legend,2025-06-22,7.4,60.0,11,12,2025-05-11,2,8,Legend,100.0,True
+159,IronTitan98,da16f86b-a1c7-46f3-8ee0-f60428972838,Default,2022-05-27,8.1,0.0,25,9,,0,6,,85.0,False
+160,PhantomWizard,6b5038fb-4c45-4cac-a6cd-414fb42cc676,Default,2023-06-30,232.1,10.0,17,19,2025-04-27,1,6,Kit mythic,60.0,True
+161,xXPhantomLordXx,94343712-b245-42b1-a762-2ab047daa27f,Default,2025-07-19,118.2,40.0,36,23,2025-04-20,2,6,Maximum land size,50.0,True
+162,EnderWraith,f0c87469-d92b-42e7-aae7-995fc7696e5a,Default,2024-11-26,47.1,10.0,17,3,2025-04-13,1,5,Kit pro,45.0,True
+163,IceRunner16,8bebba7d-7b3c-425e-bd5e-77ecf9a0025e,Default,2022-04-20,76.5,0.0,36,17,,0,4,,40.0,False
+164,HyperMaster,e9e72f94-7d61-49f5-8c57-5f155beb6f64,Legend,2022-01-14,1055.1,55.0,219,73,2025-03-30,2,4,Legend,35.0,True
+165,DiamondKing23,91094175-58a8-4d61-850d-453611236124,Default,2023-12-11,111.0,10.0,20,8,2025-03-23,1,4,Kit oracle,30.0,True
+166,FireBlade,1f954381-d3a8-422c-9ebb-8d507deb1829,Default,2026-03-14,339.1,2.5,21,23,2025-03-16,1,5,Tier1,65.0,True
+167,xXBlazeMasterXx,8e6e43e4-52ee-4273-ba4b-33bdad36a0b3,Default,2026-01-28,660.3,0.0,96,13,,0,6,,85.0,False
+168,TurboSage,76f20b8d-c5f1-42af-bd8e-b5efe20cdbff,Default,2023-07-06,274.6,0.0,75,6,,0,6,,60.0,False
+169,DarkFury,b47befa5-4566-41c9-a4cb-c3b6c1ebf9e7,Default,2024-10-26,110.4,15.0,16,5,2025-02-23,2,6,Kit pro,50.0,True
+170,FireMaster31,76b13847-be52-463d-8b03-27bdc03d6fc5,Default,2024-09-27,20.9,10.0,18,0,2025-02-16,1,5,Tier3,45.0,True
+171,CobaltSage87,4b590051-75a6-46a3-a99f-e14a563894b2,Default,2025-08-31,176.3,5.0,85,9,2025-02-09,1,2,Random tag,20.0,True
+172,xXMegaBearXx,5eb48de9-7e19-43ca-b3e6-ebdc00621af5,Default,2023-09-25,94.8,0.0,1,11,,0,2,,20.0,False
+173,xXUltraEagleXx,205374e5-acbb-4c21-b9e9-9f7a3fde5bea,VIP,2022-04-23,1373.0,10.0,179,94,2025-01-26,1,2,VIP,15.0,True
+174,xXTurboProXx,56747132-ace2-4780-94b7-38cce00acbb6,Default,2024-01-15,337.1,22.5,38,34,2025-01-19,2,2,Mythical,15.0,True
+175,UltraSlayer,f3f3c8a9-42e4-407e-8fd4-49f149bed8cc,MVP,2024-03-31,97.8,40.0,17,1,2025-01-12,2,3,MVP,50.0,True
+176,xXNetherFoxXx,7751467a-290c-4354-87eb-f2e19ba6ef60,Default,2023-12-29,157.0,0.0,75,36,,0,3,,35.0,False
+177,xXEnderBaneXx,e065498b-1bc0-4c68-bf3f-80e94795b2db,Legend,2022-02-04,70.9,60.0,0,8,2024-12-29,2,3,Legend,25.0,True
+178,xXDarkBaneXx,37b99378-1095-4de7-95cd-c77d5ccf2c48,VIP,2025-01-22,22.4,45.0,24,0,2024-12-22,3,3,Unban,25.0,True
+179,MegaSage83,5faafb3c-10ab-4f32-ab71-8f5a9543171d,Default,2025-09-28,74.8,17.5,95,27,2024-12-15,3,2,Kit mythic,20.0,True
+180,BlazePro36,968de765-b173-46cc-af17-947aaf281fcd,Default,2023-05-23,34.0,0.0,2,7,,0,2,,20.0,False
+181,CraftCraft29,bdcd1461-676a-4f50-afda-08ee10fdd207,Default,2022-05-19,512.3,10.0,60,21,2024-12-01,1,2,Kit pro,15.0,True
+182,FrostMiner,a95439cc-a231-40e9-982e-3b5b1c5fbb43,Default,2022-07-30,18.4,15.0,6,5,2024-11-24,1,2,Fix all,15.0,True
+183,ShadowKing,4d133688-d83f-42fe-9daa-0b081f59c7c5,Default,2024-06-08,14.8,5.0,19,1,2024-11-17,1,0,Random tag,0.0,True
+184,xXNightBuilderXx,c99c55d0-378e-4cdc-8d48-fcb807a51481,Default,2025-08-02,72.1,0.0,0,1,,0,0,,0.0,False
+185,xXHyperWalkerXx,2ab8839f-f3e5-4e9d-ac69-19b6799d0658,Default,2022-10-13,1736.8,2.5,386,31,2024-11-03,1,0,Tier1,0.0,True
+186,xXStormNinjaXx,9257d87b-79ef-491a-ba70-bb5ed0345034,Default,2022-07-06,100.0,12.5,2,13,2024-10-27,2,0,Kit mythic,0.0,True
+187,SwiftWolf64,926c4d96-ff8a-45c9-99ad-1fce551c5918,Default,2022-01-12,295.3,5.0,10,38,2024-10-20,1,0,Tier2,0.0,True
+188,IceFox,8b95121d-6622-495c-a5a0-993368050f0a,Default,2023-07-01,66.4,0.0,29,9,,0,0,,0.0,False
+189,EnderRaider62,1b91b42e-6b54-41ed-a115-09ee854a38cf,Default,2022-03-22,30.5,0.0,14,14,,0,0,,0.0,False
+190,StarHunter98,e157b5ff-85c1-4ef2-99f0-f1e8c6b57f28,Default,2023-12-30,272.0,15.0,99,39,2024-09-29,2,0,Legendary,0.0,True
+191,xXSkyNinjaXx,96e98131-3027-4223-835b-11df0fe885b7,Default,2025-10-07,169.1,15.0,48,15,2024-09-22,1,0,Tier4,0.0,True
+192,NeonFox43,df0d3f70-0402-4200-a318-34f0e21b0059,VIP,2024-03-23,268.7,10.0,25,6,2024-09-15,1,0,VIP,0.0,True
+193,NetherSpark53,1bf9fffe-53f6-4ce6-8a32-a4df14d7f20f,Default,2024-10-19,1629.6,0.0,314,60,,0,0,,0.0,False
+194,xXMegaStrikeXx,47a43489-7e77-4c61-a32d-d92517d1b31a,MVP,2024-08-24,44.3,25.0,29,4,2024-09-01,1,0,MVP,0.0,True
+195,xXEnderSparkXx,25e00ee3-dfb2-47e8-b511-99bd8cb5f519,Default,2025-10-25,1076.7,40.0,107,28,2024-08-25,2,0,Fly command,0.0,True
+196,xXIceForceXx,ced64ec4-4584-4e3e-ac5f-15e7e7b53262,Legend,2024-08-13,15.6,60.0,14,12,2024-08-18,2,0,Legend,0.0,True
+197,LightStrike65,fa716a61-2e78-4855-a6cd-34ec2ea7a052,Default,2023-09-17,228.8,0.0,50,39,,0,0,,0.0,False
+198,SkyWizard,bd4998c6-995d-4d8d-9164-04c942fe4045,Default,2024-02-13,168.9,12.5,27,21,2024-08-04,2,0,Kit mythic,0.0,True
+199,PixelWraith,1ea76b85-5074-4a07-be3a-5c6d268409f8,MVP,2025-03-26,5.8,65.0,24,5,2024-07-28,3,0,MVP,0.0,True
+200,xXHyperProXx,eb0c303b-4017-431b-b85d-045370561d2b,Default,2023-02-14,15.6,10.0,27,2,2024-07-21,1,0,Kit pro,0.0,True
+201,StormSniper,a555d71a-b0ec-4187-998a-776cd8a46542,Default,2023-07-16,12.1,0.0,11,8,,0,0,,0.0,False
+202,xXDarkWolfXx,e97eeb27-1b46-461d-a42b-30ec58fc2ade,Default,2025-10-04,266.6,5.0,37,32,2024-07-07,1,2,Random tag,15.0,True
+203,GoldRaider93,ea4d4852-326d-4cfc-9a0e-694c76a45b6d,Default,2022-10-31,244.0,10.0,84,11,2024-06-30,1,2,Kit oracle,15.0,True
+204,xXSkyKingXx,82476cfe-b519-4622-89bb-ede80091e47f,VIP,2025-08-08,9.8,12.5,14,11,2024-06-23,2,3,VIP,50.0,True
+205,xXNetherTitanXx,ca4c4e92-c768-4cac-8d15-cb6853932db6,Default,2023-08-20,435.7,0.0,107,59,,0,0,,0.0,False
+206,FrostRunner67,468e8580-eed4-49b6-b438-53d65fad11b4,Default,2025-11-09,361.2,5.0,147,25,2024-06-09,1,0,Tier2,0.0,True
+207,BlockEagle,03d9432f-6f36-4a82-ad8d-c933e2e59970,Default,2025-08-16,443.6,15.0,158,17,2024-06-02,2,0,Kit pro,0.0,True
+208,ShadowBane,3eb5715c-ac05-4666-ba42-7c9395ae96de,Default,2026-02-23,264.2,35.0,69,28,2024-05-26,2,0,Unban,0.0,True
+209,xXTurboLordXx,55726344-bfbd-4f4a-871c-56d4589bd8e0,Default,2023-03-06,602.3,0.0,186,13,,0,0,,0.0,False
+210,DarkMaster95,3a3335a7-4bd8-4aa5-94aa-df986e086af8,Default,2022-11-26,106.2,0.0,88,21,,0,2,,20.0,False
+211,StormSage,83f045b5-3fa0-4acb-b99a-8acf104e84a0,VIP,2023-01-24,36.3,10.0,30,1,2026-05-05,1,2,VIP,15.0,True
+212,xXStormWraithXx,a5f840c1-0477-4ea0-9c92-d5883ca703d6,Default,2022-02-14,117.4,22.5,21,12,2026-04-28,2,2,Mythical,15.0,True
+213,xXNetherRunnerXx,29ee4963-9e4e-4881-8b94-b0683c822230,Default,2022-01-14,148.1,0.0,38,18,,0,3,,50.0,False
+214,xXFireForceXx,febb2a67-7741-481d-a4b9-3ae07ceee2f3,Default,2022-02-18,205.3,0.0,52,7,,0,3,,35.0,False
+215,SkySage19,4c6d6ba5-cb2c-480d-87d3-dd05228503d2,Legend,2025-07-30,71.7,60.0,16,0,2026-04-07,2,6,Legend,60.0,True
+216,NeonEagle31,32a196a5-0dcb-4b78-9e58-e9af6fdd0bc9,Default,2023-09-03,381.4,35.0,68,38,2026-03-31,2,9,Unban,85.0,True
+217,FireWalker,fd98d163-6947-400e-8a11-9efdaa8bbb23,Default,2022-10-07,577.8,12.5,318,78,2026-03-24,2,6,Kit mythic,50.0,True
+218,NeonCraft46,fb9c93e1-db53-492a-97a1-4600d8e422fc,Default,2023-05-20,34.2,0.0,9,7,,0,5,,45.0,False
+219,ShadowSniper,1ff2d684-6e76-4235-a94f-ba5bd00d0b9e,Default,2022-12-23,294.6,25.0,81,27,2026-03-10,3,4,Kit pro,40.0,True
+220,NetherBuilder70,c0bfa870-797d-46ed-b528-d3c9f1f0d04f,Default,2022-03-17,16.0,50.0,30,10,2026-03-03,2,4,Fly command,35.0,True
+221,DragonBear,071ba5d9-4f20-4695-afd4-5ef7695081f5,Default,2023-08-24,43.7,5.0,13,4,2026-02-24,1,4,Random tag,30.0,True
+222,NetherPro58,6937ed6a-7b08-45f2-9a6d-6f3856dbead9,Default,2025-02-12,60.0,0.0,11,12,,0,5,,65.0,False
+223,DragonSpark80,550e1921-5172-4f6a-9f90-a5d6e1578a2a,VIP,2025-07-23,51.4,10.0,8,1,2026-02-10,1,6,VIP,85.0,True
+224,xXVoidLordXx,97e7f68c-b256-4910-9d55-dc9404ff2194,Default,2025-05-05,119.5,10.0,16,8,2026-02-03,1,6,Kit mythic,60.0,True
+225,UltraGamer13,7786345f-4d9d-43e3-8ee4-d33f2dff3831,Default,2024-10-22,89.7,5.0,11,1,2026-01-27,1,6,Tier2,50.0,True
+226,MegaRunner,de753c2a-cea6-48b8-836d-a45a0ddd21e3,Default,2023-12-13,386.8,0.0,45,19,,0,5,,45.0,False
+227,IceKing,139e530a-ff60-4ed6-ad81-4890258d2d4b,Default,2022-03-17,628.0,10.0,155,51,2026-01-13,1,4,Tier3,40.0,True
+228,VoidForce56,c48ef52b-fa13-40ce-9249-d0ba66cc9c72,Default,2023-09-07,130.4,15.0,82,8,2026-01-06,2,4,Legendary,35.0,True
+229,xXStormEagleXx,60568636-a48f-4f94-8045-00bf23278e26,Default,2024-07-24,687.6,15.0,40,25,2025-12-30,1,4,Tier4,30.0,True
+230,xXCreeperFoxXx,660f4865-1aed-4dab-b538-f79200b9d6d4,Default,2024-06-22,55.3,0.0,30,13,,0,2,,15.0,False
+231,xXIceSparkXx,9bf346c7-cd78-47d2-9663-719270569ec1,Default,2022-03-27,41.8,2.5,86,30,2025-12-16,1,3,Common,50.0,True
+232,StormCraft,673e5d54-5a5e-404e-ab42-7aa444bec0c5,MVP,2022-12-31,1019.7,25.0,149,78,2025-12-09,1,3,MVP,35.0,True
+233,EpicFox34,a764b452-052c-41d7-b76d-453ce6e66daa,Default,2022-06-12,597.3,40.0,152,18,2025-12-02,2,3,Fly command,25.0,True
+234,LightTitan,164c1b40-42ab-41d7-a8b1-bcce16be9737,Default,2022-12-05,67.0,0.0,72,25,,0,3,,25.0,False
+235,xXBlazeFuryXx,ee66d1d8-27b2-4f54-b922-3ace387a9943,Default,2024-05-09,77.0,0.0,19,14,,0,2,,20.0,False
+236,ShadowSniper42,b322a9ef-7dbf-4355-956c-271e11be9c71,Default,2023-11-03,15.3,12.5,15,13,2025-11-11,2,2,Kit mythic,20.0,True
+237,xXGoldWarriorXx,3454aa00-6dea-4400-99e5-6848703555c7,MVP,2025-12-01,454.4,65.0,146,29,2025-11-04,3,2,MVP,15.0,True
+238,xXHyperMinerXx,cee3d55b-040f-47cc-9e9b-3ab0732935b1,Default,2022-04-25,371.9,15.0,52,27,2025-10-28,2,2,Kit pro,15.0,True
+239,LavaStrike21,0d92b3ae-f6dc-4ecb-8145-7b3db4c196ab,Default,2025-11-29,234.1,0.0,85,34,,0,3,,50.0,False
+240,TurboStrike,9e9fb39c-c84f-42d1-a848-8ba9a2962367,Default,2022-08-08,214.7,5.0,22,7,2025-10-14,1,3,Random tag,35.0,True
+241,xXEpicWalkerXx,e1581dcf-fe07-48eb-8812-48d86a8190ae,Default,2023-10-02,366.0,35.0,80,55,2025-10-07,2,3,Unban,25.0,True
+242,IronSage,62d7ba7c-1671-4cb0-a81f-ecfe2a4e8acf,VIP,2024-09-08,25.9,10.0,29,10,2025-09-30,1,0,VIP,0.0,True
+243,TurboFury66,fc668cb5-1245-4232-a4cf-23110e1dcb22,Default,2025-05-08,45.8,0.0,5,5,,0,0,,0.0,False
+244,NetherHunter,35c1a456-e45e-4e3b-a9fb-b26ea8d8fddf,MVP,2025-12-10,91.7,30.0,29,10,2025-09-16,2,0,MVP,0.0,True
+245,SkyCraft,226a20c1-ecb1-40ae-ab57-3e06ed2d1532,Default,2026-04-21,98.4,10.0,19,0,2025-09-09,1,0,Kit pro,0.0,True
+246,LightFox44,9ab25e4f-2e07-4776-bf0d-cf799285bb87,Default,2022-04-17,77.3,10.0,27,11,2025-09-02,1,0,Tier3,0.0,True
+247,PhantomStrike,05aeda98-b4d7-4563-98c6-19266e4b339d,Default,2024-11-20,585.7,0.0,200,76,,0,0,,0.0,False
+248,NightWolf62,a278dc18-3acf-4fb0-9a76-d2db36729182,Default,2025-08-06,119.2,35.0,4,8,2025-08-19,2,0,Maximum land size,0.0,True
+249,FireKing,e50c0197-3b3c-43a4-a323-a83a350fa24c,VIP,2024-11-07,44.1,30.0,11,9,2025-08-12,2,0,Mythical,0.0,True
+250,EpicGamer,6ad34afb-ebc9-457f-a3a1-2df2a4eafcf2,Default,2023-09-26,48.4,2.5,22,15,2025-08-05,1,0,Common,0.0,True
+251,GoldMaster,23fe6e62-622c-4821-b45c-d3b2d3e90254,Default,2023-03-28,48.0,0.0,19,1,,0,0,,0.0,False
+252,xXGoldBladeXx,85b0582e-556e-4709-bed7-0d4fc652b8ab,Default,2022-12-17,79.4,40.0,23,10,2025-07-22,2,0,Fly command,0.0,True
+253,UltraHunter,af1fc89c-096e-4bdd-a87f-69a4f95bc382,Legend,2022-09-19,246.5,50.0,30,13,2025-07-15,1,0,Legend,0.0,True
+254,DarkFury57,47b70074-e65d-4053-93bd-c6cf2aa07b3d,Default,2025-06-26,119.8,35.0,3,2,2025-07-08,2,0,Unban,0.0,True
+255,CraftWalker86,378c07b0-70a4-4837-95c7-3f359458502a,Default,2024-07-28,473.5,0.0,157,44,,0,0,,0.0,False
+256,VoidTitan36,6fcb1afa-881c-4981-95b9-6ba225d151bd,Default,2022-02-20,58.4,0.0,9,13,,0,0,,0.0,False
+257,IceSpark44,22384d3f-5ad2-4eb5-b117-e31f24b959b6,Default,2025-10-02,12.4,15.0,4,15,2025-06-17,2,0,Kit pro,0.0,True
+258,UltraBane,df0d4cd7-508f-4010-b499-1bfe51720561,Legend,2024-06-28,328.5,100.0,67,10,2025-06-10,3,0,Legend,0.0,True
+259,StormStrike,86a0d8e5-e986-40eb-9ac3-bfa55736da1e,Default,2022-12-23,51.2,0.0,61,33,,0,0,,0.0,False
+260,LavaBuilder,58a7b464-c65e-4e16-b9c6-4cbdbd557684,Default,2025-07-05,37.4,0.0,22,7,,0,3,,50.0,False
+261,LightPro54,00c13513-16d3-47dd-8f60-99f1a2a51210,VIP,2025-08-03,326.1,10.0,145,36,2025-05-20,1,3,VIP,35.0,True
+262,IronWolf73,3b1acbb3-d63a-4aa2-8285-bfbd5e201cc0,Default,2023-09-29,66.5,10.0,17,13,2025-05-13,1,3,Kit mythic,25.0,True
+263,xXDragonBladeXx,b7ef797c-9316-482f-ae60-93f6746dd113,MVP,2022-06-22,778.8,25.0,182,19,2025-05-06,1,3,MVP,25.0,True
+264,xXHyperGamerXx,2d71b3a2-33c5-48bf-8345-d2dfb3e0c44d,Default,2023-06-27,41.3,0.0,22,12,,0,0,,0.0,False
+265,EpicSage19,80a78a36-f061-4b9a-af5d-68e92617b893,Default,2022-09-29,71.6,10.0,16,14,2025-04-22,1,0,Tier3,0.0,True
+266,LavaBane,3551416a-d451-4b92-bd7a-adb7aa5dc856,Default,2022-05-26,62.2,15.0,8,15,2025-04-15,2,0,Legendary,0.0,True
+267,SkyRaider20,f2a45c70-3610-416a-a7d8-6cd1a8273ea3,Default,2025-07-22,33.5,15.0,14,15,2025-04-08,1,0,Tier4,0.0,True
+268,ShadowLord87,37d463f5-24c3-4aec-bf7c-1c1017daa511,Default,2024-09-19,203.6,0.0,159,14,,0,0,,0.0,False
+269,BlazeFury65,78a9d4e0-f809-41aa-b190-0d3d153426f9,Default,2022-09-19,704.1,2.5,45,33,2025-03-25,1,3,Common,50.0,True
+270,LightFury48,6d601747-1abc-409f-afd3-aa088f2e44e7,MVP,2024-01-15,62.1,60.0,23,5,2025-03-18,2,3,Fly command,35.0,True
+271,xXSwiftKnightXx,acc04de8-c4ff-4a19-8886-1891fe12eea7,Default,2024-02-12,66.8,5.0,1,11,2025-03-11,1,3,Unique,25.0,True
+272,EpicTitan44,2f499157-bb8d-4095-bad5-186ec9117fef,Default,2022-01-19,36.5,0.0,19,3,,0,3,,25.0,False
+273,xXMegaWarriorXx,f8c80320-9580-421f-8486-2aa7448cac7f,Default,2025-05-25,298.4,35.0,11,18,2025-02-25,2,2,Unban,20.0,True
+274,UltraForge,1df622dc-54d0-48cc-a823-7b6d25ade879,Default,2023-08-17,323.1,2.5,28,13,2025-02-18,1,4,Tier1,40.0,True
+275,xXUltraBladeXx,eadec52f-1f79-47af-87c9-f55f6fdd2d70,Default,2022-03-19,205.7,40.0,29,13,2025-02-11,2,6,Maximum land size,55.0,True
+276,LavaHunter52,05ea28a8-7ce5-4263-b3f4-c09df20928e3,Default,2026-02-23,185.4,0.0,188,19,,0,4,,35.0,False
+277,FireMaster,8e03c65f-2c36-4871-bf40-9152c7cf09ab,Legend,2024-12-12,523.8,100.0,189,32,2025-01-28,3,4,Legend,30.0,True
+278,NeonBuilder,bf9d575a-8c4b-4ae3-9f88-6f5f6419f119,Default,2022-11-06,53.3,15.0,15,14,2025-01-21,2,5,Tier3,65.0,True
+279,xXDiamondFuryXx,60239470-ef45-4c41-b35d-147512cf3a8f,Default,2025-12-06,310.8,37.5,56,30,2025-01-14,3,6,Unban,85.0,True
+280,xXIceFoxXx,95b960ee-2a17-4bbf-86c8-7a59c5b4fc0a,Default,2023-04-03,360.9,0.0,85,23,,0,6,,60.0,False
+281,xXSkyRaiderXx,12ee96e0-f92c-49e2-9e80-501ee165f807,Default,2022-03-23,393.0,0.0,51,11,,0,6,,50.0,False
+282,StormFury,84e21783-1392-46f0-9353-79e94fea5051,MVP,2023-06-09,26.7,25.0,4,13,2024-12-24,1,5,MVP,45.0,True
+283,FireBuilder91,af0d70d4-160f-4f23-a62f-9275f5bc6ec0,Default,2025-07-31,112.9,10.0,3,7,2024-12-17,1,4,Kit pro,40.0,True
+284,DarkBlade,5fc74e20-3151-4e16-938f-fd4550d05000,Legend,2022-03-31,146.7,60.0,93,17,2024-12-10,2,4,Legend,35.0,True
+285,BlazeWraith,81cfc8d7-e6f4-49bd-a84d-c74e8567b2b5,Default,2023-03-06,1095.5,0.0,251,98,,0,4,,30.0,False
+286,PhantomRaider,001cf08a-cbf6-4d24-b378-11e51ce937e2,Default,2026-03-22,262.6,15.0,70,40,2024-11-26,1,5,Tier4,65.0,True
+287,xXBlazeRaiderXx,b47d9456-e869-4f09-abb0-f6b71afa118f,VIP,2023-03-05,631.0,30.0,84,23,2024-11-19,2,6,Mythical,85.0,True
+288,IceSlayer15,d9568ac9-20e3-43dd-801a-c163afd92bf1,Default,2022-04-17,350.9,17.5,37,12,2024-11-12,2,6,Fix all,60.0,True
+289,CreeperGamer,d7284157-9a7e-44be-b97c-def5e0c6966b,Default,2025-06-05,579.6,0.0,182,46,,0,3,,25.0,False
+290,NetherStrike19,8e1e6b48-1ddc-4b18-9dab-416cda3dfba1,Default,2022-03-17,370.5,5.0,116,60,2024-10-29,1,3,Unique,25.0,True
+291,ShadowEagle94,64098ccf-ca94-493b-9684-2e05cbb139ef,Legend,2024-03-31,261.0,50.0,76,23,2024-10-22,1,2,Legend,20.0,True
+292,SkyMaster14,554c723b-80bd-46a3-b596-d21e37890a77,Default,2025-03-21,28.6,35.0,23,1,2024-10-15,2,2,Unban,20.0,True
+293,GoldMiner86,2ecd9e25-4afe-4a20-bd71-98ec4dadf555,Default,2024-04-06,46.9,0.0,38,13,,0,2,,15.0,False
+294,xXPhantomKnightXx,4729b14d-217a-42ee-b37d-8e9b8ed1cdc1,Default,2025-12-16,403.5,40.0,97,19,2024-10-01,2,2,Maximum land size,15.0,True
+295,StormWolf99,bb6abf07-299d-4a2f-946b-a7b4ec23f661,Default,2025-01-19,179.5,15.0,57,29,2024-09-24,2,3,Kit pro,50.0,True
+296,StarWraith,167b993e-547d-4228-bb33-040fa9e74f23,Default,2024-03-28,282.5,50.0,53,9,2024-09-17,2,3,Fly command,35.0,True
+297,DarkSlayer68,6179083b-53a3-4016-9cfe-d1215160ca70,Default,2023-02-23,80.7,0.0,10,10,,0,3,,25.0,False
+298,HyperRunner,9587bf0d-e163-43cf-9214-91afa9706b8b,Default,2022-05-17,402.6,37.5,99,52,2024-09-03,3,3,Unban,25.0,True
+299,StarPro,ff04dffa-7382-4d96-ab38-4f1b9ca50568,VIP,2025-09-13,57.6,27.5,17,5,2024-08-27,3,2,Tier4,20.0,True
+300,CreeperFox,16d56109-5b33-41cd-b92c-ccbaa0e551c5,Default,2025-03-31,948.5,30.0,410,61,2024-08-20,2,2,Maximum land size,20.0,True
+301,NightWolf,76aca7fc-f11b-410b-a476-4d0a6bdf5c76,Default,2025-10-04,15.5,0.0,11,13,,0,0,,0.0,False
+302,TurboGamer,4675dc67-4287-4e78-8736-50e90551505a,Default,2023-07-25,90.5,0.0,25,2,,0,0,,0.0,False
+303,NeonWalker51,f112a636-f10f-4dc6-8ed5-f1c1419295e5,Legend,2025-11-12,579.7,50.0,325,25,2024-07-30,1,0,Legend,0.0,True
+304,xXBlockWarriorXx,da8aff5b-559a-4416-be8c-5b404f33264c,Default,2025-12-24,77.2,5.0,9,3,2024-07-23,1,0,Random tag,0.0,True
+305,PixelBlade,b0d8fc93-958b-4ea2-a9ac-777a1c6e46d3,Default,2023-06-27,265.7,0.0,47,41,,0,0,,0.0,False
+306,HyperWalker,ef43ae01-b0f2-4dbc-be8c-f49d1e0b748e,Default,2026-02-12,67.8,0.0,51,35,,0,0,,0.0,False
+307,DragonSpark,6cffbffe-3fbf-4239-9653-9304f78062b8,Default,2022-02-02,115.4,2.5,18,4,2024-07-02,1,0,Common,0.0,True
+308,DiamondWolf,dd75caaf-1f4d-4ab4-a363-682f5ab62358,MVP,2025-11-08,28.8,60.0,8,6,2024-06-25,2,0,Fly command,0.0,True
+309,GoldWalker92,eff78a18-d71e-497a-af6d-7a2029955178,Default,2022-07-18,49.3,5.0,31,23,2024-06-18,1,0,Unique,0.0,True
+310,xXTurboKnightXx,75789887-9187-467e-b263-aed09c98bb6e,Default,2024-07-25,68.3,0.0,24,15,,0,0,,0.0,False
+311,xXNetherWizardXx,1c87dbda-fc26-4bd3-b5aa-d05cc010662f,Default,2023-06-14,27.4,10.0,23,7,2024-06-04,1,0,Legendary,0.0,True
+312,EpicBane,feda2b64-fc74-4363-be33-730a7b70169f,Default,2024-05-17,42.0,2.5,2,1,2024-05-28,1,0,Tier1,0.0,True
+313,ShadowLord41,67ef44e2-0cc0-4269-b9c1-90d17b7053be,Default,2022-03-06,158.9,40.0,28,8,2026-05-21,2,0,Maximum land size,0.0,True
+314,DragonKnight80,8e42617f-4d85-4113-9214-d147bab9b612,Default,2022-08-22,322.5,0.0,73,17,,0,0,,0.0,False
+315,NetherKing51,946ad24e-924d-450b-bc4c-44bb1b036aac,Default,2024-10-21,5.8,50.0,1,4,2026-05-07,2,0,Fly command,0.0,True
+316,NightWraith,2badd852-59d8-4ee9-8017-8f807b23e5e4,Default,2025-01-26,108.4,15.0,6,4,2026-04-30,2,0,Tier3,0.0,True
+317,EpicWalker49,665e8609-1503-45c9-93b2-5c9154689780,Default,2025-04-08,80.0,37.5,29,11,2026-04-23,3,0,Unban,0.0,True
+318,xXCraftWizardXx,478f8a36-3dd3-4e89-aaae-9c78d73c17e1,Default,2025-12-09,279.5,0.0,23,15,,0,0,,0.0,False
+319,CreeperKnight,0e4b2022-441a-483c-a8c5-20c32bbac0bb,Default,2024-07-09,207.8,35.0,62,12,2026-04-09,3,3,Maximum land size,25.0,True
+320,SkyHunter,a6a60191-2762-41ab-a013-54446e44c0fc,MVP,2025-08-30,144.9,25.0,44,30,2026-04-02,1,2,MVP,20.0,True
+321,UltraLord54,bbd38172-6a9d-486f-be5b-1c302757b152,Default,2023-02-08,55.4,25.0,8,15,2026-03-26,2,2,Fix all,20.0,True
+322,LavaBear57,8a638b14-d9dd-4f09-ad74-ad2c543d5cb6,Default,2025-08-27,250.7,0.0,43,39,,0,2,,15.0,False
+323,FireForge81,075537e9-7690-4b8c-b466-df68b3fb3415,Default,2025-09-06,58.4,5.0,27,3,2026-03-12,1,0,Random tag,0.0,True
+324,CraftFury69,978eb6bb-52ec-4b3a-9031-02bdb4016418,Default,2025-01-07,93.2,17.5,14,13,2026-03-05,2,0,Tier4,0.0,True
+325,xXDarkKnightXx,f3f87289-a1d8-4cef-8165-efe2d0fdf31c,VIP,2025-10-09,97.0,10.0,23,0,2026-02-26,1,0,VIP,0.0,True
+326,SkyHunter50,9985433a-c4bc-478d-942a-4e1e38652a11,Default,2025-01-18,326.1,0.0,58,27,,0,0,,0.0,False
+327,EnderLord,8d1aefc5-3459-4b2b-8bd4-e500a35e2655,Default,2024-05-14,265.1,0.0,76,22,,0,3,,25.0,False
+328,xXCreeperSageXx,855e9907-42da-48da-92c3-ab0a8fa8ec6f,Default,2026-04-20,69.1,15.0,19,0,2026-02-05,2,3,Kit oracle,25.0,True
+329,xXUltraWarriorXx,cfd6e127-1c4d-4667-91c0-1dd9c913c127,Legend,2022-08-24,56.7,75.0,2,4,2026-01-29,2,2,Legend,20.0,True
+330,MegaBlade,ba2f6bb3-3641-4b84-a33f-30b41e94d3b0,Default,2025-10-26,29.8,10.0,18,3,2026-01-22,1,2,Legendary,20.0,True
+331,StarWraith80,a3bc15a5-a8c4-4ff2-98b1-8550e357efd5,Default,2024-11-02,176.5,0.0,33,6,,0,2,,15.0,False
+332,ShadowMaster48,ace0350a-abad-4d36-9cfb-80cc12b6273b,Default,2024-02-25,23.7,40.0,19,4,2026-01-08,2,2,Maximum land size,15.0,True
+333,MegaStrike72,11b8de91-601b-44b3-8613-55887a96f854,Default,2024-05-10,47.3,5.0,24,0,2026-01-01,1,7,Tier2,80.0,True
+334,xXPhantomBaneXx,e699c73e-2a04-4f49-8527-9ec5678a2bf6,Default,2024-10-13,50.6,50.0,97,32,2025-12-25,2,8,Fly command,100.0,True
+335,xXStormTitanXx,83ea697e-ffde-4711-ba89-cc6da5f6719a,Default,2022-07-06,108.0,0.0,14,1,,0,6,,85.0,False
+336,xXPixelForgeXx,f14e0f6b-f2b7-4433-9afe-15b27332f02c,Default,2025-07-23,60.9,35.0,67,22,2025-12-11,2,6,Unban,60.0,True
+337,SkyBuilder,9b59cef4-dc93-448c-a8e1-dffa5da86e43,VIP,2025-06-25,8.2,25.0,30,3,2025-12-04,2,6,Tier4,50.0,True
+338,SkyCraft88,636e2b1e-5fc8-4d14-8bc4-a4874006f2b3,Default,2024-11-02,78.1,35.0,0,13,2025-11-27,3,5,Maximum land size,45.0,True
+339,xXPhantomTitanXx,49736fc0-8605-4245-95d2-9cc3159f5b0a,Default,2025-01-27,100.2,0.0,9,9,,0,4,,40.0,False
+340,DiamondWalker,735d2642-9857-4ef4-a36c-0d99bf3e2b79,Default,2022-10-06,463.0,25.0,190,39,2025-11-13,2,4,Fix all,35.0,True
+341,xXPhantomSlayerXx,b23006be-7a31-4e13-82c4-c1f0a46fd61e,Legend,2025-02-21,673.9,50.0,84,10,2025-11-06,1,4,Legend,30.0,True
+342,xXStormSlayerXx,26c15f66-c23f-49a5-9a33-d17f0b7ae168,Default,2023-01-12,110.1,5.0,17,1,2025-10-30,1,5,Random tag,65.0,True
+343,xXNightFuryXx,c2492495-2ace-4382-8bb2-908c344af157,Default,2024-09-06,19.2,0.0,23,11,,0,6,,85.0,False
+344,xXDragonTitanXx,48b0a55b-6b54-4cb8-b35e-d510e99f9bca,VIP,2023-03-26,33.5,10.0,15,0,2025-10-16,1,6,VIP,60.0,True
+345,xXIceBearXx,10466bed-2856-4054-a006-f9da48378561,Default,2025-12-26,14.7,2.5,27,10,2025-10-09,1,6,Common,50.0,True
+346,HyperCraft91,8f3a9ca8-c07f-4eca-9757-f1c7ec04fa5d,MVP,2023-03-06,80.8,60.0,22,7,2025-10-02,2,5,Fly command,45.0,True
+347,xXLightForgeXx,727a5680-d047-4c9d-ba46-f9d0a4fb3a28,Default,2025-07-07,86.5,0.0,24,15,,0,4,,40.0,False
+348,GoldSage34,96479b6e-90a5-4170-81a8-c0ec624e5be8,Default,2024-12-12,45.8,0.0,30,5,,0,2,,20.0,False
+349,GoldSage,94d0249a-58a5-4ecc-8369-b1f859ff452c,Default,2022-04-09,278.3,10.0,93,13,2025-09-11,1,2,Legendary,15.0,True
+350,IceKnight,c65f7ceb-bdac-4b58-a20c-fac7fd80b825,Default,2025-09-15,122.9,22.5,52,12,2025-09-04,2,2,Maximum land size,15.0,True
+351,BlazeBear52,1826620e-8f30-4c3f-8e88-13c95619cbb3,Default,2022-07-30,43.1,20.0,17,13,2025-08-28,1,3,Mythical,50.0,True
+352,xXNeonNinjaXx,0e7539c6-e04a-4d41-b1a9-182f74a270f3,Default,2024-06-12,412.5,0.0,47,44,,0,3,,35.0,False
+353,HyperTitan78,3d52a359-cd9f-4a54-81dc-2e800c023160,Default,2023-05-12,83.8,50.0,22,6,2025-08-14,2,3,Fly command,25.0,True
+354,NetherKing14,9308a542-5eaf-4c78-b7cc-b7de08876ebf,Default,2024-03-22,60.7,10.0,7,12,2025-08-07,1,3,Tier3,25.0,True
+355,DragonHunter72,4b47f8b4-c12a-4402-b539-8e8895d692fb,Default,2025-11-27,390.5,35.0,72,38,2025-07-31,2,2,Unban,20.0,True
+356,TurboBear36,0aae0bc0-0bc1-45bc-bdc5-cc760a69388c,Default,2022-12-26,1742.9,0.0,434,39,,0,2,,20.0,False
+357,BlockSniper63,61ec11f4-56e0-491f-b443-4c9a2aeb883d,Default,2022-08-23,102.5,35.0,20,6,2025-07-17,3,2,Maximum land size,15.0,True
+358,NetherFury,e07d7e26-6b80-4728-9444-bfc85e4de143,MVP,2024-10-25,97.8,27.5,21,13,2025-07-10,2,2,MVP,15.0,True
+359,EnderWarrior,9f3a0c4a-52a4-49fb-b89f-8c1340f004ca,Default,2026-01-21,300.5,35.0,42,19,2025-07-03,3,3,Fix all,50.0,True
+360,StarMaster,ea8e4b0c-c7c8-4641-a1ad-12ae5076ecf8,Default,2024-08-14,728.0,0.0,56,43,,0,0,,0.0,False
+361,SkyWraith14,27f6fff4-6aa5-4add-b738-e458fb54d282,Default,2025-04-26,50.2,15.0,99,27,2025-06-19,2,0,Kit oracle,0.0,True
+362,LavaBane52,ec1709f9-d546-4f6b-a519-2f9e0691c8b5,Default,2025-02-28,29.6,2.5,26,12,2025-06-12,1,0,Tier1,0.0,True
+363,EpicForce,b264011d-2b1a-4b7c-b14e-0d84aad8ff30,VIP,2024-08-03,92.6,10.0,24,12,2025-06-05,1,0,VIP,0.0,True
+364,VoidMaster,cb89654f-1711-4d5b-a855-281ff1086eae,Default,2023-01-30,97.2,0.0,10,5,,0,0,,0.0,False
+365,xXDarkProXx,3ef8abe4-d175-4c14-a469-fd3ae10a7a1c,MVP,2023-08-02,649.2,25.0,184,46,2025-05-22,1,0,MVP,0.0,True
+366,xXPixelSniperXx,5429a150-0004-4daa-8768-0d704c8f0774,Default,2025-02-04,20.1,5.0,17,13,2025-05-15,1,0,Unique,0.0,True
+367,xXTurboMasterXx,314f15d6-5e1d-4314-8aea-ce4619d09761,Legend,2023-07-21,184.5,75.0,58,60,2025-05-08,2,0,Legend,0.0,True
+368,xXCreeperSniperXx,8bd5987f-d732-4431-8dc6-67465897f562,Default,2025-09-27,49.6,0.0,12,10,,0,0,,0.0,False
+369,SkyCraft69,1bbc0a87-f0de-46df-b9ee-05f26ef247e8,Default,2024-04-04,87.7,22.5,25,11,2025-04-24,2,0,Maximum land size,0.0,True
+370,xXPixelRunnerXx,65292f65-e9ba-4af2-95f8-f69980a6684b,Default,2022-06-15,154.1,20.0,75,15,2025-04-17,1,0,Mythical,0.0,True
+371,TurboKing,3ff0c0de-baa2-4e8a-b82b-c7a7f45a373b,Default,2025-12-07,2.4,5.0,15,11,2025-04-10,1,0,Tier2,0.0,True
+372,DiamondRunner42,ce939270-6de1-4fa5-ade9-fe41fa566d21,Default,2022-07-19,746.5,0.0,193,32,,0,0,,0.0,False
+373,SkyGamer80,19159191-30c1-48da-bf3d-df56b2079ea4,Default,2025-09-02,529.7,0.0,148,59,,0,0,,0.0,False
+374,BlazeSage43,f5a777f3-4208-4038-9fcc-7c514cc50a76,Default,2024-08-30,98.1,35.0,11,10,2025-03-20,2,0,Unban,0.0,True
+375,xXNightBladeXx,332b852a-bbd1-4d28-9ddf-308e295d45b6,VIP,2022-03-01,88.7,25.0,28,6,2025-03-13,2,0,Tier4,0.0,True
+376,EnderSage,ba85dbc3-7425-4d4c-ae6e-3fcd5d89829e,Default,2022-04-04,116.9,30.0,17,10,2025-03-06,2,0,Maximum land size,0.0,True
+377,xXUltraWraithXx,c79d664f-6ba0-4c52-8dfd-9c60b2a6dd19,Default,2022-09-17,84.5,0.0,4,7,,0,0,,0.0,False
+378,StarHunter,663ea55a-b3af-47fe-bb71-65c6035d43ed,Default,2024-08-21,3.3,35.0,17,1,2025-02-20,3,2,Fix all,15.0,True
+379,EnderBane,2d7da179-4a62-4cb9-a0c9-24c7c69c49a4,Legend,2022-02-23,11.7,65.0,17,2,2025-02-13,3,2,Legend,15.0,True
+380,xXNightSageXx,8b2f370c-67b4-4eb3-9d6a-9150417e68e7,Default,2024-02-28,317.6,15.0,66,20,2025-02-06,2,3,Kit oracle,50.0,True
+381,DarkSniper,d9eb6214-33d0-4709-8beb-c642f3b7271b,Default,2024-07-04,6.0,0.0,27,11,,0,3,,35.0,False
+382,BlockSlayer,84e54fe5-a6d7-4b5f-a3da-6487c121bf00,VIP,2025-04-08,738.9,10.0,164,12,2025-01-23,1,0,VIP,0.0,True
+383,NeonLord,21e51a02-e54a-4f5a-bace-fcca37350b8c,Default,2024-02-06,119.1,5.0,12,14,2025-01-16,1,0,Tier2,0.0,True
+384,CraftWraith,66b87e4f-8650-4753-b2d4-8210eda67717,MVP,2023-04-09,170.9,25.0,33,27,2025-01-09,1,0,MVP,0.0,True
+385,xXNeonForgeXx,0b57cfd1-b7c1-478b-915c-4365282c44d0,Default,2023-12-15,103.6,0.0,2,14,,0,0,,0.0,False
+386,CreeperEagle56,fd2f8ea7-362e-4596-8908-cd631d38f3b8,Legend,2024-03-07,285.3,75.0,49,25,2024-12-26,2,2,Legend,20.0,True
+387,PhantomWraith92,b71ccaba-b719-40ff-a1b2-251868b544c4,Default,2025-02-10,213.5,10.0,143,21,2024-12-19,1,2,Legendary,15.0,True
+388,StormWalker93,37752a92-300a-4645-8f29-3257b989d2be,Default,2025-08-30,112.3,22.5,28,15,2024-12-12,2,2,Maximum land size,15.0,True
+389,StarSniper,69c742bc-8b8f-408b-985a-21fd86541d65,Default,2022-09-21,117.0,0.0,12,11,,0,3,,50.0,False
+390,PhantomMiner,f9b8e5af-c9e9-4ae6-b9d3-79dc381e2b15,Default,2022-07-21,91.5,20.0,22,3,2024-11-28,2,3,Fix all,35.0,True
+391,BlockBlade,862c24a0-8d6c-49cf-8ead-13ad21acccb3,Default,2024-05-07,153.0,35.0,90,22,2024-11-21,1,3,Fly command,25.0,True
+392,DarkKnight,3fca7a41-7a46-492a-9047-8f6454e17b7f,Default,2022-02-06,283.6,10.0,90,20,2024-11-14,1,9,Tier3,85.0,True
+393,StormSage94,3e38433d-d40a-4696-8837-0d23902c5fc5,Default,2024-04-24,17.4,0.0,20,9,,0,8,,70.0,False
+394,GoldWalker,0fa10681-cdab-4488-8fce-a176996627eb,Default,2025-01-27,174.5,0.0,62,40,,0,5,,45.0,False
+395,GoldBuilder,d03406e6-67b2-42fa-a69e-9fdbb576e1f3,Default,2022-09-21,73.1,30.0,52,12,2024-10-24,2,4,Maximum land size,40.0,True
+396,xXLavaWraithXx,70d41d57-8184-4e82-b879-e556a403047d,MVP,2023-12-10,278.9,27.5,92,29,2024-10-17,2,4,MVP,35.0,True
+397,EnderEagle32,da1dde94-deb2-404e-a8e9-d4c4d26d3520,Default,2025-10-28,346.8,35.0,44,50,2024-10-10,3,4,Fix all,30.0,True
+398,IronEagle85,d37222cf-cf0f-404c-9d7f-e54501a37322,Default,2023-10-16,35.7,0.0,22,15,,0,5,,65.0,False
+399,MegaGamer68,97068300-2500-4ea1-9999-1c21400dcc79,Default,2022-01-05,162.9,30.0,91,23,2024-09-26,3,6,Tier4,85.0,True
+400,LightWraith40,70ace3b8-e7c1-4ca6-b6f5-9d8ae12ff435,Default,2025-05-25,403.2,2.5,182,17,2024-09-19,1,6,Tier1,60.0,True
+401,xXShadowCraftXx,71bf5a43-5a24-4f21-865e-ec6911c89e7c,VIP,2026-04-17,67.0,20.0,18,6,2024-09-12,2,6,VIP,50.0,True
+402,xXBlazeMinerXx,2e955863-3f5e-4619-a71b-76bb4d7256b1,Default,2024-02-23,268.1,0.0,38,19,,0,5,,45.0,False
+403,EpicRaider,733b5255-9ed2-4b12-9e6a-7e44bc03a312,MVP,2022-02-18,552.6,25.0,44,48,2024-08-29,1,4,MVP,40.0,True
+404,VoidRunner,06a142e1-0235-4450-8242-14953134ee7c,Default,2023-07-24,97.3,15.0,0,5,2024-08-22,2,4,Tier3,35.0,True
+405,HyperKing,cbe5f1d4-0db6-4c03-974c-2c61e270d574,Legend,2023-04-14,46.6,50.0,23,3,2024-08-15,1,4,Legend,30.0,True
+406,xXStormMinerXx,407267d3-aeeb-4e87-b63a-6013c34d1f30,Default,2025-04-05,322.1,0.0,70,14,,0,2,,15.0,False
+407,BlockGamer34,3c0c31cb-39d1-4c63-bae9-b42663e9c64f,Default,2025-04-17,70.0,22.5,21,15,2024-08-01,2,3,Maximum land size,50.0,True
+408,TurboSpark,806602f6-9353-4fc6-8d5b-229d1ff7e445,Default,2025-06-04,34.9,30.0,23,14,2024-07-25,2,3,Mythical,35.0,True
+409,GoldEagle14,b35309c6-0501-4fb5-9f4e-d226f731b141,Default,2022-01-22,587.3,20.0,47,10,2024-07-18,2,3,Fix all,25.0,True
+410,CreeperGamer80,18273cc5-9fd0-4363-8176-fa4b2c8254b2,Default,2025-06-01,369.7,0.0,41,22,,0,3,,25.0,False
+411,DarkSage,7ce4556e-76d6-41d4-886c-cf18159f3209,Default,2025-04-20,39.5,10.0,5,8,2024-07-04,1,2,Tier3,20.0,True
+412,IronFox,eaa07e66-bce4-414f-8436-b7d61b5e1e65,Default,2023-12-05,107.4,35.0,24,1,2024-06-27,2,2,Unban,20.0,True
+413,DarkBlade82,06abfa23-a738-4694-990c-229db35cef75,Default,2025-11-10,67.3,15.0,21,10,2024-06-20,1,2,Tier4,15.0,True
+414,BlockGamer,ac36bc23-c451-472e-9ab7-fa0ba9b8e952,Default,2025-03-07,661.8,0.0,169,54,,0,2,,15.0,False
+415,HyperSpark35,d80dab81-f6c2-40f0-862a-df7789fb64c6,Default,2025-09-14,190.0,0.0,85,18,,0,3,,50.0,False
+416,EpicWolf,3256379a-7dca-44cd-90cf-b6217910e0b2,Default,2023-07-17,53.3,25.0,22,9,2024-05-30,2,3,Fix all,35.0,True
+417,NightFury95,847d9f0d-5ff3-46d5-bfcd-5f7fab79a0bd,Legend,2025-04-07,66.8,55.0,13,4,2024-05-23,2,3,Legend,25.0,True
+418,EnderPro,a68af45b-0f03-466d-b326-381ef9c5c933,Default,2024-04-01,64.8,0.0,69,23,,0,3,,25.0,False
+419,PhantomSpark,6869176d-c539-4054-9867-343aea6c5de4,Default,2024-02-25,51.3,0.0,15,5,,0,0,,0.0,False
+420,CobaltSpark63,01ea9dc2-91cc-4cc6-a554-29a9cb0f13bb,VIP,2022-11-15,19.7,20.0,19,1,2026-05-02,2,0,VIP,0.0,True
+421,ShadowMiner,46daf849-50e1-4573-9228-888e021cc879,Default,2023-10-17,100.4,5.0,21,26,2026-04-25,1,0,Tier2,0.0,True
+422,xXSkySparkXx,1e617689-4a6f-45bd-b325-6e1ec610a073,MVP,2025-02-13,135.1,25.0,30,21,2026-04-18,1,0,MVP,0.0,True
+423,NetherBear89,988cde39-2959-44f3-b931-d02c92b936b3,Default,2026-01-13,302.1,0.0,46,10,,0,0,,0.0,False
+424,xXLightKingXx,e773a718-59ed-49a8-9b43-731c51a65110,Legend,2023-12-22,101.6,50.0,19,5,2026-04-04,1,0,Legend,0.0,True
+425,CraftMiner36,1f18ea9a-fe5f-4dc5-a1cb-7b22785ac63b,Default,2025-09-08,104.5,10.0,14,13,2026-03-28,1,0,Legendary,0.0,True
+426,xXDiamondLordXx,37fd6c1a-bac2-4248-bd91-d647ea1af428,Default,2022-04-15,68.9,22.5,6,14,2026-03-21,2,0,Maximum land size,0.0,True
+427,xXNeonGamerXx,d38aec3a-9c44-4621-8e73-f545aa465582,Default,2023-07-21,496.0,0.0,142,52,,0,0,,0.0,False
+428,IronWraith,ef5bd7d8-e026-4490-a54a-6e8f770f4afa,Default,2022-01-30,262.0,20.0,42,29,2026-03-07,2,0,Fix all,0.0,True
+429,VoidKing,8296e7d9-f681-4754-a19b-c22a51fe6235,Default,2022-11-14,10.2,35.0,27,3,2026-02-28,1,0,Fly command,0.0,True
+430,xXTurboMinerXx,c48d8d2f-1e27-42c4-a6d4-e696ce30eb58,Default,2025-06-08,1267.9,20.0,486,46,2026-02-21,2,0,Tier3,0.0,True
+431,xXBlockBuilderXx,931d856a-72e2-4a77-a104-47c2afcf0aa3,Default,2022-11-17,1.3,0.0,14,15,,0,0,,0.0,False
+432,xXStarRaiderXx,94f5efd6-abc9-46a4-9c77-5b809cb35c43,Default,2023-02-12,18.5,15.0,1,7,2026-02-07,1,0,Tier4,0.0,True
+433,NeonCraft74,3a232498-bc10-47c2-99d1-30c98c7279dc,Default,2023-11-17,781.8,30.0,138,81,2026-01-31,2,0,Maximum land size,0.0,True
+434,TurboKnight61,399d4463-4407-4dcb-b249-1adf656bfb5e,Default,2025-01-04,2.0,2.5,3,13,2026-01-24,1,0,Common,0.0,True
+435,PhantomEagle,f2d62c93-133d-40b4-96d9-17474c8fc255,Default,2024-04-06,194.4,0.0,71,29,,0,0,,0.0,False
+436,GoldTitan42,f7e9c18d-e70c-4bed-b2b4-304987896033,Legend,2022-06-11,73.5,55.0,12,7,2026-01-10,2,0,Legend,0.0,True
+437,xXGoldRaiderXx,aa0fdb35-91b8-47e4-a327-14316208f36e,Default,2022-07-04,95.1,30.0,0,8,2026-01-03,3,3,Tier4,35.0,True
+438,StarSpark,ff09bb52-24c9-4665-ba7c-43745f2f12d9,Default,2022-09-25,111.3,12.5,61,28,2025-12-27,2,3,Legendary,25.0,True
+439,NetherBane93,a3455148-377d-40e8-8e56-ab774ddd6b4e,Default,2025-01-05,17.1,0.0,14,11,,0,3,,25.0,False
+440,VoidMiner43,0ca4cc57-55fa-4df1-b9e9-ce4442c70d32,Default,2024-05-24,599.9,0.0,200,59,,0,0,,0.0,False
+441,NightWizard43,32bc27ac-a080-4796-82e9-32c96e1bbfc7,MVP,2025-03-13,73.6,35.0,12,10,2025-12-06,2,0,MVP,0.0,True
+442,xXEpicSlayerXx,f6c6e191-fffb-4884-bf1e-c752ccf78f59,Default,2025-09-12,223.9,10.0,31,26,2025-11-29,1,0,Tier3,0.0,True
+443,PhantomLord97,d641530f-ad0a-46f7-8bff-4a0393e543e5,Legend,2025-05-03,669.5,50.0,86,14,2025-11-22,1,0,Legend,0.0,True
+444,xXDarkEagleXx,e48844ec-be3b-4aed-8b76-27550c24feac,Default,2022-05-18,130.2,0.0,35,36,,0,0,,0.0,False
+445,TurboWizard,cb7e04dd-40e2-4faa-ac57-69e08387fc2e,Default,2022-06-13,102.8,2.5,27,3,2025-11-08,1,3,Tier1,50.0,True
+446,VoidBear50,9ff80981-4de1-45df-8144-dc4f897364ad,Default,2022-10-09,397.2,20.0,53,31,2025-11-01,1,3,Mythical,35.0,True
+447,xXVoidKingXx,d6044f63-eeae-4f29-9960-4d090dda8bbe,Default,2024-01-02,94.8,20.0,11,7,2025-10-25,2,3,Fix all,25.0,True
+448,xXFrostWarriorXx,9668078f-240f-4fcd-b115-3e63ef4045b7,Default,2025-12-16,51.9,0.0,0,3,,0,3,,25.0,False
+449,DragonRaider,e1ea431a-02e9-4725-9ed8-b7a23e53e789,Default,2026-03-24,102.0,20.0,5,13,2025-10-11,2,2,Tier3,20.0,True
+450,CreeperNinja38,d4ee96c1-6355-40e2-83d5-f5e69891ff75,Default,2022-06-30,53.0,25.0,3,7,2025-10-04,1,4,Unban,40.0,True
+451,GoldSlayer,3f670652-384c-43ee-a642-204f99457eaf,Default,2022-10-24,266.3,15.0,43,36,2025-09-27,1,6,Tier4,55.0,True
+452,TurboForce,a977d399-b23b-4484-b0f1-47753a108fba,Default,2023-07-04,59.7,0.0,2,5,,0,6,,50.0,False
+453,DiamondMaster,10871d1c-54ff-41a6-bf21-1c904a6de8f8,Default,2025-09-20,13.3,2.5,28,4,2025-09-13,1,4,Common,30.0,True
+454,StarFury90,c6a83ed8-95ec-40ca-b720-6e87c0478634,Default,2024-10-18,188.3,25.0,80,35,2025-09-06,2,5,Fix all,65.0,True
+455,CraftForce,b50ecc8b-55eb-482d-9def-f1eacaa8bbe8,Legend,2026-04-06,86.6,55.0,17,6,2025-08-30,2,6,Legend,85.0,True
+456,xXFireSageXx,fae81c3c-4f29-4fa2-a4ff-7a35c9cabb00,Default,2025-09-04,219.1,0.0,47,21,,0,6,,60.0,False
+457,xXFireSparkXx,e416af54-d95d-419c-83a7-d8a2b51ff50b,Default,2025-02-19,239.8,12.5,42,24,2025-08-16,2,6,Legendary,50.0,True
+458,FireBuilder,2a342268-4586-4b84-b66a-9a244d29eae1,VIP,2024-03-28,119.4,22.5,20,11,2025-08-09,3,5,VIP,45.0,True
+459,MegaForce20,c4c3cf22-5a05-4368-932a-8dff55816f89,Default,2022-04-13,32.0,60.0,10,6,2025-08-02,3,4,Fly command,40.0,True
+460,LavaMaster53,27c71e17-dac7-47f0-b487-f2cf95e2425c,Default,2023-02-16,16.7,0.0,17,11,,0,4,,35.0,False
+461,ShadowWalker,d2109b95-b3af-4032-9b4e-3da1b16a99f6,Default,2023-05-27,105.1,0.0,2,14,,0,4,,30.0,False
+462,xXLavaGamerXx,b48c8a16-ea4c-46b1-b10c-9e9924f60218,Legend,2025-08-21,43.8,50.0,8,11,2025-07-12,1,5,Legend,65.0,True
+463,ShadowGamer,3000a90f-77c7-4b9a-9a08-f428d6c7a123,Default,2023-10-13,214.9,15.0,52,24,2025-07-05,1,6,Tier4,85.0,True
+464,SwiftSlayer22,3119bf57-7a7d-4e60-a44a-9f50b08e2a2d,Default,2023-05-24,79.3,0.0,11,11,,0,6,,60.0,False
+465,TurboLord,0f0df8e7-ddb3-4c68-9def-2d95bab24b1f,Default,2022-01-14,220.7,0.0,27,33,,0,3,,25.0,False
+466,TurboStrike27,824c589e-0ab8-4865-bd3d-a2313536470e,Default,2023-05-21,89.7,20.0,17,8,2025-06-14,2,3,Fix all,25.0,True
+467,NightForge65,45081822-a665-4362-8426-923198aef865,Default,2024-12-27,449.6,35.0,181,36,2025-06-07,1,2,Fly command,20.0,True
+468,GoldWarrior31,b38a946d-ec43-4a38-a46d-dd1604c87f64,Default,2025-06-26,19.1,20.0,4,15,2025-05-31,2,2,Tier3,20.0,True
+469,xXIronWalkerXx,8082ab62-6714-44c8-bfe4-6ec2d493ebe3,Default,2024-12-06,349.5,0.0,74,31,,0,2,,15.0,False
+470,xXEpicSageXx,9ac6626a-5347-4e2a-88bd-23cfe0be4cab,Default,2023-07-20,579.2,25.0,155,83,2025-05-17,2,2,Tier4,15.0,True
+471,xXLightNinjaXx,720ec025-8fb5-459f-a5f7-53ca7460676d,Default,2026-01-23,173.8,20.0,129,55,2025-05-10,1,3,Maximum land size,50.0,True
+472,StarBlade,ca5b763d-a9a2-4462-9718-046d7951e54d,Default,2026-01-23,99.7,2.5,1,8,2025-05-03,1,3,Common,35.0,True
+473,xXStarWarriorXx,6651a9d7-2dca-4fc6-8b60-11682d0272d1,Default,2023-01-25,31.3,0.0,22,13,,0,3,,25.0,False
+474,xXVoidWizardXx,b85145c0-56d2-4290-a2d7-1303e76ddef4,Default,2024-04-08,83.3,5.0,9,11,2025-04-19,1,3,Unique,25.0,True
+475,LightBlade92,15783cbb-a08a-4733-88cb-7fa94d27de54,Default,2025-11-05,44.7,15.0,28,11,2025-04-12,2,2,Kit oracle,20.0,True
+476,IceBane,e2d94be4-a2c1-4543-a91c-5190a2e01134,Default,2023-11-29,34.3,12.5,19,8,2025-04-05,2,2,Legendary,20.0,True
+477,CraftRaider53,4a136e87-d5f4-4fdc-a3be-4242d763b429,Default,2024-01-02,103.6,0.0,1,10,,0,2,,15.0,False
+478,xXShadowSniperXx,9f2ba20b-910e-428f-bc3c-50c2a3bca308,Default,2023-02-26,593.0,25.0,111,29,2025-03-22,2,0,Mythical,0.0,True
+479,NeonSpark89,35466b77-14b8-4ec5-9318-f22ada4eece7,MVP,2025-10-18,152.6,40.0,24,11,2025-03-15,3,0,MVP,0.0,True
+480,PixelPro82,46afcd8f-d6a6-4e7e-8da4-e3ac7a653307,Default,2025-02-16,92.0,10.0,19,7,2025-03-08,1,0,Tier3,0.0,True
+481,PhantomSlayer96,f6892151-d937-425a-8756-bec772402812,Default,2025-06-06,50.4,0.0,97,13,,0,0,,0.0,False
+482,TurboTitan99,245a9308-37f2-467b-9cb3-5c70c50d0e12,Default,2023-08-01,136.9,15.0,66,5,2025-02-22,1,0,Tier4,0.0,True
+483,EnderStrike,7bbac891-3561-4c3d-b085-f30b477e3a35,Default,2024-09-27,67.1,2.5,7,15,2025-02-15,1,0,Tier1,0.0,True
+484,PhantomWolf,8b5ea048-ad40-49b6-afa7-c3c8f4169d4a,Default,2025-08-10,115.7,22.5,1,15,2025-02-08,2,0,Mythical,0.0,True
+485,PixelWarrior18,a4af02d3-4dd6-4cea-b06c-36757109301e,Default,2025-11-28,92.9,0.0,27,3,,0,0,,0.0,False
+486,IronWalker,c6694350-54c8-4fab-9b45-ddc6448d01e9,Default,2026-02-18,111.9,0.0,40,21,,0,0,,0.0,False
+487,PixelCraft99,3b1a6891-e9ac-4e0b-8875-612e49b3c142,Default,2024-01-29,1402.9,20.0,440,20,2025-01-18,2,0,Tier3,0.0,True
+488,xXEpicKingXx,974efd3d-be78-48fb-b269-5eea1d42c023,VIP,2023-05-09,105.5,35.0,30,2,2025-01-11,2,0,Unban,0.0,True
+489,DarkTitan,f739b8f5-3469-4b3a-a1c0-cfc4cc1aebd9,Default,2022-04-01,42.9,25.0,10,5,2025-01-04,2,0,Tier4,0.0,True
+490,MegaKnight,af635196-7c06-4662-abb7-a58ec8037752,Default,2023-06-05,259.9,0.0,34,12,,0,0,,0.0,False
+491,xXNetherWraithXx,fef5c2bd-ee99-467b-b804-b115c1f3a6be,Default,2025-11-29,29.4,2.5,12,7,2024-12-21,1,0,Common,0.0,True
+492,SwiftGamer40,f983f9bc-cf22-4419-9140-c79cd83f64d1,Default,2023-02-22,41.5,25.0,4,10,2024-12-14,2,0,Fix all,0.0,True
+493,NetherWarrior60,27928f9b-fd6e-41f4-912e-17747d635bd2,Default,2024-11-04,267.4,5.0,84,30,2024-12-07,1,0,Unique,0.0,True
+494,xXDiamondWarriorXx,ef3728fc-544d-4497-8c91-9ce8d936e5c5,Default,2022-10-19,69.7,0.0,8,13,,0,0,,0.0,False
+495,IceFury,ee22dcf9-116c-4039-9c43-ced300fd940f,Default,2025-05-07,118.8,12.5,45,8,2024-11-23,2,0,Legendary,0.0,True
+496,xXEpicProXx,1885b8fd-44db-4728-bf33-fd9638ad8eb3,VIP,2024-01-08,386.2,20.0,67,30,2024-11-16,2,2,VIP,20.0,True
+497,xXCobaltForgeXx,f900e3ae-fbd7-4d4a-97e7-c602f8601c41,Default,2024-01-08,696.0,25.0,69,28,2024-11-09,2,2,Mythical,20.0,True
+498,DiamondWraith33,27112e69-22a1-4245-965e-f1c6150d3e93,Default,2025-10-16,384.1,0.0,73,5,,0,2,,15.0,False
+499,StarPro50,6eb4a782-1f63-4d38-a98d-37d3bfdffbe1,Default,2022-06-01,69.7,70.0,21,1,2024-10-26,3,0,Fly command,0.0,True
+500,xXHyperWolfXx,7cec2061-e494-47fa-ada2-3729a47cfeed,Legend,2025-09-04,94.2,55.0,24,7,2024-10-19,2,0,Legend,0.0,True
+501,LavaBane93,b0402a25-aeba-4966-a7a1-a8076af35b41,Default,2023-07-04,356.3,15.0,21,28,2024-10-12,1,0,Tier4,0.0,True
+502,CraftWizard,85290fbb-ad48-4a72-904b-b2b827f302dd,Default,2022-07-30,10.5,0.0,21,9,,0,0,,0.0,False
+503,CobaltSage46,bc38c7ba-8eec-49b5-bac2-f244d587bb21,Default,2024-03-16,61.1,2.5,30,7,2024-09-28,1,0,Common,0.0,True
+504,DarkSpark86,56b5f688-9d19-4550-a5b1-6ec2593e62c4,Default,2025-10-10,60.4,5.0,20,9,2024-09-21,1,3,Tier2,25.0,True
+505,GoldKing,bdfb34d9-4f47-496b-920d-e5e30e0b6797,Default,2026-01-10,38.4,35.0,20,15,2024-09-14,1,2,Fly command,20.0,True
+506,NightTitan,213aec9a-55d6-4f9c-ad42-32d6312c4503,Default,2022-07-20,779.4,0.0,291,45,,0,2,,20.0,False
+507,SkyEagle,e86dfce0-655b-4236-9521-e121aa9cd807,Default,2025-12-10,55.0,0.0,9,8,,0,2,,15.0,False
+508,xXFrostWizardXx,0c0b7dd2-3fd0-491c-8db1-3801c32b233e,Default,2026-04-15,369.8,25.0,45,30,2024-08-24,2,2,Tier4,15.0,True
+509,PhantomForge,6eb52105-9fae-4da8-ab37-3f6529bef7e5,Default,2024-04-23,1771.2,20.0,330,47,2024-08-17,1,5,Maximum land size,65.0,True
+510,IronRaider83,2672ab30-6bd6-48ea-b968-dc9ed3a35f7e,Default,2023-01-01,70.1,12.5,8,1,2024-08-10,2,8,Kit pro,100.0,True
+511,FrostFury,e5bdbabe-0665-400c-9246-8f9b4bc3ad89,Default,2023-10-09,465.0,0.0,182,44,,0,9,,110.0,False
+512,LightRaider,dd274b28-d8ec-44fb-af65-a6b64b5064df,Default,2025-07-05,317.5,5.0,129,11,2024-07-27,1,6,Unique,60.0,True
+513,PixelBane,0d2a8a46-6d72-4956-945b-fb1cea94ec7e,Default,2023-12-08,962.2,15.0,308,91,2024-07-20,2,6,Kit oracle,50.0,True
+514,xXLavaBuilderXx,e6fad1cf-e880-43eb-b3a5-a36fc1510857,Default,2026-02-03,12.3,10.0,13,10,2024-07-13,1,5,Legendary,45.0,True
+515,xXFireMinerXx,3adfe537-2ec2-4312-a523-58c32a2c9a61,Default,2025-06-14,89.2,0.0,7,7,,0,4,,40.0,False
+516,xXEnderHunterXx,eeaf8617-236d-4361-a697-a3c60e37e81b,Default,2024-09-26,2.9,25.0,17,13,2024-06-29,2,4,Mythical,35.0,True
+517,StarRaider,8c60ac44-b888-477f-a834-9c5414b5ae8f,MVP,2025-12-09,533.6,40.0,190,30,2024-06-22,3,4,MVP,30.0,True
+518,SkyMaster51,a6b0d474-a0e2-4b3a-855c-ae929745c0a4,Default,2023-01-18,60.0,45.0,15,11,2024-06-15,2,5,Fly command,65.0,True
+519,EpicWraith,04ecd7f7-fdbb-4aaa-8e74-036a38f02016,Default,2026-04-13,98.8,0.0,30,15,,0,6,,85.0,False
+520,IronRunner40,4e51ccda-432d-4e1f-ae2c-4650519aed43,Default,2024-08-08,109.2,15.0,9,13,2024-06-01,1,6,Tier4,60.0,True
+521,PixelSniper,da916012-6cef-4241-978c-7e9102096d20,VIP,2025-04-01,755.9,12.5,382,39,2024-05-25,2,6,VIP,50.0,True
+522,SwiftLord46,37cd3a2e-f0b8-4469-bdab-9011dcf0d1c5,Default,2025-12-08,95.1,2.5,98,5,2026-05-18,1,5,Common,45.0,True
+523,PixelBlade63,dc99e028-ff7f-490f-86e1-587b1fd239eb,Default,2025-06-08,350.3,0.0,33,40,,0,4,,40.0,False
+524,HyperFox83,04c1f213-5b39-4ec7-8570-4bd5e34a9075,Default,2025-02-11,498.3,40.0,83,46,2026-05-04,2,2,Fly command,20.0,True
+525,xXFrostBuilderXx,3a73dce0-095c-48f3-80d5-56591056cc4a,Default,2024-04-14,179.7,10.0,90,30,2026-04-27,1,2,Tier3,15.0,True
+526,xXLightLordXx,a9e6dc1a-886c-4c43-8c23-feeb4f00cfb6,Default,2023-06-07,93.0,25.0,28,3,2026-04-20,1,2,Unban,15.0,True
+527,xXMegaGamerXx,48940c6c-ed78-4f2c-852a-5677c6cd1a01,Default,2025-02-18,45.8,0.0,25,10,,0,3,,50.0,False
+528,CreeperFury17,040c02d2-9f78-493f-b5d0-172a5ae7d8a5,MVP,2022-11-10,45.5,45.0,5,0,2026-04-06,2,3,MVP,35.0,True
+529,BlazeBane16,6c5a2233-e553-41c2-ad4e-21de03ebab2e,Default,2024-07-09,108.7,12.5,4,13,2026-03-30,2,3,Kit pro,25.0,True
+530,xXBlockNinjaXx,1406c62b-797f-4b13-b058-80f4a763e9ec,Default,2022-03-15,240.6,15.0,10,10,2026-03-23,1,3,Fix all,25.0,True
+531,LavaKing43,f1e4344e-52ad-4b97-96ea-c0195b478643,Default,2023-08-10,93.3,0.0,7,11,,0,2,,20.0,False
+532,TurboEagle,1f6751e1-8b61-43d9-a0d2-d76c7c75599e,Default,2024-02-21,179.5,0.0,97,25,,0,2,,20.0,False
+533,PixelGamer27,83015e47-7ba8-4d19-883b-929174f1720b,Default,2025-06-15,82.7,10.0,27,7,2026-03-02,1,2,Legendary,15.0,True
+534,xXStarKingXx,37910bd2-dac4-47d4-9947-a5d658a39e91,VIP,2022-07-04,60.2,20.0,87,19,2026-02-23,2,2,VIP,15.0,True
+535,DarkWalker59,41068c7b-aff5-4166-a632-aa896b383842,Default,2023-01-30,85.4,25.0,64,10,2026-02-16,2,3,Mythical,50.0,True
+536,TurboTitan74,895f7d55-fae0-48c2-b519-39e98504c8aa,Default,2025-03-10,50.4,0.0,34,17,,0,0,,0.0,False
+537,DragonWolf,5f0cd011-2bf3-43aa-ab95-d54cbc0142e7,Default,2023-02-07,76.6,45.0,17,8,2026-02-02,2,0,Fly command,0.0,True
+538,xXEnderMasterXx,5b6ab4f9-3efc-40e9-a5aa-3b81b4d4c50c,Legend,2023-09-11,24.7,65.0,12,15,2026-01-26,3,0,Legend,0.0,True
+539,xXPhantomSageXx,9d7001d5-d936-4fab-a24a-6918a1289624,Default,2024-04-20,60.7,60.0,19,15,2026-01-19,3,0,Unban,0.0,True
+540,PhantomWalker61,05170ed6-0d02-4e8e-ac0b-ed4ab9a3ce56,Default,2025-03-08,81.3,0.0,6,5,,0,0,,0.0,False
+541,FireRaider97,3ec93512-e263-4663-a0ef-3bc46b4f7e45,Default,2025-03-29,627.3,2.5,118,13,2026-01-05,1,0,Common,0.0,True
+542,xXBlazeCraftXx,21d4f8da-562f-4423-8456-d0be83ad716b,Default,2026-02-13,39.4,5.0,8,0,2025-12-29,1,0,Tier2,0.0,True
+543,StormPro43,c5a7ca0f-e740-40c0-96e7-04debe308261,Default,2023-03-17,340.9,5.0,51,14,2025-12-22,1,0,Unique,0.0,True
+544,PhantomMaster,dc0b11a4-a086-49b3-80ab-b2a6a953164a,Default,2023-10-08,373.4,0.0,60,25,,0,0,,0.0,False
+545,xXCobaltFuryXx,ff89b5d9-2ee7-4d1b-995b-be1447f381bc,Default,2026-03-04,103.5,25.0,14,8,2025-12-08,1,0,Unban,0.0,True
+546,ShadowMiner80,e17dfb8e-e3b4-4400-a557-a5f2884b87f8,Default,2025-07-20,341.5,25.0,85,12,2025-12-01,2,0,Tier4,0.0,True
+547,StormHunter60,fc98c7b0-97ac-4a7d-a585-27cd5a485f64,Default,2022-09-14,302.0,20.0,94,21,2025-11-24,1,0,Maximum land size,0.0,True
+548,xXEnderBladeXx,3387b3a4-5bd0-40a2-bb4d-97dcdf172586,Default,2022-10-25,59.1,0.0,17,17,,0,0,,0.0,False
+549,IronFury73,a172769b-4409-4d79-bde9-4e24bb70df9b,Default,2024-11-26,73.2,15.0,6,12,2025-11-10,1,0,Fix all,0.0,True
+550,BlockBear,c3ddac57-70bb-4565-ba75-03e979dbc93f,Default,2022-09-19,117.7,10.0,17,0,2025-11-03,2,0,Unique,0.0,True
+551,EpicWalker18,6e97462f-d8e6-463a-b666-e8ad9ae34632,Default,2023-02-16,95.3,10.0,7,15,2025-10-27,1,0,Kit oracle,0.0,True
+552,PhantomRaider63,a855bcf4-9550-4d81-a986-cc165669b3b7,Default,2024-06-05,342.0,0.0,71,37,,0,0,,0.0,False
+553,NetherNinja20,ba6773c0-b987-45ea-a218-516a7f86cbec,Default,2023-11-24,81.8,0.0,1,11,,0,0,,0.0,False
+554,CraftKing36,1649363a-4d3a-4fa4-907b-b94752502bb8,Default,2024-12-02,774.4,20.0,186,50,2025-10-06,1,2,Mythical,15.0,True
+555,DiamondWraith99,26300611-8136-46e4-96bf-a2ec66dd22a5,MVP,2026-03-08,211.1,35.0,44,28,2025-09-29,2,2,MVP,15.0,True
+556,LightHunter,e7084a70-8160-4e12-b167-97e9cea11c4e,Default,2023-08-11,110.2,45.0,15,4,2025-09-22,2,3,Fly command,50.0,True
+557,xXIceRunnerXx,a57d76b4-77e5-491f-9855-8b17f6eb6f5a,Default,2025-03-25,81.6,0.0,30,12,,0,3,,35.0,False
+558,xXFireLordXx,5033cccb-2d6d-4d5b-9062-c23cd299a7c3,Default,2025-12-24,8.7,40.0,17,9,2025-09-08,2,0,Unban,0.0,True
+559,StormCraft93,55b0152f-209d-4e64-a33a-7028f4d9e0b5,VIP,2025-12-12,35.8,32.5,18,8,2025-09-01,3,0,Mythical,0.0,True
+560,FrostNinja,02be2364-ac3a-40d3-ad96-5f03d472a207,Default,2023-11-24,3.5,2.5,17,7,2025-08-25,1,0,Common,0.0,True
+561,xXFrostNinjaXx,957b90e2-4d87-44f9-9974-3eeaf359e507,Default,2022-12-24,741.6,0.0,68,52,,0,0,,0.0,False
+562,BlazeSage30,43bf165a-9781-45e2-8054-46ef7730ac9a,Default,2024-01-03,374.1,5.0,23,23,2025-08-11,1,0,Unique,0.0,True
+563,IronHunter61,aeab6191-d35b-41db-8625-638d2ddcdf4a,Default,2025-02-25,1531.4,10.0,420,60,2025-08-04,1,2,Tier3,15.0,True
+564,DragonMaster,579fc477-5f7a-4d5b-b338-e9bb4d4d9ce0,Default,2022-10-25,705.0,35.0,200,46,2025-07-28,2,2,Unban,15.0,True
+565,DiamondFox51,88a06591-af27-47a0-9acc-ea6b68050c30,Default,2022-12-06,74.3,0.0,25,6,,0,3,,50.0,False
+566,BlockSlayer91,a624464d-444d-4a68-90c9-583d816eedcc,Default,2023-10-25,303.7,20.0,45,40,2025-07-14,1,3,Maximum land size,35.0,True
+567,VoidWizard,9712ca11-568e-4bf7-8f43-d826fe2c29d2,Default,2023-02-01,151.0,12.5,36,39,2025-07-07,2,3,Kit pro,25.0,True
+568,EnderMiner,c0e49b82-e00d-4538-ab9e-e5925c822bcb,Legend,2026-03-24,234.8,65.0,55,33,2025-06-30,2,6,Legend,50.0,True
+569,xXEpicCraftXx,18f0efea-ef94-4dcc-a962-dd90b47771b6,Default,2023-03-20,88.9,0.0,8,9,,0,8,,70.0,False
+570,LightBane,fdf2ffda-3427-451d-9e57-fb23c7663eeb,Default,2025-10-15,182.8,10.0,128,13,2025-06-16,1,5,Kit oracle,45.0,True
+571,IceWalker,29f74b4e-1460-4d12-8b06-f064fb3d859a,Default,2024-03-11,70.8,10.0,24,2,2025-06-09,1,4,Legendary,40.0,True
+572,PhantomWalker16,d530deb4-54f9-419a-a561-b8e48196b0cf,VIP,2022-07-07,89.8,20.0,6,12,2025-06-02,2,4,VIP,35.0,True
+573,xXShadowProXx,a7afdd60-d838-4273-b33a-a49eb094e5fe,Default,2023-08-07,19.8,0.0,26,9,,0,4,,30.0,False
+574,SkySniper58,a27fba15-f824-4771-a48e-93a5a09d2e13,Default,2024-12-03,58.5,0.0,15,3,,0,5,,65.0,False
+575,BlazeSage,929c0f3d-61c3-44a3-a3e7-4fec09a72693,Default,2023-07-10,242.0,45.0,102,46,2025-05-12,2,6,Fly command,85.0,True
+576,xXCobaltProXx,3daf6d28-7510-4a0c-a7e5-9dc32c3b8884,Legend,2025-06-09,38.9,55.0,12,9,2025-05-05,2,6,Legend,60.0,True
+577,FireGamer50,f03bc0ef-a134-4a87-ab91-a82a25de4771,Default,2025-08-04,330.8,0.0,53,31,,0,6,,50.0,False
+578,xXTurboTitanXx,6de44b59-f864-4987-aac1-ce9f12504b98,Default,2024-05-09,217.1,0.0,17,14,,0,5,,45.0,False
+579,xXFireHunterXx,27d1c360-076f-4514-85e9-e467683c204d,Default,2024-03-24,103.5,37.5,1,13,2025-04-14,3,4,Maximum land size,40.0,True
+580,StarForce99,ec095e85-6585-47c9-ad0f-873bb53f53b9,MVP,2025-12-19,399.7,30.0,160,49,2025-04-07,2,4,MVP,35.0,True

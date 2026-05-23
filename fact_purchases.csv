@@ -1,0 +1,674 @@
+﻿purchase_key,player_id,username,rank,item,price,category
+1,1,CraftHunter,Default,Legendary,10.0,Crate keys
+2,1,CraftHunter,Default,Tier4,15.0,Sellwands
+3,2,CobaltSpark12,Default,Maximum land size,20.0,Perks
+4,3,BlazeEagle,Default,Mythical,20.0,Crate keys
+5,5,xXCobaltSageXx,Default,Fly command,35.0,Perks
+6,6,EnderWalker,Default,Random tag,5.0,Tags
+7,7,xXPixelKnightXx,Default,Unban,25.0,Perks
+8,7,xXPixelKnightXx,Default,Tier1,2.5,Sellwands
+9,10,LightWarrior,MVP,MVP,25.0,Ranks
+10,11,LavaTitan31,Default,Fix all,15.0,Perks
+11,12,xXMegaBaneXx,Legend,Tier3,10.0,Sellwands
+12,12,xXMegaBaneXx,Legend,Legend,50.0,Ranks
+13,14,UltraKing77,Default,Tier4,15.0,Sellwands
+14,14,UltraKing77,Default,Tier1,2.5,Sellwands
+15,15,NightFury,Default,Kit mythic,10.0,Gkits
+16,15,NightFury,Default,Mythical,20.0,Crate keys
+17,16,FrostEagle,Default,Common,2.5,Crate keys
+18,16,FrostEagle,Default,Tier2,5.0,Sellwands
+19,18,xXPhantomGamerXx,Default,Unique,5.0,Crate keys
+20,18,xXPhantomGamerXx,Default,Tier3,10.0,Sellwands
+21,18,xXPhantomGamerXx,Default,Kit oracle,10.0,Gkits
+22,19,xXLightWalkerXx,VIP,Random tag,5.0,Tags
+23,19,xXLightWalkerXx,VIP,Unban,25.0,Perks
+24,19,xXLightWalkerXx,VIP,VIP,10.0,Ranks
+25,20,xXCreeperStrikeXx,Default,Legendary,10.0,Crate keys
+26,20,xXCreeperStrikeXx,Default,Tier4,15.0,Sellwands
+27,22,FrostForge45,Default,Mythical,20.0,Crate keys
+28,23,BlazeWraith29,Default,Fix all,15.0,Perks
+29,24,xXNeonBuilderXx,Default,Fly command,35.0,Perks
+30,26,xXBlazeWizardXx,Default,Unban,25.0,Perks
+31,26,xXBlazeWizardXx,Default,Tier1,2.5,Sellwands
+32,27,FrostBear50,VIP,VIP,10.0,Ranks
+33,28,xXVoidBaneXx,Default,Maximum land size,20.0,Perks
+34,28,xXVoidBaneXx,Default,Tier2,5.0,Sellwands
+35,31,DragonWarrior30,Legend,Legend,50.0,Ranks
+36,32,MegaMiner29,Default,Kit oracle,10.0,Gkits
+37,33,TurboSlayer46,Default,Tier4,15.0,Sellwands
+38,33,TurboSlayer46,Default,Tier1,2.5,Sellwands
+39,35,GoldPro,Default,Common,2.5,Crate keys
+40,35,GoldPro,Default,Tier2,5.0,Sellwands
+41,36,FrostEagle46,Default,Kit pro,10.0,Gkits
+42,36,FrostEagle46,Default,Fly command,35.0,Perks
+43,37,LavaTitan15,Default,Unique,5.0,Crate keys
+44,37,LavaTitan15,Default,Tier3,10.0,Sellwands
+45,37,LavaTitan15,Default,Kit oracle,10.0,Gkits
+46,39,SkyRunner,Default,Legendary,10.0,Crate keys
+47,39,SkyRunner,Default,Tier4,15.0,Sellwands
+48,39,SkyRunner,Default,Kit mythic,10.0,Gkits
+49,40,CobaltHunter21,Default,Maximum land size,20.0,Perks
+50,41,xXNetherFuryXx,Default,Mythical,20.0,Crate keys
+51,41,xXNetherFuryXx,Default,Common,2.5,Crate keys
+52,43,CraftBane23,Default,Fly command,35.0,Perks
+53,44,VoidBane77,Default,Random tag,5.0,Tags
+54,44,VoidBane77,Default,Kit oracle,10.0,Gkits
+55,45,TurboWalker78,Default,Unban,25.0,Perks
+56,47,xXEnderTitanXx,Default,Maximum land size,20.0,Perks
+57,47,xXEnderTitanXx,Default,Tier2,5.0,Sellwands
+58,48,FrostKnight82,MVP,MVP,25.0,Ranks
+59,48,FrostKnight82,MVP,Unique,5.0,Crate keys
+60,49,LightBuilder,Default,Fix all,15.0,Perks
+61,49,LightBuilder,Default,Tier3,10.0,Sellwands
+62,52,xXLightBearXx,Default,Tier4,15.0,Sellwands
+63,52,xXLightBearXx,Default,Tier1,2.5,Sellwands
+64,53,xXLavaEagleXx,Default,Kit mythic,10.0,Gkits
+65,56,xXLightEagleXx,Default,Unique,5.0,Crate keys
+66,56,xXLightEagleXx,Default,Tier3,10.0,Sellwands
+67,57,DragonForge30,Default,Random tag,5.0,Tags
+68,57,DragonForge30,Default,Unban,25.0,Perks
+69,58,HyperRaider,Default,Legendary,10.0,Crate keys
+70,58,HyperRaider,Default,Tier4,15.0,Sellwands
+71,58,HyperRaider,Default,Kit mythic,10.0,Gkits
+72,60,xXIceSageXx,Default,Mythical,20.0,Crate keys
+73,60,xXIceSageXx,Default,Common,2.5,Crate keys
+74,61,ShadowWalker28,Default,Fix all,15.0,Perks
+75,62,xXCreeperProXx,Default,Fly command,35.0,Perks
+76,64,TurboRunner,Default,Unban,25.0,Perks
+77,65,DiamondGamer45,VIP,VIP,10.0,Ranks
+78,66,UltraRunner10,Default,Maximum land size,20.0,Perks
+79,66,UltraRunner10,Default,Tier2,5.0,Sellwands
+80,68,GoldMiner21,Default,Fix all,15.0,Perks
+81,68,GoldMiner21,Default,Tier3,10.0,Sellwands
+82,69,xXIronRaiderXx,Legend,Legend,50.0,Ranks
+83,70,DarkFury54,Default,Kit oracle,10.0,Gkits
+84,70,DarkFury54,Default,Tier4,15.0,Sellwands
+85,72,VoidFox,Default,Kit mythic,10.0,Gkits
+86,73,IceMaster,Default,Common,2.5,Crate keys
+87,73,IceMaster,Default,Tier2,5.0,Sellwands
+88,74,FireKnight,Default,Kit pro,10.0,Gkits
+89,77,BlazeRaider,Default,Legendary,10.0,Crate keys
+90,77,BlazeRaider,Default,Tier4,15.0,Sellwands
+91,77,BlazeRaider,Default,Kit mythic,10.0,Gkits
+92,78,FrostSage38,VIP,VIP,10.0,Ranks
+93,78,FrostSage38,VIP,Maximum land size,20.0,Perks
+94,79,FireFox67,Default,Mythical,20.0,Crate keys
+95,79,FireFox67,Default,Common,2.5,Crate keys
+96,79,FireFox67,Default,Kit pro,10.0,Gkits
+97,81,xXPhantomForceXx,Default,Fly command,35.0,Perks
+98,81,xXPhantomForceXx,Default,Unique,5.0,Crate keys
+99,82,EnderBear,Default,Kit oracle,10.0,Gkits
+100,83,SwiftStrike,Default,Unban,25.0,Perks
+101,85,SkyFox37,Default,Maximum land size,20.0,Perks
+102,86,BlazeLord43,MVP,MVP,25.0,Ranks
+103,87,DarkTitan45,Default,Fix all,15.0,Perks
+104,87,DarkTitan45,Default,Tier3,10.0,Sellwands
+105,89,NeonMaster,Default,Kit oracle,10.0,Gkits
+106,89,NeonMaster,Default,Tier4,15.0,Sellwands
+107,90,NetherGamer,Default,Tier1,2.5,Sellwands
+108,91,DiamondSpark27,Default,Kit mythic,10.0,Gkits
+109,93,NetherLord,Default,Kit pro,10.0,Gkits
+110,94,FrostStrike72,Default,Unique,5.0,Crate keys
+111,94,FrostStrike72,Default,Tier3,10.0,Sellwands
+112,95,PixelRunner99,Default,Random tag,5.0,Tags
+113,95,PixelRunner99,Default,Unban,25.0,Perks
+114,98,LavaKnight92,Default,Mythical,20.0,Crate keys
+115,98,LavaKnight92,Default,Common,2.5,Crate keys
+116,98,LavaKnight92,Default,Kit pro,10.0,Gkits
+117,99,xXFrostRaiderXx,Legend,MVP,25.0,Ranks
+118,99,xXFrostRaiderXx,Legend,Fix all,15.0,Perks
+119,99,xXFrostRaiderXx,Legend,Legend,50.0,Ranks
+120,102,MegaSage69,Default,Unban,25.0,Perks
+121,103,EnderForce,Default,Kit mythic,10.0,Gkits
+122,104,MegaFox,Default,Maximum land size,20.0,Perks
+123,106,MegaWolf,Default,Fix all,15.0,Perks
+124,106,MegaWolf,Default,Tier3,10.0,Sellwands
+125,107,TurboBuilder,Legend,Legend,50.0,Ranks
+126,108,IronForce18,Default,Kit oracle,10.0,Gkits
+127,108,IronForce18,Default,Tier4,15.0,Sellwands
+128,110,GoldBane,Default,Kit mythic,10.0,Gkits
+129,110,GoldBane,Default,Common,2.5,Crate keys
+130,111,EpicBlade,Default,Tier2,5.0,Sellwands
+131,112,NeonPro72,Default,Kit pro,10.0,Gkits
+132,114,xXEnderWizardXx,Default,Random tag,5.0,Tags
+133,115,CraftBuilder83,Default,Legendary,10.0,Crate keys
+134,115,CraftBuilder83,Default,Tier4,15.0,Sellwands
+135,116,MegaForce34,VIP,VIP,10.0,Ranks
+136,116,MegaForce34,VIP,Maximum land size,20.0,Perks
+137,118,PhantomBear60,MVP,MVP,25.0,Ranks
+138,118,PhantomBear60,MVP,Fix all,15.0,Perks
+139,119,UltraWraith,Default,Fly command,35.0,Perks
+140,119,UltraWraith,Default,Unique,5.0,Crate keys
+141,119,UltraWraith,Default,Random tag,5.0,Tags
+142,120,FrostSniper,Default,Kit oracle,10.0,Gkits
+143,123,TurboWalker77,Default,Maximum land size,20.0,Perks
+144,124,CraftEagle,MVP,MVP,25.0,Ranks
+145,124,CraftEagle,MVP,Kit pro,10.0,Gkits
+146,125,xXVoidForceXx,Default,Fix all,15.0,Perks
+147,127,xXLightRunnerXx,Default,Kit oracle,10.0,Gkits
+148,127,xXLightRunnerXx,Default,Tier4,15.0,Sellwands
+149,128,HyperForce,Default,Tier1,2.5,Sellwands
+150,128,HyperForce,Default,Mythical,20.0,Crate keys
+151,129,CobaltMaster94,Default,Kit mythic,10.0,Gkits
+152,129,CobaltMaster94,Default,Common,2.5,Crate keys
+153,131,FireSage58,Default,Kit pro,10.0,Gkits
+154,132,DiamondPro,Default,Unique,5.0,Crate keys
+155,132,DiamondPro,Default,Tier3,10.0,Sellwands
+156,133,xXFrostForgeXx,Default,Random tag,5.0,Tags
+157,135,HyperWizard,VIP,VIP,10.0,Ranks
+158,135,HyperWizard,VIP,Maximum land size,20.0,Perks
+159,136,xXFireSlayerXx,Default,Mythical,20.0,Crate keys
+160,136,xXFireSlayerXx,Default,Common,2.5,Crate keys
+161,137,LavaFury45,MVP,MVP,25.0,Ranks
+162,137,LavaFury45,MVP,Fix all,15.0,Perks
+163,139,PhantomSage,Legend,Legend,50.0,Ranks
+164,139,PhantomSage,Legend,Kit oracle,10.0,Gkits
+165,139,PhantomSage,Legend,Tier1,2.5,Sellwands
+166,140,EpicSniper33,Default,Unban,25.0,Perks
+167,140,EpicSniper33,Default,Legendary,10.0,Crate keys
+168,141,TurboMaster37,Default,Kit mythic,10.0,Gkits
+169,144,xXCobaltWolfXx,Default,Fix all,15.0,Perks
+170,145,NeonKnight,Legend,Legend,50.0,Ranks
+171,148,HyperWizard38,Default,Kit mythic,10.0,Gkits
+172,148,HyperWizard38,Default,Common,2.5,Crate keys
+173,149,CreeperEagle,Default,Tier2,5.0,Sellwands
+174,150,TurboRunner21,Default,Kit pro,10.0,Gkits
+175,150,TurboRunner21,Default,Unique,5.0,Crate keys
+176,152,xXCraftRaiderXx,Default,Random tag,5.0,Tags
+177,153,FrostPro,Default,Legendary,10.0,Crate keys
+178,153,FrostPro,Default,Tier4,15.0,Sellwands
+179,154,xXSwiftMinerXx,VIP,VIP,10.0,Ranks
+180,156,MegaMiner36,MVP,MVP,25.0,Ranks
+181,156,MegaMiner36,MVP,Fix all,15.0,Perks
+182,157,xXShadowFoxXx,Default,Fly command,35.0,Perks
+183,157,xXShadowFoxXx,Default,Unique,5.0,Crate keys
+184,157,xXShadowFoxXx,Default,Random tag,5.0,Tags
+185,158,CobaltBane66,Legend,Legend,50.0,Ranks
+186,158,CobaltBane66,Legend,Kit oracle,10.0,Gkits
+187,160,PhantomWizard,Default,Kit mythic,10.0,Gkits
+188,161,xXPhantomLordXx,Default,Maximum land size,20.0,Perks
+189,161,xXPhantomLordXx,Default,Mythical,20.0,Crate keys
+190,162,EnderWraith,Default,Kit pro,10.0,Gkits
+191,164,HyperMaster,Legend,Legend,50.0,Ranks
+192,164,HyperMaster,Legend,Random tag,5.0,Tags
+193,165,DiamondKing23,Default,Kit oracle,10.0,Gkits
+194,166,FireBlade,Default,Tier1,2.5,Sellwands
+195,169,DarkFury,Default,Kit pro,10.0,Gkits
+196,169,DarkFury,Default,Unique,5.0,Crate keys
+197,170,FireMaster31,Default,Tier3,10.0,Sellwands
+198,171,CobaltSage87,Default,Random tag,5.0,Tags
+199,173,xXUltraEagleXx,VIP,VIP,10.0,Ranks
+200,174,xXTurboProXx,Default,Mythical,20.0,Crate keys
+201,174,xXTurboProXx,Default,Common,2.5,Crate keys
+202,175,UltraSlayer,MVP,MVP,25.0,Ranks
+203,175,UltraSlayer,MVP,Fix all,15.0,Perks
+204,177,xXEnderBaneXx,Legend,Legend,50.0,Ranks
+205,177,xXEnderBaneXx,Legend,Kit oracle,10.0,Gkits
+206,178,xXDarkBaneXx,VIP,Unban,25.0,Perks
+207,178,xXDarkBaneXx,VIP,Legendary,10.0,Crate keys
+208,178,xXDarkBaneXx,VIP,VIP,10.0,Ranks
+209,179,MegaSage83,Default,Tier1,2.5,Sellwands
+210,179,MegaSage83,Default,Kit mythic,10.0,Gkits
+211,179,MegaSage83,Default,Tier2,5.0,Sellwands
+212,181,CraftCraft29,Default,Kit pro,10.0,Gkits
+213,182,FrostMiner,Default,Fix all,15.0,Perks
+214,183,ShadowKing,Default,Random tag,5.0,Tags
+215,185,xXHyperWalkerXx,Default,Tier1,2.5,Sellwands
+216,186,xXStormNinjaXx,Default,Kit mythic,10.0,Gkits
+217,186,xXStormNinjaXx,Default,Common,2.5,Crate keys
+218,187,SwiftWolf64,Default,Tier2,5.0,Sellwands
+219,190,StarHunter98,Default,Random tag,5.0,Tags
+220,190,StarHunter98,Default,Legendary,10.0,Crate keys
+221,191,xXSkyNinjaXx,Default,Tier4,15.0,Sellwands
+222,192,NeonFox43,VIP,VIP,10.0,Ranks
+223,194,xXMegaStrikeXx,MVP,MVP,25.0,Ranks
+224,195,xXEnderSparkXx,Default,Fly command,35.0,Perks
+225,195,xXEnderSparkXx,Default,Unique,5.0,Crate keys
+226,196,xXIceForceXx,Legend,Legend,50.0,Ranks
+227,196,xXIceForceXx,Legend,Kit oracle,10.0,Gkits
+228,198,SkyWizard,Default,Tier1,2.5,Sellwands
+229,198,SkyWizard,Default,Kit mythic,10.0,Gkits
+230,199,PixelWraith,MVP,Maximum land size,20.0,Perks
+231,199,PixelWraith,MVP,Mythical,20.0,Crate keys
+232,199,PixelWraith,MVP,MVP,25.0,Ranks
+233,200,xXHyperProXx,Default,Kit pro,10.0,Gkits
+234,202,xXDarkWolfXx,Default,Random tag,5.0,Tags
+235,203,GoldRaider93,Default,Kit oracle,10.0,Gkits
+236,204,xXSkyKingXx,VIP,Tier1,2.5,Sellwands
+237,204,xXSkyKingXx,VIP,VIP,10.0,Ranks
+238,206,FrostRunner67,Default,Tier2,5.0,Sellwands
+239,207,BlockEagle,Default,Kit pro,10.0,Gkits
+240,207,BlockEagle,Default,Unique,5.0,Crate keys
+241,208,ShadowBane,Default,Tier3,10.0,Sellwands
+242,208,ShadowBane,Default,Unban,25.0,Perks
+243,211,StormSage,VIP,VIP,10.0,Ranks
+244,212,xXStormWraithXx,Default,Mythical,20.0,Crate keys
+245,212,xXStormWraithXx,Default,Common,2.5,Crate keys
+246,215,SkySage19,Legend,Legend,50.0,Ranks
+247,215,SkySage19,Legend,Kit oracle,10.0,Gkits
+248,216,NeonEagle31,Default,Unban,25.0,Perks
+249,216,NeonEagle31,Default,Legendary,10.0,Crate keys
+250,217,FireWalker,Default,Tier1,2.5,Sellwands
+251,217,FireWalker,Default,Kit mythic,10.0,Gkits
+252,219,ShadowSniper,Default,Tier2,5.0,Sellwands
+253,219,ShadowSniper,Default,Kit pro,10.0,Gkits
+254,219,ShadowSniper,Default,Tier3,10.0,Sellwands
+255,220,NetherBuilder70,Default,Fix all,15.0,Perks
+256,220,NetherBuilder70,Default,Fly command,35.0,Perks
+257,221,DragonBear,Default,Random tag,5.0,Tags
+258,223,DragonSpark80,VIP,VIP,10.0,Ranks
+259,224,xXVoidLordXx,Default,Kit mythic,10.0,Gkits
+260,225,UltraGamer13,Default,Tier2,5.0,Sellwands
+261,227,IceKing,Default,Tier3,10.0,Sellwands
+262,228,VoidForce56,Default,Random tag,5.0,Tags
+263,228,VoidForce56,Default,Legendary,10.0,Crate keys
+264,229,xXStormEagleXx,Default,Tier4,15.0,Sellwands
+265,231,xXIceSparkXx,Default,Common,2.5,Crate keys
+266,232,StormCraft,MVP,MVP,25.0,Ranks
+267,233,EpicFox34,Default,Fly command,35.0,Perks
+268,233,EpicFox34,Default,Unique,5.0,Crate keys
+269,236,ShadowSniper42,Default,Tier1,2.5,Sellwands
+270,236,ShadowSniper42,Default,Kit mythic,10.0,Gkits
+271,237,xXGoldWarriorXx,MVP,Maximum land size,20.0,Perks
+272,237,xXGoldWarriorXx,MVP,Mythical,20.0,Crate keys
+273,237,xXGoldWarriorXx,MVP,MVP,25.0,Ranks
+274,238,xXHyperMinerXx,Default,Tier2,5.0,Sellwands
+275,238,xXHyperMinerXx,Default,Kit pro,10.0,Gkits
+276,240,TurboStrike,Default,Random tag,5.0,Tags
+277,241,xXEpicWalkerXx,Default,Kit oracle,10.0,Gkits
+278,241,xXEpicWalkerXx,Default,Unban,25.0,Perks
+279,242,IronSage,VIP,VIP,10.0,Ranks
+280,244,NetherHunter,MVP,Tier2,5.0,Sellwands
+281,244,NetherHunter,MVP,MVP,25.0,Ranks
+282,245,SkyCraft,Default,Kit pro,10.0,Gkits
+283,246,LightFox44,Default,Tier3,10.0,Sellwands
+284,248,NightWolf62,Default,Tier4,15.0,Sellwands
+285,248,NightWolf62,Default,Maximum land size,20.0,Perks
+286,249,FireKing,VIP,VIP,10.0,Ranks
+287,249,FireKing,VIP,Mythical,20.0,Crate keys
+288,250,EpicGamer,Default,Common,2.5,Crate keys
+289,252,xXGoldBladeXx,Default,Fly command,35.0,Perks
+290,252,xXGoldBladeXx,Default,Unique,5.0,Crate keys
+291,253,UltraHunter,Legend,Legend,50.0,Ranks
+292,254,DarkFury57,Default,Unban,25.0,Perks
+293,254,DarkFury57,Default,Legendary,10.0,Crate keys
+294,257,IceSpark44,Default,Tier2,5.0,Sellwands
+295,257,IceSpark44,Default,Kit pro,10.0,Gkits
+296,258,UltraBane,Legend,Fix all,15.0,Perks
+297,258,UltraBane,Legend,Fly command,35.0,Perks
+298,258,UltraBane,Legend,Legend,50.0,Ranks
+299,261,LightPro54,VIP,VIP,10.0,Ranks
+300,262,IronWolf73,Default,Kit mythic,10.0,Gkits
+301,263,xXDragonBladeXx,MVP,MVP,25.0,Ranks
+302,265,EpicSage19,Default,Tier3,10.0,Sellwands
+303,266,LavaBane,Default,Random tag,5.0,Tags
+304,266,LavaBane,Default,Legendary,10.0,Crate keys
+305,267,SkyRaider20,Default,Tier4,15.0,Sellwands
+306,269,BlazeFury65,Default,Common,2.5,Crate keys
+307,270,LightFury48,MVP,MVP,25.0,Ranks
+308,270,LightFury48,MVP,Fly command,35.0,Perks
+309,271,xXSwiftKnightXx,Default,Unique,5.0,Crate keys
+310,273,xXMegaWarriorXx,Default,Unban,25.0,Perks
+311,273,xXMegaWarriorXx,Default,Legendary,10.0,Crate keys
+312,274,UltraForge,Default,Tier1,2.5,Sellwands
+313,275,xXUltraBladeXx,Default,Maximum land size,20.0,Perks
+314,275,xXUltraBladeXx,Default,Mythical,20.0,Crate keys
+315,277,FireMaster,Legend,Fix all,15.0,Perks
+316,277,FireMaster,Legend,Fly command,35.0,Perks
+317,277,FireMaster,Legend,Legend,50.0,Ranks
+318,278,NeonBuilder,Default,Tier3,10.0,Sellwands
+319,278,NeonBuilder,Default,Random tag,5.0,Tags
+320,279,xXDiamondFuryXx,Default,Kit oracle,10.0,Gkits
+321,279,xXDiamondFuryXx,Default,Unban,25.0,Perks
+322,279,xXDiamondFuryXx,Default,Tier1,2.5,Sellwands
+323,282,StormFury,MVP,MVP,25.0,Ranks
+324,283,FireBuilder91,Default,Kit pro,10.0,Gkits
+325,284,DarkBlade,Legend,Tier3,10.0,Sellwands
+326,284,DarkBlade,Legend,Legend,50.0,Ranks
+327,286,PhantomRaider,Default,Tier4,15.0,Sellwands
+328,287,xXBlazeRaiderXx,VIP,VIP,10.0,Ranks
+329,287,xXBlazeRaiderXx,VIP,Mythical,20.0,Crate keys
+330,288,IceSlayer15,Default,Common,2.5,Crate keys
+331,288,IceSlayer15,Default,Fix all,15.0,Perks
+332,290,NetherStrike19,Default,Unique,5.0,Crate keys
+333,291,ShadowEagle94,Legend,Legend,50.0,Ranks
+334,292,SkyMaster14,Default,Unban,25.0,Perks
+335,292,SkyMaster14,Default,Legendary,10.0,Crate keys
+336,294,xXPhantomKnightXx,Default,Maximum land size,20.0,Perks
+337,294,xXPhantomKnightXx,Default,Mythical,20.0,Crate keys
+338,295,StormWolf99,Default,Tier2,5.0,Sellwands
+339,295,StormWolf99,Default,Kit pro,10.0,Gkits
+340,296,StarWraith,Default,Fix all,15.0,Perks
+341,296,StarWraith,Default,Fly command,35.0,Perks
+342,298,HyperRunner,Default,Kit oracle,10.0,Gkits
+343,298,HyperRunner,Default,Unban,25.0,Perks
+344,298,HyperRunner,Default,Tier1,2.5,Sellwands
+345,299,StarPro,VIP,Tier4,15.0,Sellwands
+346,299,StarPro,VIP,VIP,10.0,Ranks
+347,299,StarPro,VIP,Common,2.5,Crate keys
+348,300,CreeperFox,Default,Kit mythic,10.0,Gkits
+349,300,CreeperFox,Default,Maximum land size,20.0,Perks
+350,303,NeonWalker51,Legend,Legend,50.0,Ranks
+351,304,xXBlockWarriorXx,Default,Random tag,5.0,Tags
+352,307,DragonSpark,Default,Common,2.5,Crate keys
+353,308,DiamondWolf,MVP,MVP,25.0,Ranks
+354,308,DiamondWolf,MVP,Fly command,35.0,Perks
+355,309,GoldWalker92,Default,Unique,5.0,Crate keys
+356,311,xXNetherWizardXx,Default,Legendary,10.0,Crate keys
+357,312,EpicBane,Default,Tier1,2.5,Sellwands
+358,313,ShadowLord41,Default,Maximum land size,20.0,Perks
+359,313,ShadowLord41,Default,Mythical,20.0,Crate keys
+360,315,NetherKing51,Default,Fix all,15.0,Perks
+361,315,NetherKing51,Default,Fly command,35.0,Perks
+362,316,NightWraith,Default,Tier3,10.0,Sellwands
+363,316,NightWraith,Default,Random tag,5.0,Tags
+364,317,EpicWalker49,Default,Kit oracle,10.0,Gkits
+365,317,EpicWalker49,Default,Unban,25.0,Perks
+366,317,EpicWalker49,Default,Tier1,2.5,Sellwands
+367,319,CreeperKnight,Default,Kit mythic,10.0,Gkits
+368,319,CreeperKnight,Default,Maximum land size,20.0,Perks
+369,319,CreeperKnight,Default,Tier2,5.0,Sellwands
+370,320,SkyHunter,MVP,MVP,25.0,Ranks
+371,321,UltraLord54,Default,Kit pro,10.0,Gkits
+372,321,UltraLord54,Default,Fix all,15.0,Perks
+373,323,FireForge81,Default,Random tag,5.0,Tags
+374,324,CraftFury69,Default,Tier4,15.0,Sellwands
+375,324,CraftFury69,Default,Tier1,2.5,Sellwands
+376,325,xXDarkKnightXx,VIP,VIP,10.0,Ranks
+377,328,xXCreeperSageXx,Default,Unique,5.0,Crate keys
+378,328,xXCreeperSageXx,Default,Kit oracle,10.0,Gkits
+379,329,xXUltraWarriorXx,Legend,Legend,50.0,Ranks
+380,329,xXUltraWarriorXx,Legend,Unban,25.0,Perks
+381,330,MegaBlade,Default,Legendary,10.0,Crate keys
+382,332,ShadowMaster48,Default,Maximum land size,20.0,Perks
+383,332,ShadowMaster48,Default,Mythical,20.0,Crate keys
+384,333,MegaStrike72,Default,Tier2,5.0,Sellwands
+385,334,xXPhantomBaneXx,Default,Fix all,15.0,Perks
+386,334,xXPhantomBaneXx,Default,Fly command,35.0,Perks
+387,336,xXPixelForgeXx,Default,Kit oracle,10.0,Gkits
+388,336,xXPixelForgeXx,Default,Unban,25.0,Perks
+389,337,SkyBuilder,VIP,Tier4,15.0,Sellwands
+390,337,SkyBuilder,VIP,VIP,10.0,Ranks
+391,338,SkyCraft88,Default,Kit mythic,10.0,Gkits
+392,338,SkyCraft88,Default,Maximum land size,20.0,Perks
+393,338,SkyCraft88,Default,Tier2,5.0,Sellwands
+394,340,DiamondWalker,Default,Kit pro,10.0,Gkits
+395,340,DiamondWalker,Default,Fix all,15.0,Perks
+396,341,xXPhantomSlayerXx,Legend,Legend,50.0,Ranks
+397,342,xXStormSlayerXx,Default,Random tag,5.0,Tags
+398,344,xXDragonTitanXx,VIP,VIP,10.0,Ranks
+399,345,xXIceBearXx,Default,Common,2.5,Crate keys
+400,346,HyperCraft91,MVP,MVP,25.0,Ranks
+401,346,HyperCraft91,MVP,Fly command,35.0,Perks
+402,349,GoldSage,Default,Legendary,10.0,Crate keys
+403,350,IceKnight,Default,Tier1,2.5,Sellwands
+404,350,IceKnight,Default,Maximum land size,20.0,Perks
+405,351,BlazeBear52,Default,Mythical,20.0,Crate keys
+406,353,HyperTitan78,Default,Fix all,15.0,Perks
+407,353,HyperTitan78,Default,Fly command,35.0,Perks
+408,354,NetherKing14,Default,Tier3,10.0,Sellwands
+409,355,DragonHunter72,Default,Kit oracle,10.0,Gkits
+410,355,DragonHunter72,Default,Unban,25.0,Perks
+411,357,BlockSniper63,Default,Kit mythic,10.0,Gkits
+412,357,BlockSniper63,Default,Maximum land size,20.0,Perks
+413,357,BlockSniper63,Default,Tier2,5.0,Sellwands
+414,358,NetherFury,MVP,Common,2.5,Crate keys
+415,358,NetherFury,MVP,MVP,25.0,Ranks
+416,359,EnderWarrior,Default,Kit pro,10.0,Gkits
+417,359,EnderWarrior,Default,Fix all,15.0,Perks
+418,359,EnderWarrior,Default,Tier3,10.0,Sellwands
+419,361,SkyWraith14,Default,Random tag,5.0,Tags
+420,361,SkyWraith14,Default,Kit oracle,10.0,Gkits
+421,362,LavaBane52,Default,Tier1,2.5,Sellwands
+422,363,EpicForce,VIP,VIP,10.0,Ranks
+423,365,xXDarkProXx,MVP,MVP,25.0,Ranks
+424,366,xXPixelSniperXx,Default,Unique,5.0,Crate keys
+425,367,xXTurboMasterXx,Legend,Legend,50.0,Ranks
+426,367,xXTurboMasterXx,Legend,Unban,25.0,Perks
+427,369,SkyCraft69,Default,Tier1,2.5,Sellwands
+428,369,SkyCraft69,Default,Maximum land size,20.0,Perks
+429,370,xXPixelRunnerXx,Default,Mythical,20.0,Crate keys
+430,371,TurboKing,Default,Tier2,5.0,Sellwands
+431,374,BlazeSage43,Default,Kit oracle,10.0,Gkits
+432,374,BlazeSage43,Default,Unban,25.0,Perks
+433,375,xXNightBladeXx,VIP,Tier4,15.0,Sellwands
+434,375,xXNightBladeXx,VIP,VIP,10.0,Ranks
+435,376,EnderSage,Default,Kit mythic,10.0,Gkits
+436,376,EnderSage,Default,Maximum land size,20.0,Perks
+437,378,StarHunter,Default,Kit pro,10.0,Gkits
+438,378,StarHunter,Default,Fix all,15.0,Perks
+439,378,StarHunter,Default,Tier3,10.0,Sellwands
+440,379,EnderBane,Legend,Unique,5.0,Crate keys
+441,379,EnderBane,Legend,Legend,50.0,Ranks
+442,379,EnderBane,Legend,Legendary,10.0,Crate keys
+443,380,xXNightSageXx,Default,Random tag,5.0,Tags
+444,380,xXNightSageXx,Default,Kit oracle,10.0,Gkits
+445,382,BlockSlayer,VIP,VIP,10.0,Ranks
+446,383,NeonLord,Default,Tier2,5.0,Sellwands
+447,384,CraftWraith,MVP,MVP,25.0,Ranks
+448,386,CreeperEagle56,Legend,Legend,50.0,Ranks
+449,386,CreeperEagle56,Legend,Unban,25.0,Perks
+450,387,PhantomWraith92,Default,Legendary,10.0,Crate keys
+451,388,StormWalker93,Default,Tier1,2.5,Sellwands
+452,388,StormWalker93,Default,Maximum land size,20.0,Perks
+453,390,PhantomMiner,Default,Tier2,5.0,Sellwands
+454,390,PhantomMiner,Default,Fix all,15.0,Perks
+455,391,BlockBlade,Default,Fly command,35.0,Perks
+456,392,DarkKnight,Default,Tier3,10.0,Sellwands
+457,395,GoldBuilder,Default,Kit mythic,10.0,Gkits
+458,395,GoldBuilder,Default,Maximum land size,20.0,Perks
+459,396,xXLavaWraithXx,MVP,Common,2.5,Crate keys
+460,396,xXLavaWraithXx,MVP,MVP,25.0,Ranks
+461,397,EnderEagle32,Default,Kit pro,10.0,Gkits
+462,397,EnderEagle32,Default,Fix all,15.0,Perks
+463,397,EnderEagle32,Default,Tier3,10.0,Sellwands
+464,399,MegaGamer68,Default,Random tag,5.0,Tags
+465,399,MegaGamer68,Default,Kit oracle,10.0,Gkits
+466,399,MegaGamer68,Default,Tier4,15.0,Sellwands
+467,400,LightWraith40,Default,Tier1,2.5,Sellwands
+468,401,xXShadowCraftXx,VIP,VIP,10.0,Ranks
+469,401,xXShadowCraftXx,VIP,Kit mythic,10.0,Gkits
+470,403,EpicRaider,MVP,MVP,25.0,Ranks
+471,404,VoidRunner,Default,Unique,5.0,Crate keys
+472,404,VoidRunner,Default,Tier3,10.0,Sellwands
+473,405,HyperKing,Legend,Legend,50.0,Ranks
+474,407,BlockGamer34,Default,Tier1,2.5,Sellwands
+475,407,BlockGamer34,Default,Maximum land size,20.0,Perks
+476,408,TurboSpark,Default,Mythical,20.0,Crate keys
+477,408,TurboSpark,Default,Kit pro,10.0,Gkits
+478,409,GoldEagle14,Default,Tier2,5.0,Sellwands
+479,409,GoldEagle14,Default,Fix all,15.0,Perks
+480,411,DarkSage,Default,Tier3,10.0,Sellwands
+481,412,IronFox,Default,Kit oracle,10.0,Gkits
+482,412,IronFox,Default,Unban,25.0,Perks
+483,413,DarkBlade82,Default,Tier4,15.0,Sellwands
+484,416,EpicWolf,Default,Kit pro,10.0,Gkits
+485,416,EpicWolf,Default,Fix all,15.0,Perks
+486,417,NightFury95,Legend,Unique,5.0,Crate keys
+487,417,NightFury95,Legend,Legend,50.0,Ranks
+488,420,CobaltSpark63,VIP,VIP,10.0,Ranks
+489,420,CobaltSpark63,VIP,Kit mythic,10.0,Gkits
+490,421,ShadowMiner,Default,Tier2,5.0,Sellwands
+491,422,xXSkySparkXx,MVP,MVP,25.0,Ranks
+492,424,xXLightKingXx,Legend,Legend,50.0,Ranks
+493,425,CraftMiner36,Default,Legendary,10.0,Crate keys
+494,426,xXDiamondLordXx,Default,Tier1,2.5,Sellwands
+495,426,xXDiamondLordXx,Default,Maximum land size,20.0,Perks
+496,428,IronWraith,Default,Tier2,5.0,Sellwands
+497,428,IronWraith,Default,Fix all,15.0,Perks
+498,429,VoidKing,Default,Fly command,35.0,Perks
+499,430,xXTurboMinerXx,Default,Tier3,10.0,Sellwands
+500,430,xXTurboMinerXx,Default,Kit oracle,10.0,Gkits
+501,432,xXStarRaiderXx,Default,Tier4,15.0,Sellwands
+502,433,NeonCraft74,Default,Kit mythic,10.0,Gkits
+503,433,NeonCraft74,Default,Maximum land size,20.0,Perks
+504,434,TurboKnight61,Default,Common,2.5,Crate keys
+505,436,GoldTitan42,Legend,Unique,5.0,Crate keys
+506,436,GoldTitan42,Legend,Legend,50.0,Ranks
+507,437,xXGoldRaiderXx,Default,Random tag,5.0,Tags
+508,437,xXGoldRaiderXx,Default,Kit oracle,10.0,Gkits
+509,437,xXGoldRaiderXx,Default,Tier4,15.0,Sellwands
+510,438,StarSpark,Default,Legendary,10.0,Crate keys
+511,438,StarSpark,Default,Tier1,2.5,Sellwands
+512,441,NightWizard43,MVP,MVP,25.0,Ranks
+513,441,NightWizard43,MVP,Kit pro,10.0,Gkits
+514,442,xXEpicSlayerXx,Default,Tier3,10.0,Sellwands
+515,443,PhantomLord97,Legend,Legend,50.0,Ranks
+516,445,TurboWizard,Default,Tier1,2.5,Sellwands
+517,446,VoidBear50,Default,Mythical,20.0,Crate keys
+518,447,xXVoidKingXx,Default,Tier2,5.0,Sellwands
+519,447,xXVoidKingXx,Default,Fix all,15.0,Perks
+520,449,DragonRaider,Default,Tier3,10.0,Sellwands
+521,449,DragonRaider,Default,Kit oracle,10.0,Gkits
+522,450,CreeperNinja38,Default,Unban,25.0,Perks
+523,451,GoldSlayer,Default,Tier4,15.0,Sellwands
+524,453,DiamondMaster,Default,Common,2.5,Crate keys
+525,454,StarFury90,Default,Kit pro,10.0,Gkits
+526,454,StarFury90,Default,Fix all,15.0,Perks
+527,455,CraftForce,Legend,Unique,5.0,Crate keys
+528,455,CraftForce,Legend,Legend,50.0,Ranks
+529,457,xXFireSparkXx,Default,Legendary,10.0,Crate keys
+530,457,xXFireSparkXx,Default,Tier1,2.5,Sellwands
+531,458,FireBuilder,VIP,VIP,10.0,Ranks
+532,458,FireBuilder,VIP,Kit mythic,10.0,Gkits
+533,458,FireBuilder,VIP,Common,2.5,Crate keys
+534,459,MegaForce20,Default,Mythical,20.0,Crate keys
+535,459,MegaForce20,Default,Tier2,5.0,Sellwands
+536,459,MegaForce20,Default,Fly command,35.0,Perks
+537,462,xXLavaGamerXx,Legend,Legend,50.0,Ranks
+538,463,ShadowGamer,Default,Tier4,15.0,Sellwands
+539,466,TurboStrike27,Default,Tier2,5.0,Sellwands
+540,466,TurboStrike27,Default,Fix all,15.0,Perks
+541,467,NightForge65,Default,Fly command,35.0,Perks
+542,468,GoldWarrior31,Default,Tier3,10.0,Sellwands
+543,468,GoldWarrior31,Default,Kit oracle,10.0,Gkits
+544,470,xXEpicSageXx,Default,Tier4,15.0,Sellwands
+545,470,xXEpicSageXx,Default,Kit mythic,10.0,Gkits
+546,471,xXLightNinjaXx,Default,Maximum land size,20.0,Perks
+547,472,StarBlade,Default,Common,2.5,Crate keys
+548,474,xXVoidWizardXx,Default,Unique,5.0,Crate keys
+549,475,LightBlade92,Default,Random tag,5.0,Tags
+550,475,LightBlade92,Default,Kit oracle,10.0,Gkits
+551,476,IceBane,Default,Legendary,10.0,Crate keys
+552,476,IceBane,Default,Tier1,2.5,Sellwands
+553,478,xXShadowSniperXx,Default,Mythical,20.0,Crate keys
+554,478,xXShadowSniperXx,Default,Tier2,5.0,Sellwands
+555,479,NeonSpark89,MVP,MVP,25.0,Ranks
+556,479,NeonSpark89,MVP,Kit pro,10.0,Gkits
+557,479,NeonSpark89,MVP,Unique,5.0,Crate keys
+558,480,PixelPro82,Default,Tier3,10.0,Sellwands
+559,482,TurboTitan99,Default,Tier4,15.0,Sellwands
+560,483,EnderStrike,Default,Tier1,2.5,Sellwands
+561,484,PhantomWolf,Default,Mythical,20.0,Crate keys
+562,484,PhantomWolf,Default,Common,2.5,Crate keys
+563,487,PixelCraft99,Default,Tier3,10.0,Sellwands
+564,487,PixelCraft99,Default,Kit oracle,10.0,Gkits
+565,488,xXEpicKingXx,VIP,Unban,25.0,Perks
+566,488,xXEpicKingXx,VIP,VIP,10.0,Ranks
+567,489,DarkTitan,Default,Tier4,15.0,Sellwands
+568,489,DarkTitan,Default,Kit mythic,10.0,Gkits
+569,491,xXNetherWraithXx,Default,Common,2.5,Crate keys
+570,492,SwiftGamer40,Default,Kit pro,10.0,Gkits
+571,492,SwiftGamer40,Default,Fix all,15.0,Perks
+572,493,NetherWarrior60,Default,Unique,5.0,Crate keys
+573,495,IceFury,Default,Legendary,10.0,Crate keys
+574,495,IceFury,Default,Tier1,2.5,Sellwands
+575,496,xXEpicProXx,VIP,VIP,10.0,Ranks
+576,496,xXEpicProXx,VIP,Kit mythic,10.0,Gkits
+577,497,xXCobaltForgeXx,Default,Mythical,20.0,Crate keys
+578,497,xXCobaltForgeXx,Default,Tier2,5.0,Sellwands
+579,499,StarPro50,Default,Fly command,35.0,Perks
+580,499,StarPro50,Default,Tier3,10.0,Sellwands
+581,499,StarPro50,Default,Unban,25.0,Perks
+582,500,xXHyperWolfXx,Legend,Legend,50.0,Ranks
+583,500,xXHyperWolfXx,Legend,Random tag,5.0,Tags
+584,501,LavaBane93,Default,Tier4,15.0,Sellwands
+585,503,CobaltSage46,Default,Common,2.5,Crate keys
+586,504,DarkSpark86,Default,Tier2,5.0,Sellwands
+587,505,GoldKing,Default,Fly command,35.0,Perks
+588,508,xXFrostWizardXx,Default,Tier4,15.0,Sellwands
+589,508,xXFrostWizardXx,Default,Kit mythic,10.0,Gkits
+590,509,PhantomForge,Default,Maximum land size,20.0,Perks
+591,510,IronRaider83,Default,Common,2.5,Crate keys
+592,510,IronRaider83,Default,Kit pro,10.0,Gkits
+593,512,LightRaider,Default,Unique,5.0,Crate keys
+594,513,PixelBane,Default,Random tag,5.0,Tags
+595,513,PixelBane,Default,Kit oracle,10.0,Gkits
+596,514,xXLavaBuilderXx,Default,Legendary,10.0,Crate keys
+597,516,xXEnderHunterXx,Default,Mythical,20.0,Crate keys
+598,516,xXEnderHunterXx,Default,Tier2,5.0,Sellwands
+599,517,StarRaider,MVP,MVP,25.0,Ranks
+600,517,StarRaider,MVP,Kit pro,10.0,Gkits
+601,517,StarRaider,MVP,Unique,5.0,Crate keys
+602,518,SkyMaster51,Default,Fly command,35.0,Perks
+603,518,SkyMaster51,Default,Tier3,10.0,Sellwands
+604,520,IronRunner40,Default,Tier4,15.0,Sellwands
+605,521,PixelSniper,VIP,Tier1,2.5,Sellwands
+606,521,PixelSniper,VIP,VIP,10.0,Ranks
+607,522,SwiftLord46,Default,Common,2.5,Crate keys
+608,524,HyperFox83,Default,Fly command,35.0,Perks
+609,524,HyperFox83,Default,Unique,5.0,Crate keys
+610,525,xXFrostBuilderXx,Default,Tier3,10.0,Sellwands
+611,526,xXLightLordXx,Default,Unban,25.0,Perks
+612,528,CreeperFury17,MVP,Maximum land size,20.0,Perks
+613,528,CreeperFury17,MVP,MVP,25.0,Ranks
+614,529,BlazeBane16,Default,Common,2.5,Crate keys
+615,529,BlazeBane16,Default,Kit pro,10.0,Gkits
+616,530,xXBlockNinjaXx,Default,Fix all,15.0,Perks
+617,533,PixelGamer27,Default,Legendary,10.0,Crate keys
+618,534,xXStarKingXx,VIP,VIP,10.0,Ranks
+619,534,xXStarKingXx,VIP,Kit mythic,10.0,Gkits
+620,535,DarkWalker59,Default,Mythical,20.0,Crate keys
+621,535,DarkWalker59,Default,Tier2,5.0,Sellwands
+622,537,DragonWolf,Default,Fly command,35.0,Perks
+623,537,DragonWolf,Default,Tier3,10.0,Sellwands
+624,538,xXEnderMasterXx,Legend,Legend,50.0,Ranks
+625,538,xXEnderMasterXx,Legend,Random tag,5.0,Tags
+626,538,xXEnderMasterXx,Legend,Legendary,10.0,Crate keys
+627,539,xXPhantomSageXx,Default,Unban,25.0,Perks
+628,539,xXPhantomSageXx,Default,Tier4,15.0,Sellwands
+629,539,xXPhantomSageXx,Default,Maximum land size,20.0,Perks
+630,541,FireRaider97,Default,Common,2.5,Crate keys
+631,542,xXBlazeCraftXx,Default,Tier2,5.0,Sellwands
+632,543,StormPro43,Default,Unique,5.0,Crate keys
+633,545,xXCobaltFuryXx,Default,Unban,25.0,Perks
+634,546,ShadowMiner80,Default,Tier4,15.0,Sellwands
+635,546,ShadowMiner80,Default,Kit mythic,10.0,Gkits
+636,547,StormHunter60,Default,Maximum land size,20.0,Perks
+637,549,IronFury73,Default,Fix all,15.0,Perks
+638,550,BlockBear,Default,Unique,5.0,Crate keys
+639,550,BlockBear,Default,Random tag,5.0,Tags
+640,551,EpicWalker18,Default,Kit oracle,10.0,Gkits
+641,554,CraftKing36,Default,Mythical,20.0,Crate keys
+642,555,DiamondWraith99,MVP,MVP,25.0,Ranks
+643,555,DiamondWraith99,MVP,Kit pro,10.0,Gkits
+644,556,LightHunter,Default,Fly command,35.0,Perks
+645,556,LightHunter,Default,Tier3,10.0,Sellwands
+646,558,xXFireLordXx,Default,Unban,25.0,Perks
+647,558,xXFireLordXx,Default,Tier4,15.0,Sellwands
+648,559,StormCraft93,VIP,Tier1,2.5,Sellwands
+649,559,StormCraft93,VIP,VIP,10.0,Ranks
+650,559,StormCraft93,VIP,Mythical,20.0,Crate keys
+651,560,FrostNinja,Default,Common,2.5,Crate keys
+652,562,BlazeSage30,Default,Unique,5.0,Crate keys
+653,563,IronHunter61,Default,Tier3,10.0,Sellwands
+654,564,DragonMaster,Default,Unban,25.0,Perks
+655,564,DragonMaster,Default,Legendary,10.0,Crate keys
+656,566,BlockSlayer91,Default,Maximum land size,20.0,Perks
+657,567,VoidWizard,Default,Common,2.5,Crate keys
+658,567,VoidWizard,Default,Kit pro,10.0,Gkits
+659,568,EnderMiner,Legend,Fix all,15.0,Perks
+660,568,EnderMiner,Legend,Legend,50.0,Ranks
+661,570,LightBane,Default,Kit oracle,10.0,Gkits
+662,571,IceWalker,Default,Legendary,10.0,Crate keys
+663,572,PhantomWalker16,VIP,VIP,10.0,Ranks
+664,572,PhantomWalker16,VIP,Kit mythic,10.0,Gkits
+665,575,BlazeSage,Default,Fly command,35.0,Perks
+666,575,BlazeSage,Default,Tier3,10.0,Sellwands
+667,576,xXCobaltProXx,Legend,Legend,50.0,Ranks
+668,576,xXCobaltProXx,Legend,Random tag,5.0,Tags
+669,579,xXFireHunterXx,Default,Maximum land size,20.0,Perks
+670,579,xXFireHunterXx,Default,Common,2.5,Crate keys
+671,579,xXFireHunterXx,Default,Fix all,15.0,Perks
+672,580,StarForce99,MVP,Tier2,5.0,Sellwands
+673,580,StarForce99,MVP,MVP,25.0,Ranks
