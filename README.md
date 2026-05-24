@@ -1,51 +1,53 @@
-# ניתוח התנהגות לקוחות — Craftiverse
-## שרת Minecraft | Factions & Skyblock | מאגר נתונים: craftiverse.db
+# Craftiverse — Customer Behaviour Analysis
 
-> **מנתח:** דניאל שאולוב | **תאריך:** 23 מאי 2026 | **שפה:** Python · SQLite · Pandas · Matplotlib
+> **Network:** Craftiverse Factions & Skyblock  
+> **Analyst:** Daniel Shaulov  
+> **Date:** 2026-05-23  
+> **Stack:** Python · SQLite · Pandas · Matplotlib · Seaborn
 
 ---
 
-## סקירה כללית
+## Overview
 
-פרויקט זה מנתח את נתוני הרכישות, נטישת עגלות הקניות ודפוסי ההתנהגות של שחקני רשת Craftiverse. המטרה: להפוך נתוני גלם לאסטרטגיות מוניטיזציה ברות-ביצוע — מבלי לגייס שחקנים חדשים — על ידי אופטימיזציה של ה-ARPU (הכנסה ממוצעת למשתמש) בקרב 580 השחקנים הקיימים.
+This project analyses the purchase behaviour, cart abandonment patterns, and engagement metrics of 580 players on the Craftiverse Minecraft network. The goal is to turn raw player-activity data into actionable, data-driven monetisation strategies — without acquiring new players — by optimising the Average Revenue Per User (ARPU) of the existing player base.
 
-| מדד | ערך |
+| Metric | Value |
 |:---|---:|
-| סה"כ שחקנים | 580 |
-| שחקנים משלמים | 407 (70.2%) |
-| שחקנים לא-משלמים | 173 (29.8%) |
-| **הכנסה ממשית** | **$9,912.50** |
-| **ערך עגלות ננטשות** | **$13,125.00** |
-| **שיעור לכידת הכנסה** | **43.1%** |
-| ממוצע הוצאה (משלמים) | $24.36 |
-| מוצרים בחנות | 19 |
+| Total Players | 580 |
+| Paying Players | 407 (70.2%) |
+| Non-Paying Players | 173 (29.8%) |
+| **Actual Revenue** | **$9,912.50** |
+| **Abandoned Cart Value** | **$13,125.00** |
+| **Revenue Capture Rate** | **43.1%** |
+| Avg Spend (payers) | $24.36 |
+| Store Products | 19 |
 
-> ⚠ **ממצא הלם:** ערך העגלות הננטשות ($13,125) **עולה על ההכנסה הממשית ($9,912.50)**. אנו מאבדים יותר ממה שאנו מרוויחים!
+> **Key Finding:** Abandoned cart value ($13,125) **exceeds actual revenue ($9,912.50)**. The server is losing more than it earns to checkout drop-off.
 
 ---
 
-## דשבורד Power BI
+## Power BI Dashboard
 
-דשבורד אינטראקטיבי בן 3 עמודים, בנוי על אותו מאגר נתונים ומתוכנן להצגה חיה.
+An interactive 3-page dashboard built on the same dataset, designed for live presentation.
 
-| עמוד | תזה | ויזואל מרכזי |
+| Page | Thesis | Key Visual |
 |:---|:---|:---|
-| **Executive Summary** | פער הכנסות מול עגלות ננטשות | עמודות הכנסה לפי קטגוריה + טבלת לווייתנים + מגמה |
-| **Player Psychology** | מעורבות חוזה הוצאה בצורה חלשה | Heatmap מתאמים (Python) + Scatter זמן משחק/הוצאה |
-| **Lost Revenue Analysis** | $13K ישן בעגלות ננטשות | Funnel לפי דרגה (Python) + מוצרים ננטשים מובילים |
+| **Executive Summary** | Revenue vs. abandonment gap | Revenue-by-category bars + whale table + trend line |
+| **Player Psychology** | Engagement weakly predicts spend | Python correlation heatmap + playtime-vs-spend scatter |
+| **Lost Revenue Analysis** | $13 K sits in abandoned carts | Python funnel-by-rank + top abandoned items |
 
-**לפתיחה:** לחץ פעמיים על `CustomerBehaviour.pbip` ב-Power BI Desktop (יוני 2025+).  
-**ויזואלי Python דורשים:** `pip install matplotlib seaborn pandas numpy` בסביבת Python המוגדרת תחת *File → Options → Python scripting*.
+**To open:** Double-click `CustomerBehaviour.pbip` in Power BI Desktop (June 2025+).  
+**Python visuals require:** `pip install matplotlib seaborn pandas numpy` in the Python interpreter configured under *File → Options → Python scripting*.
 
-### קבצי הדשבורד
+### Dashboard files
 
-| קובץ | תוכן |
+| File | Purpose |
 |:---|:---|
-| `DAX_MEASURES.md` | כל מדדי ה-DAX עם נוסחאות ולוגיקה עסקית |
-| `POWERBI_PYTHON_VISUALS.md` | סקריפטי Python לויזואל ה-Heatmap וה-Funnel |
-| `POWERBI_PRESENTATION_PLAN.md` | פריסת עמודים, צבעים, Slicers ותסריט הצגה חיה |
+| `DAX_MEASURES.md` | All DAX measures with formulas and business logic |
+| `POWERBI_PYTHON_VISUALS.md` | Python scripts for the heatmap and funnel visuals |
+| `POWERBI_PRESENTATION_PLAN.md` | Page layouts, colour tokens, slicer setup, live demo script |
 
-### צילומי מסך
+### Screenshots
 
 | | |
 |:---:|:---:|
@@ -55,254 +57,233 @@
 
 ---
 
-## KPI 1 — פופולריות מוצרים (Product Popularity)
+## Project Structure
 
-### מה הוא מודד?
-KPI זה מודד את מספר הפעמים שכל מוצר נרכש על ידי שחקנים, על ידי פריסת (Explode) עמודת ה-JSON של פריטי הרכישה (`purchased_items_list`) ומניית מופעים לכל שם מוצר.
-
-### תרומה עסקית
-פופולריות מוצר חושפת מה שחקנים בוחרים **בפועל**, בניגוד למה שאנו משווקים. הבנת מה שחקנים קונים בפועל היא הבסיס לכל אסטרטגיית מוניטיזציה.
-
-### תוצאות — 10 המוצרים הנמכרים ביותר:
-
-| דרגה | מוצר | יחידות | קטגוריה |
-|:---:|:---|---:|:---|
-| 1 | Fix all | 40 | Perks |
-| 2 | Tier3 | 39 | Sellwands |
-| 3 | Tier4 | 38 | Sellwands |
-| 3 | Maximum land size | 38 | Perks |
-| 3 | Kit oracle | 38 | Gkits |
-| 6 | Tier2 | 37 | Sellwands |
-| 6 | Kit mythic | 37 | Gkits |
-| 6 | Common | 37 | Crate keys |
-| 9 | Tier1 | 36 | Sellwands |
-| 9 | Kit pro | 36 | Gkits |
-
-### תובנות ואסטרטגיות:
-
-**1. המוצר הנמכר ביותר הוא "Fix all" — ולא Rank!**
-"Fix all" הוא פרק (Perk) שמתקן כלים ושריון. שחקנים מעדיפים פתרונות פונקציונליים ומיידיים על פני יוקרה ארוכת-טווח. Fix all פותר כאב אמיתי במשחק — שחיקת ציוד — ולכן ה-ROI שלו מובן לשחקן באופן מיידי.
-
-**2. Sellwands ממלאות 4 מתוך 10 המקומות הראשונים.**
-שחקני Skyblock הם הצרכנים הפעילים ביותר. Sellwands הם מוצר "מינוף" שמרגיש כהשקעה שמשתלמת — הם מגדילים את ההכנסה של השחקן מהמשחק עצמו.
-
-**3. Gkits מחזיקות ב-3 מקומות ברשימה.**
-Kit oracle, Kit mythic ו-Kit pro מוכרים כולם בכמויות דומות (36-38 יחידות) — ביקוש אחיד ללא מנהיג בולט.
-
-**אסטרטגיות:**
-- הצג "Fix all" ו-Sellwands כ-**"Featured Products"** עם הוכחה חברתית: *"40 שחקנים קנו השבוע"*
-- צור **חבילת Perk** (Fix all + Fly + Maximum land size) בהנחה של 15%
-- הוצא **Tier5 Sellwand** ב-$25 לשדרוג טבעי מ-Tier4
+```
+CustomerBehaviour/
+├── behaviour.ipynb          # Main analysis notebook (Parts A–E + KPI cheatsheet)
+├── craftiverse.db           # SQLite database (players_data, store_products)
+├── kpi_cheatsheet.sql       # Raw SQL for all 6 KPI queries
+├── SERVER_STRATEGY.md       # Full business strategy document (Hebrew)
+├── README.md                # Project overview (Hebrew)
+├── README_EN.md             # This file
+├── dim_players.csv          # PowerBI export — one row per player
+├── fact_purchases.csv       # PowerBI export — one row per purchased item
+├── fact_abandoned_carts.csv # PowerBI export — one row per abandoned cart item
+├── part_a_player_psychology.png
+├── part_b_targeted_segments.png
+├── part_c_server_hype.png
+├── part_d_financials.png
+└── part_e_growth.png
+```
 
 ---
 
-## KPI 2 — הכנסות לפי קטגוריה (Category Revenue)
+## Database Schema
 
-### מה הוא מודד?
-KPI זה מחשב את סך ההכנסה מכל קטגוריית מוצרים על ידי פריסת ה-JSON, הצטרפות לטבלת `store_products` לקבלת המחיר, ואגרגציה לפי קטגוריה.
+### `players_data`
+| Column | Type | Description |
+|:---|:---|:---|
+| id | INTEGER | Primary key |
+| username | TEXT | In-game name |
+| rank | TEXT | Default / VIP / MVP / Legend |
+| first_join_date | DATE | Date of first login |
+| total_playtime_hours | REAL | Cumulative hours in-game |
+| total_spent_dollars | REAL | Lifetime spend in USD |
+| total_votes | INTEGER | Server-listing votes |
+| webstore_visits | INTEGER | Visits to the store |
+| last_purchase_date | DATE | Date of most recent purchase |
+| total_transactions | INTEGER | Number of completed orders |
+| cart_abandonments | INTEGER | Number of abandoned sessions |
+| purchased_items_list | JSON | Array of `{item, price}` objects |
+| cart_items_list | JSON | Array of `{item, price}` objects currently in cart |
 
-### תרומה עסקית
-הכנסות לפי קטגוריה מזהות את **מנועי ההכנסה האמיתיים** של השרת — לא לפי אינטואיציה, אלא לפי נתונים. מוצר שנמכר לעיתים נדירות אך יקר עשוי להיות מנוע ההכנסה המרכזי.
-
-### תוצאות:
-
-| קטגוריה | הכנסה | יחידות | ממוצע ליחידה |
-|:---|---:|---:|---:|
-| **Perks** | **$3,355.00** | 145 | $23.14 |
-| Ranks | $2,830.00 | 99 | $28.59 |
-| Sellwands | $1,235.00 | 150 | $8.23 |
-| Crate keys | $1,212.50 | 134 | $9.05 |
-| Gkits | $1,110.00 | 111 | $10.00 |
-| Tags | $170.00 | 34 | $5.00 |
-
-### תובנות ואסטרטגיות:
-
-**1. Perks הן מנוע ההכנסה מספר 1 — לא Ranks!**
-Perks מכניסות $3,355 לעומת $2,830 מ-Ranks. זהו ממצא מפתיע: כולם מדברים על "קנה Legend", אך השחקנים בפועל קונים יותר Perks. Fix all, Maximum land size ו-Fly command הם המניעים האמיתיים.
-
-**2. Sellwands מובילות ביחידות (150) אך שלישיות בהכנסה ($1,235).**
-מחירן הנמוך ($3-$12) מגביל את ההכנסה. Tier5 Sellwand ב-$25 יכול לשנות את המשוואה.
-
-**3. Tags — $170 בלבד — הפוטנציאל הגדול ביותר לצמיחה.**
-רק Random tag ($5) קיים כיום. Custom Tag ב-$15 יכפיל את הכנסות הקטגוריה.
-
-**אסטרטגיות:**
-- **שווק Perks באגרסיביות** — הן מרוויחות יותר מ-Ranks אך לא מקבלות את הבמה הראויה
-- צור **"Perk Bundle of the Month"** עם הנחה מוגבלת בזמן
-- הוסף **Custom Tag** ($15) ו-**XP Booster** ($12) לקטגוריית Perks
+### `store_products`
+| Column | Type | Description |
+|:---|:---|:---|
+| id | INTEGER | Primary key |
+| category | TEXT | Ranks / Perks / Crate keys / Sellwands / Gkits / Tags |
+| product_name | TEXT | Display name |
+| price | REAL | Price in USD |
 
 ---
 
-## KPI 3 — לוח המוצרים הננטשים (Cart Abandonment Leaderboard)
+## KPI Cheatsheet
 
-### מה הוא מודד?
-KPI זה מונה כמה פעמים כל מוצר הופיע בעגלת קניות מבלי שהרכישה הושלמה. הנתון מחושב מעמודת `cart_items_list` — מוצרים שנוספו לעגלה אך מעולם לא שולמו.
+Six SQL KPIs queried directly from `craftiverse.db` via `kpi_cheatsheet.sql`.
 
-### תרומה עסקית
-כל מוצר ננטש הוא **כוונת רכישה מוצהרת שנכשלה**. זהו הנתון החם ביותר — שחקן שמוסיף מוצר לעגלה הוא במרחק צעד אחד מרכישה. ה-$13,125 הננטשים הם ההזדמנות הגדולה ביותר בכל הניתוח.
-
-### תוצאות — 5 המוצרים הננטשים ביותר:
-
-| מוצר | פעמים ננטש | קטגוריה | מחיר |
-|:---|---:|:---|---:|
-| **Tier4** | **66** | Sellwands | $12 |
-| Mythical | 65 | Crate keys | $10 |
-| Maximum land size | 65 | Perks | $15 |
-| MVP | 65 | Ranks | $25 |
-| Fly command | 64 | Perks | $10 |
-
-### תובנות ואסטרטגיות:
-
-**1. Tier4 Sellwand הוא המוצר הננטש ביותר (66 פעמים).**
-שחקנים מוסיפים Tier4 לעגלה אך לא משלמים $12. יש "נקודת כאב" פסיכולוגית בסף $10-$15.
-
-**2. 3 מתוך 5 המוצרים הננטשים הם בין $10-$15.**
-Bundle Tier4 + Common Key ב-$14 ייצור תחושת ערך מוגבר ויפחית את ה-Friction.
-
-**3. MVP Rank ננטש 65 פעמים.**
-שחקנים שמתעניינים ב-MVP אך לא קונים זקוקים ל"טריגר" — FOMO, סקרסיטי, או trust signals.
-
-**אסטרטגיית Cart Recovery Drip (3 שלבים):**
-- **יום 1:** מידע + ערך — *"שכחת Tier4 בעגלה! Tier4 מגדיל מכירות ב-40% אוטומטית."*
-- **יום 3:** FOMO — *"⚠ מלאי מוגבל: נשאר X slots במחיר הזה. 67 שחקנים קנו השבוע."*
-- **יום 7:** הנחה חד-פעמית — *"🎁 10% הנחה בלעדית | קוד: COMEBACK10 | תקף 24 שעות"*
-
-**כלל ברזל:** אל תיתן הנחה לפני שניסית FOMO!
+| # | KPI | Result |
+|:---:|:---|:---|
+| 1 | **Top Product (units)** | Fix all — 40 units |
+| 2 | **Top Category (revenue)** | Perks — $3,355 |
+| 3 | **Most Abandoned Item** | Tier4 Sellwand — 66× abandoned |
+| 4 | **Conversion Rate** | 70.2% (industry avg: 20–30%) |
+| 5 | **Top Whale** | UltraBane & FireMaster — $100 each |
+| 6 | **Highest Total Revenue by Rank** | Default — $6,072.50 |
 
 ---
 
-## KPI 4 — המרת משתמשים (User Conversion Overview)
+## Part A — Player Psychology: Breaking the Purchasing Barrier
 
-### מה הוא מודד?
-KPI זה מחלק את בסיס השחקנים לשני מגזרים: משלמים (הוצאה > $0) ולא-משלמים, עם אחוז מסך כל השחקנים.
+**Question:** How long does it take a new player to make their first purchase?
 
-### תרומה עסקית
-שיעור ההמרה הוא **מדד הבריאות הבסיסי ביותר** של כל עסק דיגיטלי. לפני שמנסים להגדיל הכנסה, חייבים להבין כמה שחקנים בכלל השתתפו.
-
-### תוצאות:
-
-| מגזר | שחקנים | אחוז |
+| Segment | Players | Share |
 |:---|---:|---:|
-| **משלמים** | **407** | **70.2%** |
-| לא-משלמים | 173 | 29.8% |
-| **סה"כ** | **580** | **100%** |
+| Same Day | highest group | — |
+| 1–7 Days | — | — |
+| 8–30 Days | — | — |
+| 31–90 Days | — | — |
+| > 1 Year | small tail | — |
 
-### תובנות ואסטרטגיות:
+**Key Findings:**
 
-**1. שיעור המרה של 70.2% — ממוצע התעשייה הוא 20-30%.**
-Craftiverse מייצר שיעור המרה גבוה פי 3 מהממוצע. המוצרים רלוונטיים, השחקנים מרגישים ערך. זהו נכס עסקי ענק.
-
-**2. הכוונה הנכונה: הגדלת ARPU, לא acquisition.**
-כשכבר 70% קנו, מה שחשוב הוא להגדיל **כמה** כל שחקן משלם. ממוצע ההוצאה ($24.36) יכול לעלות ל-$35+ עם Bundles נכונים.
-
-**3. 173 שחקנים לא-משלמים — היעד לפעולה ממוקדת.**
-"Sleeper VIPs" (Default עם מעורבות גבוהה, $0 הוצאה) הם בעלי ה-ROI הגבוה ביותר.
-
-**אסטרטגיות:**
-- **Welcome Bonus:** 15% הנחה על רכישה ראשונה, פג תוקף 48 שעות לאחר ההצטרפות
-- **Day-7 ו-Day-28:** הודעה אוטומטית לשחקנים שביקרו בחנות אך לא קנו
-- **Sleeper VIP DM:** פנייה אישית ל-Default players עם הצבעות + שעות גבוהים
+| Finding | Recommended Action |
+|:---|:---|
+| Same-day converters are the largest single group | Launch a **"Welcome Bonus"** — 15% off for 48 hours after account creation |
+| 70%+ of eventual buyers convert within 30 days | Automated Discord/email nudge at **Day 7** and **Day 28** for webstore visitors with 0 purchases |
+| Legend-rank players convert fastest | Pre-launch teasers targeting Legend aspirants accelerate conversion |
+| >1-year tail is small but reachable | One annual **"Comeback Event"** (double-vote rewards, discounted ranks) systematically monetises dormant accounts |
 
 ---
 
-## KPI 5 — שחקנים מובילים: "הלווייתנים" (Top Spenders)
+## Part B — Targeted Segments: Sleeper VIPs & Cart Abandonment
 
-### מה הוא מודד?
-KPI זה מדרג את כל השחקנים לפי הוצאה מצטברת ומציג את 10 המובילים יחד עם מדדי מעורבות (שעות משחק, הצבעות, עסקאות).
+**Question:** Which players can be moved with a single targeted action?
 
-### תרומה עסקית
-לווייתנים הם לקוחות ה-VIP של השרת. הם מייצגים נתח לא-פרופורציונלי מההכנסה ומשמשים כ**שגרירי מותג** טבעיים.
+### Segment 1 — Sleeper VIPs
+Default-rank players with zero spend but top-30% votes **and** playtime. They love the server but have never purchased.
 
-### תוצאות — 10 השחקנים המובילים:
+- Identified via: `rank = 'Default' AND total_spent = 0 AND votes ≥ P70 AND playtime ≥ P70`
 
-| # | שם משתמש | Rank | הוצאה | שעות | הצבעות |
-|:---:|:---|:---|---:|---:|---:|
-| 1 | UltraBane | Legend | $100.00 | 328.5 | 67 |
-| 1 | FireMaster | Legend | $100.00 | 523.8 | 189 |
-| 3 | xXFrostRaiderXx | Legend | $90.00 | 373.3 | 65 |
-| 4 | xXUltraWarriorXx | Legend | $75.00 | 56.7 | 2 |
-| 4 | xXTurboMasterXx | Legend | $75.00 | 184.5 | 58 |
-| 4 | CreeperEagle56 | Legend | $75.00 | 285.3 | 49 |
-| **7** | **StarPro50** | **Default** | **$70.00** | 69.7 | 21 |
-| 8 | PixelWraith | MVP | $65.00 | 5.8 | 24 |
-| 8 | xXGoldWarriorXx | MVP | $65.00 | 454.4 | 146 |
-| 10 | EnderBane | Legend | $65.00 | 11.7 | 17 |
+**Action:** Send a personalised Discord DM offering a **"Loyal Player Bundle"** (VIP Rank + Legendary Crate Key) at a 40% discount, valid 72 hours.
 
-### תובנות ואסטרטגיות:
+### Segment 2 — Cart Abandoners
 
-**1. תקרת ההוצאה היא $100 — Legend rank.**
-אין מוצר שמאפשר להוציא יותר. **פתרון: דרגת "Elite" ב-$80** מעל Legend עם הטבות בלעדיות. זה פותח מסלול חדש ללווייתנים.
+| Rank | Total Abandonments | Avg / Player |
+|:---|---:|---:|
+| Default | 1,061 | 2.20 |
+| Legend | highest avg | 2.44 |
+| MVP | — | — |
+| VIP | — | — |
 
-**2. StarPro50 — Default rank עם $70 הוצאה!**
-שחקן Default ברמת Whale שקנה $70 מבלי לשדרג דרגה. Perks ו-Gkits מדברים אליו — לא Ranks. **פנה אישית עם הצעת VIP ב-$10.**
+**Key Findings:**
 
-**3. FireMaster — 523 שעות ו-$100 הוצאה.**
-גייס אותו כשגריר רשמי: כינוי בלעדי, ערוץ Discord פרטי, גישה ראשונה למוצרים חדשים.
-
-**אסטרטגיות:**
-- **"Elite" Rank ב-$80:** פותח מסלול הכנסה מעל $100
-- **Whale VIP Club:** קהילה פרטית לטופ-10 עם גישה ל-Beta ומוצרים מוגבלים ראשון
-- **Personal Outreach:** DM אישי מצוות השרת לכל אחד מהטופ-10
+| Finding | Recommended Action |
+|:---|:---|
+| Default players generate the most total abandonments | In-game `/msg` or Discord bot 24 h after abandoned session: *"You left [item] behind!"* |
+| Legend players have the highest per-player abandonment | Show **exclusivity** triggers, not discounts: *"Legend-exclusive bundle"* or *"Only 3 left at this price"* |
+| Repeat abandoners (≥4 events) are a high-value micro-segment | Direct, personalised staff outreach — converts far better than automated blasts |
 
 ---
 
-## KPI 6 — ערך דרגה (Rank Value)
+## Part C — Server Hype: Engagement vs. Revenue Correlation
 
-### מה הוא מודד?
-KPI זה מקבץ שחקנים לפי דרגתם ומחשב סטטיסטיקות הוצאה: ממוצע, מינימום, מקסימום וסכום כולל לכל דרגה.
+**Question:** Do votes and playtime correlate with spending?
 
-### תרומה עסקית
-הבנת ערך כל דרגה חיונית לתמחור, לבניית מסלולי שדרוג ולזיהוי היכן יש הכי הרבה לרוויח.
+| Metric | Pearson r | p-value | Significant? |
+|:---|---:|---:|:---|
+| Total Votes → Revenue | positive | < 0.05 | Yes |
+| Total Playtime → Revenue | weaker positive | < 0.05 | Yes |
 
-### תוצאות:
+**Key Findings:**
 
-| דרגה | שחקנים | ממוצע הוצאה | מקסימום | **סה"כ הכנסה** |
-|:---|---:|---:|---:|---:|
-| **Default** | **482** | $12.60 | $70.00 | **$6,072.50** |
-| Legend | 34 | $60.66 | $100.00 | $2,062.50 |
-| MVP | 31 | $36.13 | $65.00 | $1,120.00 |
-| VIP | 33 | $19.92 | $45.00 | $657.50 |
-
-### תובנות ואסטרטגיות:
-
-**1. דרגת Default מייצרת את ההכנסה הכוללת הגדולה ביותר — $6,072.50!**
-482 שחקנים × $12.60 ממוצע = $6,072.50. זהו הממצא הנגד-אינטואיטיבי הגדול של כל הניתוח. **דרגת Default היא עמוד השדרה הפיננסי של השרת.**
-
-**2. Legend players — ARPU גבוה ($60.66) אך מספר קטן (34).**
-הפלח המצומצם של שחקנים עשירים. ה-Legend pipeline הוא מקור הכנסה קריטי.
-
-**3. VIP ו-MVP — "ה-Middle Market" — $20 ו-$36 בממוצע.**
-אין להם אינסנטיב ברור לשדרג שוב. **Bundle MVP→Legend ב-$15 הפרש** הוא הצעה שעובדת.
-
-**אסטרטגיות:**
-- **Default Campaign:** *"שיחקת מעל 100 שעות? מגיע לך VIP. השג אותה ב-$10 בלבד היום."*
-- **Rank Up Ladder:** הצג בחנות: "אתה VIP. Legend רק $40 משם" — קרבה למטרה מגבירה המרה
-- **Elite Rank:** כשלווייתנים מגיעים לתקרת $100, Elite ב-$80 extra פותח מסלול חדש
+| Finding | Recommended Action |
+|:---|:---|
+| Votes correlate positively with revenue | Budget 1–2 staff hours/month on **"Vote Drive"** weekends with double-vote rewards |
+| High-playtime ≠ high-spender (grinders prefer earning) | Target **mid-range playtime players** (50–300 hrs) with purchase nudges |
+| Legend players dominate the high-vote + high-spend quadrant | Recruit top 10 Legend spenders as **brand ambassadors** (custom tag, private Discord) |
 
 ---
 
-## סיכום: 5 הממצאים הגדולים
+## Part D — Financials: Revenue vs. Abandoned Cart
 
-| # | ממצא | משמעות |
-|:---:|:---|:---|
-| 1 | ❗ ערך עגלות ננטשות ($13,125) **> הכנסה ממשית ($9,912)** | שחזור עגלות = הזדמנות #1 |
-| 2 | ❗ Perks ($3,355) מרוויחות **יותר מ-Ranks ($2,830)** | שווק Perks, לא רק Ranks |
-| 3 | ❗ Default rank מייצר $6,072 — **הכי הרבה מכל דרגה** | Default players = הלב הפיננסי |
-| 4 | ✅ שיעור המרה 70.2% — **3× מעל ממוצע התעשייה** | מקד ב-ARPU, לא ב-acquisition |
-| 5 | ❗ תקרת מחיר $100 — **אין דרגה מעל Legend** | צור "Elite" לפתיחת מסלול חדש |
+**Question:** What is the financial scale of cart abandonment?
 
-## פעולות מיידיות לפי עדיפות
+| Item | Value |
+|:---|---:|
+| Actual Revenue | $9,912.50 |
+| Abandoned Cart Value | $13,125.00 |
+| Revenue Capture Rate | 43.1% |
+| 30% Cart Recovery | +$3,937 |
+| 50% Cart Recovery | +$6,562 |
 
-| עדיפות | פעולה | השפעה צפויה |
-|:---:|:---|:---|
-| 🔴 דחוף | Cart Recovery Bot (3-step drip) | +$3,937–$6,562 |
-| 🔴 דחוף | "Elite" Rank ב-$80 | +$1,200–$2,500 |
-| 🟡 גבוה | Welcome Bonus (48h coupon 15%) | +15-20% conv. חדשים |
-| 🟡 גבוה | Perk Bundle (Fix all + Fly + Max Land) | +ARPU Default |
-| 🟢 בינוני | Ambassador Program לטופ-10 Whales | WoM acquisition |
-| 🟢 בינוני | Seasonal Crate Key ($7.50) | +volume Crate keys |
+**Cart Recovery Drip (3-step):**
+
+```
+Day 0:  Player adds Tier4 Sellwand ($12) and abandons cart
+Day 1:  Info + value  — "You left Tier4 behind — it boosts income by 40% automatically."
+Day 3:  FOMO          — "⚠ Only 5 slots at this price. 67 players bought this week."
+Day 7:  One-time offer — "🎁 Exclusive 10% off | Code: COMEBACK10 | Expires in 24h"
+```
+
+> **Iron rule:** Never offer a discount before trying FOMO. Players who respond to scarcity don't need a discount — and early discounts train players to wait.
 
 ---
 
-*מסמך זה נוצר מתוך `behaviour.ipynb` על בסיס `craftiverse.db`.*
-*לאסטרטגיה המלאה ראה `SERVER_STRATEGY.md`.*
+## Part E — Growth: Category Performance & ARPU Opportunities
+
+**Question:** Where should new products be added to maximise ARPU?
+
+| Category | Revenue | Units Sold | Revenue / Buyer |
+|:---|---:|---:|---:|
+| **Perks** | **$3,355** | 145 | highest ARPU |
+| Ranks | $2,830 | 99 | — |
+| Sellwands | $1,235 | 150 | — |
+| Crate keys | $1,212.50 | 134 | — |
+| Gkits | $1,110 | 111 | — |
+| Tags | $170 | 34 | lowest |
+
+### Suggested New Products
+
+| Category | Product | Price | Rationale |
+|:---|:---|:---|:---|
+| Ranks | **Elite Rank** (above Legend) | $80 | Opens new ceiling; pulls Legend buyers up |
+| Perks | **XP Booster** (×2 XP, 7 days) | $12 | Recurring weekly repurchase |
+| Gkits | **Skyblock / Factions Starter Kit** | $8–12 | Game-mode specificity lifts conversion |
+| Crate keys | **Seasonal Key** (Summer/Halloween) | $7.50 | Fills gap between Common ($5) and Legendary ($10) |
+| Tags | **Custom Tag** (staff-reviewed) | $15 | Near-zero cost, very high perceived value |
+| Sellwands | **Tier5 Sellwand** (×1.5 bonus) | $25 | Natural upsell for 38 Tier4 owners |
+
+---
+
+## Revenue Potential Summary
+
+| Strategy | Estimated Annual Uplift |
+|:---|---:|
+| Cart Recovery (30% conversion) | +$3,937 |
+| Sleeper VIP Activation | +$800–$1,500 |
+| Welcome Flow (15% coupon) | +$800–$1,200 |
+| Bundle Strategy (AOV ×1.5) | +$1,500–$2,500 |
+| Elite Rank (15 sales × $80) | +$1,200 |
+| Seasonal Keys + New Products | +$700–$1,000 |
+| **Total Potential** | **+$8,937–$11,337** |
+| Current Revenue | $9,912.50 |
+| **Full Potential (~×2)** | **~$19,000–$21,000** |
+
+---
+
+## Setup & Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+**`requirements.txt`** covers: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`
+
+Open `behaviour.ipynb` in Jupyter and run all cells sequentially. The notebook:
+1. Connects to `craftiverse.db` and loads both tables
+2. Parses all JSON columns into flat fact tables
+3. Executes all 6 KPI queries via `kpi_cheatsheet.sql`
+4. Generates Parts A–E charts (saved as PNG)
+5. Exports `dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv` for PowerBI
+
+### PowerBI Import
+1. **Get Data → Text/CSV** for each export file
+2. Relate `dim_players[player_id]` → `fact_purchases[player_id]` (1:many)
+3. Relate `dim_players[player_id]` → `fact_abandoned_carts[player_id]` (1:many)
+4. Mark `dim_players` as the Dimension table
+5. Create a Date table linked to `first_join_date` and `last_purchase_date`
+
+---
+
+*Source: `behaviour.ipynb` | Database: `craftiverse.db` | Full strategy: `SERVER_STRATEGY.md`*
