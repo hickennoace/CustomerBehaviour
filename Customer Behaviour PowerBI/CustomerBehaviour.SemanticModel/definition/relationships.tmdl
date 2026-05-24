@@ -1,0 +1,18 @@
+relationship fact_purchases_to_dim_players
+	fromColumn: fact_purchases.player_id
+	toColumn: dim_players.player_id
+
+relationship fact_abandoned_carts_to_dim_players
+	fromColumn: fact_abandoned_carts.player_id
+	toColumn: dim_players.player_id
+
+relationship e456a4ed-1d31-49cc-8edf-cbc09f2a1f5a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_players.first_join_date
+	toColumn: LocalDateTable_e501f156-5231-4d43-8ac1-c68561811e7a.Date
+
+relationship cd9b56f1-4291-4743-bdbe-eadf369cb34b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_players.last_purchase_date
+	toColumn: LocalDateTable_a89fd6ef-adcc-413b-8aec-4b4577424a17.Date
+

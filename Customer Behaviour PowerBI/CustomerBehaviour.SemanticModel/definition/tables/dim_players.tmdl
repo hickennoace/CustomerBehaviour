@@ -1,0 +1,213 @@
+table dim_players
+	lineageTag: a0000001-0000-0000-0000-000000000000
+
+	measure 'Avg Votes Per Person' = DIVIDE(SUM(dim_players[total_votes]), DISTINCTCOUNT(dim_players[player_id]), 0)
+		formatString: #,0.00
+		displayFolder: Per-Person Averages
+		lineageTag: a0000001-0014-0000-0000-000000000000
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Avg Spend Per Person (ARPU)' = AVERAGE(dim_players[total_spent_dollars])
+		formatString: \$#,0.00
+		displayFolder: Per-Person Averages
+		lineageTag: a0000001-0015-0000-0000-000000000000
+
+	measure 'Avg Transactions Per Person' = DIVIDE(SUM(dim_players[total_transactions]), DISTINCTCOUNT(dim_players[player_id]), 0)
+		formatString: #,0.00
+		displayFolder: Per-Person Averages
+		lineageTag: a0000001-0016-0000-0000-000000000000
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a0000001-0001-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column username
+		dataType: string
+		lineageTag: a0000001-0002-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: username
+
+		annotation SummarizationSetBy = Automatic
+
+	column uuid
+		dataType: string
+		lineageTag: a0000001-0003-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: uuid
+
+		annotation SummarizationSetBy = Automatic
+
+	column rank
+		dataType: string
+		lineageTag: a0000001-0004-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_join_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: a0000001-0005-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: first_join_date
+
+		variation Variation
+			isDefault
+			relationship: e456a4ed-1d31-49cc-8edf-cbc09f2a1f5a
+			defaultHierarchy: LocalDateTable_e501f156-5231-4d43-8ac1-c68561811e7a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column total_playtime_hours
+		dataType: double
+		lineageTag: a0000001-0006-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: total_playtime_hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_spent_dollars
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: a0000001-0007-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: total_spent_dollars
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_votes
+		dataType: int64
+		formatString: 0
+		lineageTag: a0000001-0008-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: total_votes
+
+		annotation SummarizationSetBy = Automatic
+
+	column webstore_visits
+		dataType: int64
+		formatString: 0
+		lineageTag: a0000001-0009-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: webstore_visits
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_purchase_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: a0000001-000a-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: last_purchase_date
+
+		variation Variation
+			isDefault
+			relationship: cd9b56f1-4291-4743-bdbe-eadf369cb34b
+			defaultHierarchy: LocalDateTable_a89fd6ef-adcc-413b-8aec-4b4577424a17.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column total_transactions
+		dataType: int64
+		formatString: 0
+		lineageTag: a0000001-000b-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: total_transactions
+
+		annotation SummarizationSetBy = Automatic
+
+	column cart_abandonments
+		dataType: int64
+		formatString: 0
+		lineageTag: a0000001-000c-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: cart_abandonments
+
+		annotation SummarizationSetBy = Automatic
+
+	column most_expensive_item_purchased
+		dataType: string
+		lineageTag: a0000001-000d-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: most_expensive_item_purchased
+
+		annotation SummarizationSetBy = Automatic
+
+	column cart_total_value
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: a0000001-000e-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: cart_total_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_payer
+		dataType: boolean
+		lineageTag: a0000001-000f-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: is_payer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Playtime Bucket' = SWITCH(TRUE(), dim_players[total_playtime_hours] < 10, "0-10 h (Tourist)", dim_players[total_playtime_hours] < 50, "10-50 h (Casual)", dim_players[total_playtime_hours] < 200, "50-200 h (Regular)", dim_players[total_playtime_hours] < 500, "200-500 h (Core)", "500 h+ (Hardcore)")
+		dataType: string
+		lineageTag: a0000001-0010-0000-0000-000000000000
+		summarizeBy: none
+		sortByColumn: 'Playtime Bucket Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Playtime Bucket Sort' = SWITCH(TRUE(), dim_players[total_playtime_hours] < 10, 1, dim_players[total_playtime_hours] < 50, 2, dim_players[total_playtime_hours] < 200, 3, dim_players[total_playtime_hours] < 500, 4, 5)
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a0000001-0011-0000-0000-000000000000
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cart Value Bucket' = SWITCH(TRUE(), dim_players[cart_total_value] = 0, "Empty", dim_players[cart_total_value] < 10, "Under $10", dim_players[cart_total_value] < 25, "$10-25", dim_players[cart_total_value] < 50, "$25-50", "$50+")
+		dataType: string
+		lineageTag: a0000001-0012-0000-0000-000000000000
+		summarizeBy: none
+		sortByColumn: 'Cart Value Bucket Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cart Value Bucket Sort' = SWITCH(TRUE(), dim_players[cart_total_value] = 0, 1, dim_players[cart_total_value] < 10, 2, dim_players[cart_total_value] < 25, 3, dim_players[cart_total_value] < 50, 4, 5)
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a0000001-0013-0000-0000-000000000000
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_players = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\danie\PycharmProjects\CustomerBehaviour\dim_players.csv"),[Delimiter=",", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"player_id", Int64.Type}, {"username", type text}, {"uuid", type text}, {"rank", type text}, {"first_join_date", type date}, {"total_playtime_hours", type number}, {"total_spent_dollars", type number}, {"total_votes", Int64.Type}, {"webstore_visits", Int64.Type}, {"last_purchase_date", type date}, {"total_transactions", Int64.Type}, {"cart_abandonments", Int64.Type}, {"most_expensive_item_purchased", type text}, {"cart_total_value", type number}, {"is_payer", type logical}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

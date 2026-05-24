@@ -1,0 +1,7 @@
+DEFINE
+    MEASURE 'fact_purchases'[Avg Playtime (Hours)] = AVERAGE(dim_players[total_playtime_hours])
+
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Avg Playtime (Hours)", [Avg Playtime (Hours)]
+    )

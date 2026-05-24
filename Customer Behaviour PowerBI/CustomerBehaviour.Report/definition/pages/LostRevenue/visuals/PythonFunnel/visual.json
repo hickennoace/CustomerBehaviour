@@ -1,0 +1,156 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "PythonFunnel",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 400,
+    "height": 439.00757498949929,
+    "width": 770.04301667077038,
+    "tabOrder": 400
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_players"
+                    }
+                  },
+                  "Property": "player_id"
+                }
+              },
+              "queryRef": "dim_players.player_id",
+              "nativeQueryRef": "player_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_players"
+                    }
+                  },
+                  "Property": "rank"
+                }
+              },
+              "queryRef": "dim_players.rank",
+              "nativeQueryRef": "rank"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "webstore_visits"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.webstore_visits)",
+              "nativeQueryRef": "webstore_visits",
+              "displayName": "webstore_visits"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "cart_abandonments"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.cart_abandonments)",
+              "nativeQueryRef": "cart_abandonments",
+              "displayName": "cart_abandonments"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "total_transactions"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.total_transactions)",
+              "nativeQueryRef": "total_transactions",
+              "displayName": "total_transactions"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport matplotlib.patches as mpatches\nimport matplotlib.ticker as mticker\n\n# שים לב: הקוד מניח שיש לך כבר משתנה בשם dataset עם הנתונים\ndf = dataset.copy()\n\n# ── Prep ──────────────────────────────────────────────────────────────────────\nfor c in [\"webstore_visits\", \"cart_abandonments\", \"total_transactions\"]:\n    df[c] = pd.to_numeric(df[c], errors=\"coerce\").fillna(0)\n\nagg = (\n    df.groupby(\"rank\", as_index=False)\n    .agg(\n        visited   = (\"webstore_visits\",    lambda s: (s > 0).sum()),\n        carted    = (\"cart_abandonments\",  lambda s: (s > 0).sum()),\n        purchased = (\"total_transactions\", lambda s: (s > 0).sum()),\n    )\n)\n\n# Purchased implies carted; cap both at visited\nagg[\"carted\"]    = np.minimum(agg[\"carted\"] + agg[\"purchased\"], agg[\"visited\"])\nagg[\"purchased\"] = np.minimum(agg[\"purchased\"], agg[\"carted\"])\n\n# All-Ranks summary row\nagg = pd.concat([agg, pd.DataFrame([{\n    \"rank\": \"All Ranks\",\n    \"visited\":   agg[\"visited\"].sum(),\n    \"carted\":    agg[\"carted\"].sum(),\n    \"purchased\": agg[\"purchased\"].sum(),\n}])], ignore_index=True)\n\nrank_order = [\"Default\", \"VIP\", \"MVP\", \"Elite\", \"Legend\", \"Mythic\", \"All Ranks\"]\nagg[\"rank\"] = pd.Categorical(agg[\"rank\"], categories=rank_order, ordered=True)\nagg = agg.sort_values(\"rank\").dropna(subset=[\"rank\"]).reset_index(drop=True)\nn = len(agg)\n\n# Stacked % segments — 100 % = visitors per rank\nsafe = agg[\"visited\"].replace(0, np.nan)\nagg[\"pct_purch\"] = (agg[\"purchased\"]                 / safe * 100).fillna(0)\nagg[\"pct_aband\"] = ((agg[\"carted\"] - agg[\"purchased\"]) / safe * 100).fillna(0)\nagg[\"pct_nocrt\"] = ((agg[\"visited\"] - agg[\"carted\"])   / safe * 100).fillna(0)\n\n# Conversion KPIs\nagg[\"cr_v2c\"] = np.where(agg[\"visited\"] > 0, agg[\"carted\"]    / agg[\"visited\"] * 100, 0)\nagg[\"cr_c2p\"] = np.where(agg[\"carted\"]  > 0, agg[\"purchased\"] / agg[\"carted\"]  * 100, 0)\nagg[\"cr_v2p\"] = np.where(agg[\"visited\"] > 0, agg[\"purchased\"] / agg[\"visited\"] * 100, 0)\n\n# ── Palette ───────────────────────────────────────────────────────────────────\nBG     = \"#0d1117\"\nPANEL  = \"#161b22\"\nPURCH  = \"#a6ff00\"   # neon lime  — converted revenue\nABAND  = \"#ff6b35\"   # hot orange — lost revenue\nNOCRT  = \"#253048\"   # dark slate — browsed only\nTEXT   = \"#e6e6e6\"\nDIM    = \"#8b949e\"\nACCENT = \"#00d4ff\"\n\n# ── Figure ────────────────────────────────────────────────────────────────────\nplt.style.use(\"dark_background\")\nfig, ax = plt.subplots(figsize=(13, max(n * 1.35 + 1.8, 6)), facecolor=BG)\nax.set_facecolor(PANEL)\ny, BAR_H = np.arange(n), 0.55\n\nax.barh(y, agg[\"pct_nocrt\"], height=BAR_H, color=NOCRT, edgecolor=BG, linewidth=0.8, zorder=2)\nax.barh(y, agg[\"pct_aband\"], height=BAR_H, color=ABAND, edgecolor=BG, linewidth=0.8, zorder=2,\n        left=agg[\"pct_nocrt\"])\nax.barh(y, agg[\"pct_purch\"], height=BAR_H, color=PURCH, edgecolor=BG, linewidth=0.8, zorder=2,\n        left=agg[\"pct_nocrt\"] + agg[\"pct_aband\"])\n\n# Dashed separator before All-Ranks row\nall_idx = agg.index[agg[\"rank\"].astype(str) == \"All Ranks\"]\nif len(all_idx):\n    ax.axhline(all_idx[0] - 0.5, color=\"#2a3548\", linewidth=1.5, linestyle=\"--\", zorder=1)\n\n# ── Annotations ───────────────────────────────────────────────────────────────\nfor i, row in agg.iterrows():\n    is_total = str(row[\"rank\"]) == \"All Ranks\"\n    fs = 8 if is_total else 8.5\n    nc, ab, pu = row[\"pct_nocrt\"], row[\"pct_aband\"], row[\"pct_purch\"]\n\n    def _lbl(x0, w, count, fg):\n        if w > 7:\n            ax.text(x0 + w / 2, i, f\"{int(count):,}\",\n                    va=\"center\", ha=\"center\", fontsize=fs,\n                    color=fg, weight=\"bold\", zorder=3)\n\n    _lbl(0,       nc, row[\"visited\"] - row[\"carted\"],    DIM)\n    _lbl(nc,      ab, row[\"carted\"]  - row[\"purchased\"], \"#ffffff\")\n    _lbl(nc + ab, pu, row[\"purchased\"],                  BG)\n\n    # Visitor count left of bar\n    ax.text(-2, i, f\"{int(row[''visited'']):,}\",\n            va=\"center\", ha=\"right\", fontsize=fs,\n            color=ACCENT if is_total else DIM)\n\n    # KPI block right of bar\n    ax.text(\n        103, i,\n        f\"V→C: {row[''cr_v2c'']:5.1f}%  │  C→P: {row[''cr_c2p'']:5.1f}%  │  Net: {row[''cr_v2p'']:5.1f}%\",\n        va=\"center\", ha=\"left\", fontsize=fs, color=DIM, family=\"monospace\",\n    )\n\n# ── Axes & grid ───────────────────────────────────────────────────────────────\nax.set_yticks(y)\nax.set_yticklabels(agg[\"rank\"].astype(str), fontsize=11, weight=\"bold\", color=TEXT)\nax.invert_yaxis()\nax.set_xlim(-18, 195)\nax.xaxis.set_major_formatter(mticker.FormatStrFormatter(\"%.0f%%\"))\nax.tick_params(axis=\"x\", colors=DIM, labelsize=9)\nax.tick_params(axis=\"y\", length=0)\n\nfor sp in [\"top\", \"right\", \"left\"]:\n    ax.spines[sp].set_visible(False)\nax.spines[\"bottom\"].set_color(\"#2a3548\")\nax.grid(axis=\"x\", color=\"#1c2230\", linewidth=0.5, linestyle=\"--\", zorder=0)\nax.set_axisbelow(True)\nax.set_xlabel(\"% of store visitors per rank  (player counts shown inside each segment)\",\n              color=DIM, fontsize=9)\n\n# ── Title, subtitle & legend ──────────────────────────────────────────────────\nax.set_title(\"Cart Abandonment Funnel — by Rank\",\n             fontsize=15, weight=\"bold\", color=\"#ffffff\", pad=16, loc=\"left\")\nax.text(0, 1.02,\n        \"Each bar = 100 % of visitors  ·  KPIs: Visit→Cart  ·  Cart→Buy  ·  Net conversion\",\n        transform=ax.transAxes, fontsize=8.5, color=DIM, va=\"bottom\")\n\nax.legend(\n    handles=[\n        mpatches.Patch(color=PURCH, label=\"Purchased\"),\n        mpatches.Patch(color=ABAND, label=\"Abandoned cart\"),\n        mpatches.Patch(color=NOCRT, label=\"Browsed, no cart\"),\n    ],\n    frameon=False, labelcolor=TEXT, fontsize=9.5, ncol=3,\n    loc=\"lower center\", bbox_to_anchor=(0.40, -0.15),\n)\n\nplt.tight_layout(pad=1.5)\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cart Abandonment Funnel by Rank'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

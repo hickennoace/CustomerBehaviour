@@ -1,0 +1,4 @@
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Avg Playtime (Hours)", [Avg Playtime (Hours)]
+    )

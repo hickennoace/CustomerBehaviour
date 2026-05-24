@@ -1,0 +1,169 @@
+{
+  "name": "Craftiverse Dark",
+  "dataColors": [
+    "#00D4FF",
+    "#A6FF00",
+    "#FF3DCB",
+    "#FF8A00",
+    "#FF4D4D",
+    "#7A8696",
+    "#5EE6FF",
+    "#C8FF6B"
+  ],
+  "background": "#0D1117",
+  "foreground": "#F0F6FC",
+  "tableAccent": "#00D4FF",
+  "good": "#A6FF00",
+  "neutral": "#FF8A00",
+  "bad": "#FF4D4D",
+  "maximum": "#A6FF00",
+  "center": "#FF8A00",
+  "minimum": "#FF4D4D",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#161B22"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#2A2F3A"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#F0F6FC"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#161B22"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 14,
+            "bold": true
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#9DA7B3"
+              }
+            },
+            "fontSize": 10
+          }
+        ],
+        "categoryAxis": [
+          {
+            "color": {
+              "solid": {
+                "color": "#9DA7B3"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#2A2F3A"
+              }
+            },
+            "gridlineThickness": 1
+          }
+        ],
+        "valueAxis": [
+          {
+            "color": {
+              "solid": {
+                "color": "#9DA7B3"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#2A2F3A"
+              }
+            },
+            "gridlineThickness": 1
+          }
+        ],
+        "legend": [
+          {
+            "color": {
+              "solid": {
+                "color": "#9DA7B3"
+              }
+            },
+            "fontSize": 10
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#0D1117"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "categoryLabels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#9DA7B3"
+              }
+            },
+            "fontSize": 11
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#00D4FF"
+              }
+            },
+            "fontSize": 36
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#161B22"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+DEFINE
+    MEASURE 'dim_players'[Avg Votes Per Person] = DIVIDE(SUM(dim_players[total_votes]), DISTINCTCOUNT(dim_players[player_id]), 0)
+    MEASURE 'dim_players'[Avg Spend Per Person (ARPU)] = AVERAGE(dim_players[total_spent_dollars])
+    MEASURE 'dim_players'[Avg Transactions Per Person] = DIVIDE(SUM(dim_players[total_transactions]), DISTINCTCOUNT(dim_players[player_id]), 0)
+    MEASURE 'fact_purchases'[Total Revenue] = SUM(fact_purchases[price])
+    MEASURE 'fact_purchases'[Total Players] = DISTINCTCOUNT(dim_players[player_id])
+    MEASURE 'fact_purchases'[Paying Players] = CALCULATE(DISTINCTCOUNT(dim_players[player_id]), dim_players[is_payer] = TRUE())
+    MEASURE 'fact_purchases'[Paying Rate %] = DIVIDE([Paying Players], [Total Players], 0)
+    MEASURE 'fact_purchases'[ARPU (All Players)] = DIVIDE([Total Revenue], DISTINCTCOUNT(dim_players[player_id]))
+    MEASURE 'fact_purchases'[ARPPU (Paying Players Only)] = DIVIDE([Total Revenue], CALCULATE(DISTINCTCOUNT(dim_players[player_id]), dim_players[is_payer] = TRUE()))
+    MEASURE 'fact_purchases'[Cart Items Abandoned] = COUNTROWS(fact_abandoned_carts)
+    MEASURE 'fact_purchases'[Cart Items Total] = [Cart Items Abandoned] + COUNTROWS(fact_purchases)
+    MEASURE 'fact_purchases'[Cart Abandonment Rate %] = DIVIDE([Cart Items Abandoned], [Cart Items Total], 0)
+    MEASURE 'fact_purchases'[Lost Revenue (Abandoned $)] = SUM(fact_abandoned_carts[price])
+    MEASURE 'fact_purchases'[Recoverable Revenue ($)] = [Lost Revenue (Abandoned $)] * [First-Purchase Conversion Rate %]
+    MEASURE 'fact_purchases'[Crate Keys] = CALCULATE([Total Revenue], fact_purchases[category] = "Crate keys")
+    MEASURE 'fact_purchases'[Ranks] = CALCULATE([Total Revenue], fact_purchases[category] = "Ranks")
+    MEASURE 'fact_purchases'[Perks] = CALCULATE([Total Revenue], fact_purchases[category] = "Perks")
+    MEASURE 'fact_purchases'[Sellwands] = CALCULATE([Total Revenue], fact_purchases[category] = "Sellwands")
+    MEASURE 'fact_purchases'[Top Category by Revenue] = VAR Ranked = ADDCOLUMNS(VALUES(fact_purchases[category]), "@Rev", [Total Revenue])
+VAR TopRow = TOPN(1, Ranked, [@Rev], DESC)
+RETURN CONCATENATEX(TopRow, fact_purchases[category] & " ($" & FORMAT([@Rev], "#,0") & ")")
+    MEASURE 'fact_purchases'[Default Players (Visited Store)] = CALCULATE(DISTINCTCOUNT(dim_players[player_id]), dim_players[rank] = "Default", dim_players[webstore_visits] > 0)
+    MEASURE 'fact_purchases'[Default Players (Converted)] = CALCULATE(DISTINCTCOUNT(dim_players[player_id]), dim_players[rank] = "Default", dim_players[total_transactions] >= 1)
+    MEASURE 'fact_purchases'[First-Purchase Conversion Rate %] = DIVIDE([Default Players (Converted)], [Default Players (Visited Store)], 0)
+    MEASURE 'fact_purchases'[Avg Playtime (Hours)] = AVERAGE(dim_players[total_playtime_hours])
+    MEASURE 'fact_purchases'[Whale Threshold ($)] = PERCENTILEX.INC(FILTER(dim_players, dim_players[is_payer] = TRUE()), dim_players[total_spent_dollars], 0.9)
+    MEASURE 'fact_purchases'[Whale Revenue Share %] = VAR Threshold = [Whale Threshold ($)]
+VAR WhaleRev = CALCULATE([Total Revenue], FILTER(dim_players, dim_players[total_spent_dollars] >= Threshold))
+RETURN DIVIDE(WhaleRev, [Total Revenue], 0)
+
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Avg Votes Per Person", [Avg Votes Per Person],
+        "Avg Spend Per Person (ARPU)", [Avg Spend Per Person (ARPU)],
+        "Avg Transactions Per Person", [Avg Transactions Per Person],
+        "Total Revenue", [Total Revenue],
+        "Total Players", [Total Players],
+        "Paying Players", [Paying Players],
+        "Paying Rate %", [Paying Rate %],
+        "ARPU (All Players)", [ARPU (All Players)],
+        "ARPPU (Paying Players Only)", [ARPPU (Paying Players Only)],
+        "Cart Items Abandoned", [Cart Items Abandoned],
+        "Cart Items Total", [Cart Items Total],
+        "Cart Abandonment Rate %", [Cart Abandonment Rate %],
+        "Lost Revenue (Abandoned $)", [Lost Revenue (Abandoned $)],
+        "Recoverable Revenue ($)", [Recoverable Revenue ($)],
+        "Crate Keys", [Crate Keys],
+        "Ranks", [Ranks],
+        "Perks", [Perks],
+        "Sellwands", [Sellwands],
+        "Top Category by Revenue", [Top Category by Revenue],
+        "Default Players (Visited Store)", [Default Players (Visited Store)],
+        "Default Players (Converted)", [Default Players (Converted)],
+        "First-Purchase Conversion Rate %", [First-Purchase Conversion Rate %],
+        "Avg Playtime (Hours)", [Avg Playtime (Hours)],
+        "Whale Threshold ($)", [Whale Threshold ($)],
+        "Whale Revenue Share %", [Whale Revenue Share %]
+    )

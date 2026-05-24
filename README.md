@@ -3,7 +3,7 @@
 > **Network:** Craftiverse Factions & Skyblock  
 > **Analyst:** Daniel Shaulov  
 > **Date:** 2026-05-23  
-> **Stack:** Python · SQLite · Pandas · Matplotlib · Seaborn
+> **Stack:** Python · SQLite · Pandas · Matplotlib · Seaborn · Power BI
 
 ---
 
@@ -28,7 +28,7 @@ This project analyses the purchase behaviour, cart abandonment patterns, and eng
 
 ## Power BI Dashboard
 
-An interactive 3-page dashboard built on the same dataset, designed for live presentation.
+An interactive 3-page dashboard built on the same dataset, designed for live presentation. All dashboard files live in the `Customer Behaviour PowerBI/` folder.
 
 | Page | Thesis | Key Visual |
 |:---|:---|:---|
@@ -36,16 +36,45 @@ An interactive 3-page dashboard built on the same dataset, designed for live pre
 | **Player Psychology** | Engagement weakly predicts spend | Python correlation heatmap + playtime-vs-spend scatter |
 | **Lost Revenue Analysis** | $13 K sits in abandoned carts | Python funnel-by-rank + top abandoned items |
 
-**To open:** Double-click `CustomerBehaviour.pbip` in Power BI Desktop (June 2025+).  
-**Python visuals require:** `pip install matplotlib seaborn pandas numpy` in the Python interpreter configured under *File → Options → Python scripting*.
+### How to open
 
-### Dashboard files
+1. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (June 2025 release or later).
+2. Double-click `Customer Behaviour PowerBI/CustomerBehaviour.pbip` — Power BI opens the full report with all three pages and the data model pre-loaded.
+3. If prompted for a data source, point it at the CSV files in the project root (`dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv`).
 
-| File | Purpose |
-|:---|:---|
-| `DAX_MEASURES.md` | All DAX measures with formulas and business logic |
-| `POWERBI_PYTHON_VISUALS.md` | Python scripts for the heatmap and funnel visuals |
-| `POWERBI_PRESENTATION_PLAN.md` | Page layouts, colour tokens, slicer setup, live demo script |
+### Python visuals setup
+
+Two visuals (correlation heatmap and cart abandonment funnel) run Python scripts inside Power BI. Before opening the file:
+
+```bash
+pip install matplotlib seaborn pandas numpy
+```
+
+Then in Power BI Desktop go to **File → Options → Python scripting** and set the interpreter to your Python installation. Refresh the visuals — they will render automatically.
+
+### Dashboard structure
+
+```
+Customer Behaviour PowerBI/
+├── CustomerBehaviour.pbip               # Open this in Power BI Desktop
+├── CustomerBehaviour.Report/
+│   ├── definition/
+│   │   ├── pages/
+│   │   │   ├── ExecutiveSummary/        # Page 1 — KPI cards, revenue bars, trend line
+│   │   │   ├── PlayerPsychology/        # Page 2 — Python heatmap, scatter, rank slicer
+│   │   │   └── LostRevenue/             # Page 3 — Python funnel, top abandoned items
+│   │   └── report.json
+│   └── StaticResources/
+│       └── SharedResources/
+│           └── CustomThemes/craftiverse-dark.json   # Dark theme
+├── CustomerBehaviour.SemanticModel/
+│   ├── definition/
+│   │   ├── tables/                      # dim_players, fact_purchases, fact_abandoned_carts
+│   │   ├── relationships.tmdl           # Player → purchases / abandoned carts (1:many)
+│   │   └── model.tmdl
+│   └── DAXQueries/                      # Saved DAX queries for ad-hoc exploration
+└── craftiverse-dark.json                # Theme source file
+```
 
 ### Screenshots
 
@@ -61,20 +90,23 @@ An interactive 3-page dashboard built on the same dataset, designed for live pre
 
 ```
 CustomerBehaviour/
-├── behaviour.ipynb          # Main analysis notebook (Parts A–E + KPI cheatsheet)
-├── craftiverse.db           # SQLite database (players_data, store_products)
-├── kpi_cheatsheet.sql       # Raw SQL for all 6 KPI queries
-├── SERVER_STRATEGY.md       # Full business strategy document (Hebrew)
-├── README.md                # Project overview (Hebrew)
-├── README_EN.md             # This file
-├── dim_players.csv          # PowerBI export — one row per player
-├── fact_purchases.csv       # PowerBI export — one row per purchased item
-├── fact_abandoned_carts.csv # PowerBI export — one row per abandoned cart item
+├── behaviour.ipynb                    # Main analysis notebook (Parts A–E + KPI cheatsheet)
+├── craftiverse.db                     # SQLite database (players_data, store_products)
+├── kpi_cheatsheet.sql                 # Raw SQL for all 6 KPI queries
+├── requirements.txt                   # Python dependencies
+├── dim_players.csv                    # Power BI export — one row per player
+├── fact_purchases.csv                 # Power BI export — one row per purchased item
+├── fact_abandoned_carts.csv           # Power BI export — one row per abandoned cart item
 ├── part_a_player_psychology.png
 ├── part_b_targeted_segments.png
 ├── part_c_server_hype.png
 ├── part_d_financials.png
-└── part_e_growth.png
+├── part_e_growth.png
+└── Customer Behaviour PowerBI/        # Power BI project (open CustomerBehaviour.pbip)
+    ├── CustomerBehaviour.pbip
+    ├── CustomerBehaviour.Report/
+    ├── CustomerBehaviour.SemanticModel/
+    └── craftiverse-dark.json
 ```
 
 ---
@@ -277,13 +309,10 @@ Open `behaviour.ipynb` in Jupyter and run all cells sequentially. The notebook:
 4. Generates Parts A–E charts (saved as PNG)
 5. Exports `dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv` for PowerBI
 
-### PowerBI Import
-1. **Get Data → Text/CSV** for each export file
-2. Relate `dim_players[player_id]` → `fact_purchases[player_id]` (1:many)
-3. Relate `dim_players[player_id]` → `fact_abandoned_carts[player_id]` (1:many)
-4. Mark `dim_players` as the Dimension table
-5. Create a Date table linked to `first_join_date` and `last_purchase_date`
+### Power BI
+
+The `Customer Behaviour PowerBI/CustomerBehaviour.pbip` file already contains the full semantic model with all three tables, relationships, and DAX measures. Simply open the `.pbip` file — no manual import steps needed. If the data source path needs updating, right-click any table in the model view and point it to the CSV files in the project root.
 
 ---
 
-*Source: `behaviour.ipynb` | Database: `craftiverse.db` | Full strategy: `SERVER_STRATEGY.md`*
+*Source: `behaviour.ipynb` | Database: `craftiverse.db` | Dashboard: `Customer Behaviour PowerBI/CustomerBehaviour.pbip`*

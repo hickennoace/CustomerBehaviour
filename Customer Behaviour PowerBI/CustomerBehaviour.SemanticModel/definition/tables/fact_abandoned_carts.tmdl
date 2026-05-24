@@ -1,0 +1,74 @@
+table fact_abandoned_carts
+	lineageTag: d0000001-0000-0000-0000-000000000000
+
+	column cart_key
+		dataType: int64
+		formatString: 0
+		lineageTag: d0000001-0001-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: cart_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_id
+		dataType: int64
+		formatString: 0
+		lineageTag: d0000001-0002-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column username
+		dataType: string
+		lineageTag: d0000001-0003-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: username
+
+		annotation SummarizationSetBy = Automatic
+
+	column rank
+		dataType: string
+		lineageTag: d0000001-0004-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column item
+		dataType: string
+		lineageTag: d0000001-0005-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: item
+
+		annotation SummarizationSetBy = Automatic
+
+	column price
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: d0000001-0006-0000-0000-000000000000
+		summarizeBy: sum
+		sourceColumn: price
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: d0000001-0007-0000-0000-000000000000
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_abandoned_carts = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\danie\PycharmProjects\CustomerBehaviour\fact_abandoned_carts.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"cart_key", Int64.Type}, {"player_id", Int64.Type}, {"username", type text}, {"rank", type text}, {"item", type text}, {"price", type number}, {"category", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

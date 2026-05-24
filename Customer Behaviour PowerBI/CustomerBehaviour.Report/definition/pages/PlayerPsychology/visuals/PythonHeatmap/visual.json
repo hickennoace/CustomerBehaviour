@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "PythonHeatmap",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 100,
+    "height": 398.66633836884262,
+    "width": 499.5194299204843,
+    "tabOrder": 100
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_players"
+                    }
+                  },
+                  "Property": "player_id"
+                }
+              },
+              "queryRef": "dim_players.player_id",
+              "nativeQueryRef": "player_id"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "total_playtime_hours"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.total_playtime_hours)",
+              "nativeQueryRef": "total_playtime_hours",
+              "displayName": "total_playtime_hours"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "total_votes"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.total_votes)",
+              "nativeQueryRef": "total_votes",
+              "displayName": "total_votes"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "total_spent_dollars"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.total_spent_dollars)",
+              "nativeQueryRef": "total_spent_dollars",
+              "displayName": "total_spent_dollars"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "webstore_visits"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.webstore_visits)",
+              "nativeQueryRef": "webstore_visits",
+              "displayName": "webstore_visits"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_players"
+                        }
+                      },
+                      "Property": "cart_abandonments"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dim_players.cart_abandonments)",
+              "nativeQueryRef": "cart_abandonments",
+              "displayName": "cart_abandonments"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \n\n# dataset = pandas.DataFrame(player_id, total_playtime_hours, total_votes, total_spent_dollars, webstore_visits, cart_abandonments)\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n  \ndf = dataset.copy()\n\nnumeric_cols = [\n    \"total_playtime_hours\",\n    \"total_votes\",\n    \"total_spent_dollars\",\n    \"webstore_visits\",\n    \"cart_abandonments\",\n  ]\nfor col in numeric_cols:\n    df[col] = pd.to_numeric(df[col], errors=\"coerce\")\n\ndf = df.dropna(subset=numeric_cols)\n\nrename = {\n    \"total_playtime_hours\": \"Playtime (h)\",\n    \"total_votes\":          \"Votes\",\n    \"total_spent_dollars\":  \"Spend ($)\",\n    \"webstore_visits\":      \"Store Visits\",\n    \"cart_abandonments\":    \"Cart Drops\",\n  }\ncorr = df[numeric_cols].rename(columns=rename).corr(method=\"pearson\")\n\nplt.style.use(\"dark_background\")\nplt.rcParams.update({\n    \"font.family\":      \"DejaVu Sans\",\n    \"axes.edgecolor\":   \"#2a2f3a\",\n    \"axes.labelcolor\":  \"#e6e6e6\",\n    \"xtick.color\":      \"#c8c8c8\",\n    \"ytick.color\":      \"#c8c8c8\",\n    \"axes.titlecolor\":  \"#ffffff\",\n})\n\nmask = np.triu(np.ones_like(corr, dtype=bool))\n\nfig, ax = plt.subplots(figsize=(9, 7), facecolor=\"#0d1117\")\nax.set_facecolor(\"#0d1117\")\n\nsns.heatmap(\n    corr,\n    mask=mask,\n    cmap=\"mako_r\",\n    vmin=-1, vmax=1, center=0,\n    annot=True, fmt=\".2f\",\n    annot_kws={\"size\": 11, \"weight\": \"bold\", \"color\": \"#ffffff\"},\n    linewidths=0.6, linecolor=\"#0d1117\",\n    square=True,\n    cbar_kws={\"shrink\": 0.75, \"label\": \"Pearson r\"},\n    ax=ax,\n)\n\nax.set_title(\n    \"Engagement vs. Monetization — Correlation Matrix\",\n    fontsize=15, weight=\"bold\", pad=16,\n)\nax.tick_params(axis=\"x\", rotation=30)\nax.tick_params(axis=\"y\", rotation=0)\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Engagement vs. Spend Correlation'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
