@@ -278,6 +278,109 @@ Day 7:  One-time offer — "🎁 Exclusive 10% off | Code: COMEBACK10 | Expires 
 
 ---
 
+## Revenue Growth Ideas
+
+The five charts below are the direct output of `behaviour.ipynb`. Each one reveals a specific leak or untapped opportunity — and a concrete action to address it.
+
+---
+
+### 1. Fix the Checkout Leak — Cart Recovery
+
+![Financials](part_d_financials.png)
+
+**What the data shows:** Abandoned cart value ($13,125) exceeds actual revenue ($9,912.50). The server's Revenue Capture Rate is only 43.1% — more than half of every dollar a player intends to spend never completes checkout.
+
+**Why it happens:** Players add items, browse away, and forget. There is no follow-up mechanism pulling them back.
+
+**Action — 3-step cart recovery drip:**
+
+| Day | Message | Goal |
+|:---:|:---|:---|
+| 1 | *"You left [item] behind — here's what it does for you."* | Re-engage with value |
+| 3 | *"⚠ Only 5 slots at this price. 67 players bought this week."* | Create urgency (FOMO first) |
+| 7 | *"🎁 One-time 10% off — Code: COMEBACK10 — expires in 24 h."* | Close with a discount only if needed |
+
+> **Rule:** Never lead with a discount. Players who respond to scarcity don't need one — and early discounts train players to wait for a deal every time.
+
+**Estimated uplift:** +$3,937/year at 30% recovery rate.
+
+---
+
+### 2. Capture Players on Day 1 — Welcome Flow
+
+![Player Psychology](part_a_player_psychology.png)
+
+**What the data shows:** Same-day converters are the single largest purchasing group. Over 70% of all eventual buyers make their first purchase within 30 days of joining. After 90 days, conversion probability drops sharply.
+
+**Why it happens:** New players are at peak excitement when they first join. The longer they wait, the more the novelty fades.
+
+**Actions:**
+- Launch a **"Welcome Bonus"** — 15% off any item for the first 48 hours after account creation.
+- Send an automated Discord/in-game nudge at **Day 7** and **Day 28** targeting players who visited the store but have 0 purchases.
+- Tease Legend-rank perks early — Legend players convert fastest of all rank groups.
+
+**Estimated uplift:** +$800–$1,200/year.
+
+---
+
+### 3. Wake Up Sleeping Loyalists — Sleeper VIP Campaign
+
+![Targeted Segments](part_b_targeted_segments.png)
+
+**What the data shows:** A subset of Default-rank players sit in the top 30% for both votes and playtime but have never spent a single dollar. They are the most engaged non-paying players on the server.
+
+**Why it happens:** These players love the server and contribute actively (voting, playing), but have never been given a compelling reason to open their wallet.
+
+**Action:** Identify players matching `rank = 'Default' AND total_spent = 0 AND votes ≥ P70 AND playtime ≥ P70`. Send a personalised Discord DM:
+
+> *"Hey [username] — you've been one of our most loyal players. As a thank-you, here's a private offer: VIP Rank + Legendary Crate Key bundle at 40% off. Valid for 72 hours."*
+
+Personalisation and exclusivity outperform broadcast discounts for this segment.
+
+**Estimated uplift:** +$800–$1,500/year.
+
+---
+
+### 4. Turn Votes into Revenue — Vote Drive Campaigns
+
+![Server Hype](part_c_server_hype.png)
+
+**What the data shows:** Total votes have the strongest positive correlation with spending of any engagement metric (Pearson r significant at p < 0.05). High-vote players cluster in the same quadrant as high-spend players. Playtime correlates too, but more weakly — heavy grinders prefer earning over buying.
+
+**Why it happens:** Players who vote are already invested in the server's growth. That investment mindset overlaps with willingness to spend.
+
+**Actions:**
+- Run **"Vote Drive" weekends** once or twice a month — double vote rewards, in-game announcements, Discord countdowns. Budget 1–2 staff hours.
+- Target **mid-range playtime players (50–300 hrs)** with purchase nudges — they have skin in the game but haven't gone full grind-mode yet.
+- Recruit the top 10 Legend spenders as **brand ambassadors** — give them a custom tag and a private Discord channel. Their social proof drives conversions from their followers.
+
+**Estimated uplift:** +$1,500–$2,500/year (bundle strategy + ambassador effect).
+
+---
+
+### 5. Fill the Product Gaps — New SKUs
+
+![Growth](part_e_growth.png)
+
+**What the data shows:** Perks generate the highest Revenue per Buyer of any category, yet there are only a handful of Perk products. Tags generate the lowest revenue despite having zero inventory cost. The Sellwand ladder has a hard ceiling at Tier 4 — 38 players who already own it have nowhere to upgrade.
+
+**Why it happens:** The product catalogue has not kept pace with player spending willingness. There are clear gaps at the top of every category.
+
+**Suggested new products:**
+
+| Category | Product | Price | Reason |
+|:---|:---|:---|:---|
+| Ranks | **Elite Rank** (above Legend) | $80 | Raises the ceiling; pulls Legend buyers upward |
+| Perks | **XP Booster** (×2 XP, 7 days) | $12 | Weekly repurchase cycle — recurring revenue |
+| Gkits | **Skyblock / Factions Starter Kit** | $8–12 | Game-mode specificity lifts conversion for new players |
+| Crate keys | **Seasonal Key** (Summer / Halloween) | $7.50 | Fills the gap between Common ($5) and Legendary ($10) |
+| Tags | **Custom Tag** (staff-reviewed) | $15 | Near-zero cost, very high perceived value and exclusivity |
+| Sellwands | **Tier5 Sellwand** (×1.5 bonus) | $25 | Natural upsell — 38 current Tier4 owners are the ready audience |
+
+**Estimated uplift:** +$1,900–$2,200/year.
+
+---
+
 ## Revenue Potential Summary
 
 | Strategy | Estimated Annual Uplift |
