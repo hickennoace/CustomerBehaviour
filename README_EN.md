@@ -26,6 +26,37 @@ This project analyses the purchase behaviour, cart abandonment patterns, and eng
 
 ---
 
+## Power BI Dashboard
+
+An interactive 3-page dashboard built on the same dataset, designed for live presentation.
+
+| Page | Thesis | Key Visual |
+|:---|:---|:---|
+| **Executive Summary** | Revenue vs. abandonment gap | Revenue-by-category bars + whale table + trend line |
+| **Player Psychology** | Engagement weakly predicts spend | Python correlation heatmap + playtime-vs-spend scatter |
+| **Lost Revenue Analysis** | $13 K sits in abandoned carts | Python funnel-by-rank + top abandoned items |
+
+**To open:** Double-click `CustomerBehaviour.pbip` in Power BI Desktop (June 2025+).  
+**Python visuals require:** `pip install matplotlib seaborn pandas numpy` in the Python interpreter configured under *File → Options → Python scripting*.
+
+### Dashboard files
+
+| File | Purpose |
+|:---|:---|
+| `DAX_MEASURES.md` | All DAX measures with formulas and business logic |
+| `POWERBI_PYTHON_VISUALS.md` | Python scripts for the heatmap and funnel visuals |
+| `POWERBI_PRESENTATION_PLAN.md` | Page layouts, colour tokens, slicer setup, live demo script |
+
+### Screenshots
+
+| | |
+|:---:|:---:|
+| ![Player Psychology](part_a_player_psychology.png) | ![Targeted Segments](part_b_targeted_segments.png) |
+| ![Server Hype](part_c_server_hype.png) | ![Financials](part_d_financials.png) |
+| ![Growth](part_e_growth.png) | |
+
+---
+
 ## Project Structure
 
 ```

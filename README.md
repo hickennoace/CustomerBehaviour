@@ -24,6 +24,37 @@
 
 ---
 
+## דשבורד Power BI
+
+דשבורד אינטראקטיבי בן 3 עמודים, בנוי על אותו מאגר נתונים ומתוכנן להצגה חיה.
+
+| עמוד | תזה | ויזואל מרכזי |
+|:---|:---|:---|
+| **Executive Summary** | פער הכנסות מול עגלות ננטשות | עמודות הכנסה לפי קטגוריה + טבלת לווייתנים + מגמה |
+| **Player Psychology** | מעורבות חוזה הוצאה בצורה חלשה | Heatmap מתאמים (Python) + Scatter זמן משחק/הוצאה |
+| **Lost Revenue Analysis** | $13K ישן בעגלות ננטשות | Funnel לפי דרגה (Python) + מוצרים ננטשים מובילים |
+
+**לפתיחה:** לחץ פעמיים על `CustomerBehaviour.pbip` ב-Power BI Desktop (יוני 2025+).  
+**ויזואלי Python דורשים:** `pip install matplotlib seaborn pandas numpy` בסביבת Python המוגדרת תחת *File → Options → Python scripting*.
+
+### קבצי הדשבורד
+
+| קובץ | תוכן |
+|:---|:---|
+| `DAX_MEASURES.md` | כל מדדי ה-DAX עם נוסחאות ולוגיקה עסקית |
+| `POWERBI_PYTHON_VISUALS.md` | סקריפטי Python לויזואל ה-Heatmap וה-Funnel |
+| `POWERBI_PRESENTATION_PLAN.md` | פריסת עמודים, צבעים, Slicers ותסריט הצגה חיה |
+
+### צילומי מסך
+
+| | |
+|:---:|:---:|
+| ![Player Psychology](part_a_player_psychology.png) | ![Targeted Segments](part_b_targeted_segments.png) |
+| ![Server Hype](part_c_server_hype.png) | ![Financials](part_d_financials.png) |
+| ![Growth](part_e_growth.png) | |
+
+---
+
 ## KPI 1 — פופולריות מוצרים (Product Popularity)
 
 ### מה הוא מודד?
