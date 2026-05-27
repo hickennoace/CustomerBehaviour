@@ -1,421 +1,71 @@
-# Craftiverse — Customer Behaviour Analysis
+# Craftiverse Customer Behaviour
 
-> **Network:** Craftiverse Factions & Skyblock  
-> **Analyst:** Daniel Shaulov  
-> **Date:** 2026-05-23  
-> **Stack:** Python · SQLite · Pandas · Matplotlib · Seaborn · Power BI
+I pulled the player data from a Minecraft network (Craftiverse - Factions and Skyblock) and dug into where the money actually comes from and, more interestingly, where it leaks out. The dataset is 580 players in a SQLite DB plus a webstore product table.
 
----
+Stack: Python, SQLite, pandas, matplotlib/seaborn, Power BI.
 
-## Overview
+## The headline numbers
 
-This project analyses the purchase behaviour, cart abandonment patterns, and engagement metrics of 580 players on the Craftiverse Minecraft network. The goal is to turn raw player-activity data into actionable, data-driven monetisation strategies — without acquiring new players — by optimising the Average Revenue Per User (ARPU) of the existing player base.
+| | |
+|---|---:|
+| Players | 580 |
+| Paying players | 407 (70.2%) |
+| Actual revenue | $9,912.50 |
+| Abandoned cart value | $13,125.00 |
+| Revenue capture rate | 43.1% |
 
-| Metric | Value |
-|:---|---:|
-| Total Players | 580 |
-| Paying Players | 407 (70.2%) |
-| Non-Paying Players | 173 (29.8%) |
-| **Actual Revenue** | **$9,912.50** |
-| **Abandoned Cart Value** | **$13,125.00** |
-| **Revenue Capture Rate** | **43.1%** |
-| Avg Spend (payers) | $24.36 |
-| Store Products | 19 |
+So the abandoned-cart pile is bigger than the revenue pile. That single fact ended up driving most of the analysis - if I could recover even a third of the abandoned carts, that's a ~40% revenue lift with zero new players acquired.
 
-> **Key Finding:** Abandoned cart value ($13,125) **exceeds actual revenue ($9,912.50)**. The server is losing more than it earns to checkout drop-off.
+## What's in here
 
----
+- `behaviour.ipynb` - main analysis notebook. Runs end to end: connects to `craftiverse.db`, parses out the JSON purchase/cart columns into flat fact tables, runs the SQL KPIs, generates the five Part A-E charts, and exports the CSVs that feed Power BI.
+- `kpi_cheatsheet.sql` - the six KPIs as plain SQL if you'd rather skip the notebook.
+- `craftiverse.db` - the SQLite source (two tables: `players_data` and `store_products`).
+- `dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv` - the exports that Power BI consumes.
+- `Customer Behaviour PowerBI/` - the 3-page Power BI dashboard built on those CSVs.
+- `part_a_player_psychology.png` ... `part_e_growth.png` - the chart outputs.
 
-## Power BI Dashboard
+## The 6 KPIs
 
-An interactive 3-page dashboard built on the same dataset, designed for live presentation. All dashboard files live in the `Customer Behaviour PowerBI/` folder.
+| # | KPI | Result |
+|---|---|---|
+| 1 | Top product (units) | Fix all - 40 units |
+| 2 | Top category (revenue) | Perks - $3,355 |
+| 3 | Most abandoned item | Tier4 Sellwand - 66 times |
+| 4 | Conversion rate | 70.2% (industry avg is 20-30%) |
+| 5 | Top spenders | UltraBane and FireMaster at $100 each |
+| 6 | Top revenue rank | Default - $6,072.50 |
 
-| Page | Thesis | Key Visual |
-|:---|:---|:---|
-| **Executive Summary** | Revenue vs. abandonment gap | Revenue-by-category bars + whale table + trend line |
-| **Player Psychology** | Engagement weakly predicts spend | Python correlation heatmap + playtime-vs-spend scatter |
-| **Lost Revenue Analysis** | $13 K sits in abandoned carts | Python funnel-by-rank + top abandoned items |
+The conversion rate jumped out at me. 70% is well above the typical 20-30% e-commerce range, which means the players who reach the cart at all are already pre-sold. The problem isn't interest - it's the checkout itself.
 
-### How to open
+## The five parts of the analysis
 
-1. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (June 2025 release or later).
-2. Double-click `Customer Behaviour PowerBI/CustomerBehaviour.pbip` — Power BI opens the full report with all three pages and the data model pre-loaded.
-3. If prompted for a data source, point it at the CSV files in the project root (`dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv`).
+**A. Player psychology.** When does a new player first buy? Same-day converters are the biggest single group, and ~70% of all eventual buyers convert inside 30 days. After 90 days it tails off hard. So the obvious play is a Day 0-7 welcome discount and a Day 28 nudge for store-visitors with zero purchases.
 
-### Python visuals setup
+**B. Targeted segments.** Two sub-segments worth treating separately:
+- Sleeper VIPs - Default-rank players in the top 30% for both votes and playtime but who've never spent a dollar. They love the server but never opened the wallet.
+- Cart abandoners - Default players generate the most abandonments in absolute terms; Legend players abandon the most per player. Different problems, different fixes (broad nudges for Default, exclusivity messaging for Legend).
 
-Two visuals (correlation heatmap and cart abandonment funnel) run Python scripts inside Power BI. Before opening the file:
+**C. Server hype.** Pearson correlation: votes correlate positively with revenue (and it's significant). Playtime correlates too but weaker - heavy grinders prefer earning over buying. The actionable read: vote-drive weekends are cheap and they pay back.
+
+**D. Financials.** The cart-recovery math. A 30% cart-recovery rate is worth about $3,937/year on top of existing revenue. The notebook lays out a 3-step drip (info -> FOMO -> discount only as a last resort).
+
+**E. Growth.** Where do the product gaps sit? Perks generate the highest revenue per buyer but there are very few of them. The Sellwand ladder dead-ends at Tier 4 even though 38 players already own it. Adding a Tier 5 (a natural upsell), an Elite rank above Legend, and a recurring XP booster are the obvious additions.
+
+## How to run
 
 ```bash
-pip install matplotlib seaborn pandas numpy
+pip install -r requirements.txt
 ```
 
-Then in Power BI Desktop go to **File → Options → Python scripting** and set the interpreter to your Python installation. Refresh the visuals — they will render automatically.
+Then open `behaviour.ipynb` in Jupyter and run top to bottom. It writes the PNGs and CSVs into the project root.
 
-### Dashboard structure
+For the Power BI report: install Power BI Desktop (June 2025 or later), open `Customer Behaviour PowerBI/CustomerBehaviour.pbip`. Two of the visuals (the correlation heatmap and the abandonment funnel) run Python inside Power BI, so you also need `matplotlib seaborn pandas numpy` installed and the Python interpreter pointed at it in Power BI Options.
 
-```
-Customer Behaviour PowerBI/
-├── CustomerBehaviour.pbip               # Open this in Power BI Desktop
-├── CustomerBehaviour.Report/
-│   ├── definition/
-│   │   ├── pages/
-│   │   │   ├── ExecutiveSummary/        # Page 1 — KPI cards, revenue bars, trend line
-│   │   │   ├── PlayerPsychology/        # Page 2 — Python heatmap, scatter, rank slicer
-│   │   │   └── LostRevenue/             # Page 3 — Python funnel, top abandoned items
-│   │   └── report.json
-│   └── StaticResources/
-│       └── SharedResources/
-│           └── CustomThemes/craftiverse-dark.json   # Dark theme
-├── CustomerBehaviour.SemanticModel/
-│   ├── definition/
-│   │   ├── tables/                      # dim_players, fact_purchases, fact_abandoned_carts
-│   │   ├── relationships.tmdl           # Player → purchases / abandoned carts (1:many)
-│   │   └── model.tmdl
-│   └── DAXQueries/                      # Saved DAX queries for ad-hoc exploration
-└── craftiverse-dark.json                # Theme source file
-```
-
-### Screenshots
+## Screenshots
 
 | | |
 |:---:|:---:|
 | ![Player Psychology](part_a_player_psychology.png) | ![Targeted Segments](part_b_targeted_segments.png) |
 | ![Server Hype](part_c_server_hype.png) | ![Financials](part_d_financials.png) |
 | ![Growth](part_e_growth.png) | |
-
----
-
-## Project Structure
-
-```
-CustomerBehaviour/
-├── behaviour.ipynb                    # Main analysis notebook (Parts A–E + KPI cheatsheet)
-├── craftiverse.db                     # SQLite database (players_data, store_products)
-├── kpi_cheatsheet.sql                 # Raw SQL for all 6 KPI queries
-├── requirements.txt                   # Python dependencies
-├── dim_players.csv                    # Power BI export — one row per player
-├── fact_purchases.csv                 # Power BI export — one row per purchased item
-├── fact_abandoned_carts.csv           # Power BI export — one row per abandoned cart item
-├── part_a_player_psychology.png
-├── part_b_targeted_segments.png
-├── part_c_server_hype.png
-├── part_d_financials.png
-├── part_e_growth.png
-└── Customer Behaviour PowerBI/        # Power BI project (open CustomerBehaviour.pbip)
-    ├── CustomerBehaviour.pbip
-    ├── CustomerBehaviour.Report/
-    ├── CustomerBehaviour.SemanticModel/
-    └── craftiverse-dark.json
-```
-
----
-
-## Database Schema
-
-### `players_data`
-| Column | Type | Description |
-|:---|:---|:---|
-| id | INTEGER | Primary key |
-| username | TEXT | In-game name |
-| rank | TEXT | Default / VIP / MVP / Legend |
-| first_join_date | DATE | Date of first login |
-| total_playtime_hours | REAL | Cumulative hours in-game |
-| total_spent_dollars | REAL | Lifetime spend in USD |
-| total_votes | INTEGER | Server-listing votes |
-| webstore_visits | INTEGER | Visits to the store |
-| last_purchase_date | DATE | Date of most recent purchase |
-| total_transactions | INTEGER | Number of completed orders |
-| cart_abandonments | INTEGER | Number of abandoned sessions |
-| purchased_items_list | JSON | Array of `{item, price}` objects |
-| cart_items_list | JSON | Array of `{item, price}` objects currently in cart |
-
-### `store_products`
-| Column | Type | Description |
-|:---|:---|:---|
-| id | INTEGER | Primary key |
-| category | TEXT | Ranks / Perks / Crate keys / Sellwands / Gkits / Tags |
-| product_name | TEXT | Display name |
-| price | REAL | Price in USD |
-
----
-
-## KPI Cheatsheet
-
-Six SQL KPIs queried directly from `craftiverse.db` via `kpi_cheatsheet.sql`.
-
-| # | KPI | Result |
-|:---:|:---|:---|
-| 1 | **Top Product (units)** | Fix all — 40 units |
-| 2 | **Top Category (revenue)** | Perks — $3,355 |
-| 3 | **Most Abandoned Item** | Tier4 Sellwand — 66× abandoned |
-| 4 | **Conversion Rate** | 70.2% (industry avg: 20–30%) |
-| 5 | **Top Whale** | UltraBane & FireMaster — $100 each |
-| 6 | **Highest Total Revenue by Rank** | Default — $6,072.50 |
-
----
-
-## Part A — Player Psychology: Breaking the Purchasing Barrier
-
-**Question:** How long does it take a new player to make their first purchase?
-
-| Segment | Players | Share |
-|:---|---:|---:|
-| Same Day | highest group | — |
-| 1–7 Days | — | — |
-| 8–30 Days | — | — |
-| 31–90 Days | — | — |
-| > 1 Year | small tail | — |
-
-**Key Findings:**
-
-| Finding | Recommended Action |
-|:---|:---|
-| Same-day converters are the largest single group | Launch a **"Welcome Bonus"** — 15% off for 48 hours after account creation |
-| 70%+ of eventual buyers convert within 30 days | Automated Discord/email nudge at **Day 7** and **Day 28** for webstore visitors with 0 purchases |
-| Legend-rank players convert fastest | Pre-launch teasers targeting Legend aspirants accelerate conversion |
-| >1-year tail is small but reachable | One annual **"Comeback Event"** (double-vote rewards, discounted ranks) systematically monetises dormant accounts |
-
----
-
-## Part B — Targeted Segments: Sleeper VIPs & Cart Abandonment
-
-**Question:** Which players can be moved with a single targeted action?
-
-### Segment 1 — Sleeper VIPs
-Default-rank players with zero spend but top-30% votes **and** playtime. They love the server but have never purchased.
-
-- Identified via: `rank = 'Default' AND total_spent = 0 AND votes ≥ P70 AND playtime ≥ P70`
-
-**Action:** Send a personalised Discord DM offering a **"Loyal Player Bundle"** (VIP Rank + Legendary Crate Key) at a 40% discount, valid 72 hours.
-
-### Segment 2 — Cart Abandoners
-
-| Rank | Total Abandonments | Avg / Player |
-|:---|---:|---:|
-| Default | 1,061 | 2.20 |
-| Legend | highest avg | 2.44 |
-| MVP | — | — |
-| VIP | — | — |
-
-**Key Findings:**
-
-| Finding | Recommended Action |
-|:---|:---|
-| Default players generate the most total abandonments | In-game `/msg` or Discord bot 24 h after abandoned session: *"You left [item] behind!"* |
-| Legend players have the highest per-player abandonment | Show **exclusivity** triggers, not discounts: *"Legend-exclusive bundle"* or *"Only 3 left at this price"* |
-| Repeat abandoners (≥4 events) are a high-value micro-segment | Direct, personalised staff outreach — converts far better than automated blasts |
-
----
-
-## Part C — Server Hype: Engagement vs. Revenue Correlation
-
-**Question:** Do votes and playtime correlate with spending?
-
-| Metric | Pearson r | p-value | Significant? |
-|:---|---:|---:|:---|
-| Total Votes → Revenue | positive | < 0.05 | Yes |
-| Total Playtime → Revenue | weaker positive | < 0.05 | Yes |
-
-**Key Findings:**
-
-| Finding | Recommended Action |
-|:---|:---|
-| Votes correlate positively with revenue | Budget 1–2 staff hours/month on **"Vote Drive"** weekends with double-vote rewards |
-| High-playtime ≠ high-spender (grinders prefer earning) | Target **mid-range playtime players** (50–300 hrs) with purchase nudges |
-| Legend players dominate the high-vote + high-spend quadrant | Recruit top 10 Legend spenders as **brand ambassadors** (custom tag, private Discord) |
-
----
-
-## Part D — Financials: Revenue vs. Abandoned Cart
-
-**Question:** What is the financial scale of cart abandonment?
-
-| Item | Value |
-|:---|---:|
-| Actual Revenue | $9,912.50 |
-| Abandoned Cart Value | $13,125.00 |
-| Revenue Capture Rate | 43.1% |
-| 30% Cart Recovery | +$3,937 |
-| 50% Cart Recovery | +$6,562 |
-
-**Cart Recovery Drip (3-step):**
-
-```
-Day 0:  Player adds Tier4 Sellwand ($12) and abandons cart
-Day 1:  Info + value  — "You left Tier4 behind — it boosts income by 40% automatically."
-Day 3:  FOMO          — "⚠ Only 5 slots at this price. 67 players bought this week."
-Day 7:  One-time offer — "🎁 Exclusive 10% off | Code: COMEBACK10 | Expires in 24h"
-```
-
-> **Iron rule:** Never offer a discount before trying FOMO. Players who respond to scarcity don't need a discount — and early discounts train players to wait.
-
----
-
-## Part E — Growth: Category Performance & ARPU Opportunities
-
-**Question:** Where should new products be added to maximise ARPU?
-
-| Category | Revenue | Units Sold | Revenue / Buyer |
-|:---|---:|---:|---:|
-| **Perks** | **$3,355** | 145 | highest ARPU |
-| Ranks | $2,830 | 99 | — |
-| Sellwands | $1,235 | 150 | — |
-| Crate keys | $1,212.50 | 134 | — |
-| Gkits | $1,110 | 111 | — |
-| Tags | $170 | 34 | lowest |
-
-### Suggested New Products
-
-| Category | Product | Price | Rationale |
-|:---|:---|:---|:---|
-| Ranks | **Elite Rank** (above Legend) | $80 | Opens new ceiling; pulls Legend buyers up |
-| Perks | **XP Booster** (×2 XP, 7 days) | $12 | Recurring weekly repurchase |
-| Gkits | **Skyblock / Factions Starter Kit** | $8–12 | Game-mode specificity lifts conversion |
-| Crate keys | **Seasonal Key** (Summer/Halloween) | $7.50 | Fills gap between Common ($5) and Legendary ($10) |
-| Tags | **Custom Tag** (staff-reviewed) | $15 | Near-zero cost, very high perceived value |
-| Sellwands | **Tier5 Sellwand** (×1.5 bonus) | $25 | Natural upsell for 38 Tier4 owners |
-
----
-
-## Revenue Growth Ideas
-
-The five charts below are the direct output of `behaviour.ipynb`. Each one reveals a specific leak or untapped opportunity — and a concrete action to address it.
-
----
-
-### 1. Fix the Checkout Leak — Cart Recovery
-
-![Financials](part_d_financials.png)
-
-**What the data shows:** Abandoned cart value ($13,125) exceeds actual revenue ($9,912.50). The server's Revenue Capture Rate is only 43.1% — more than half of every dollar a player intends to spend never completes checkout.
-
-**Why it happens:** Players add items, browse away, and forget. There is no follow-up mechanism pulling them back.
-
-**Action — 3-step cart recovery drip:**
-
-| Day | Message | Goal |
-|:---:|:---|:---|
-| 1 | *"You left [item] behind — here's what it does for you."* | Re-engage with value |
-| 3 | *"⚠ Only 5 slots at this price. 67 players bought this week."* | Create urgency (FOMO first) |
-| 7 | *"🎁 One-time 10% off — Code: COMEBACK10 — expires in 24 h."* | Close with a discount only if needed |
-
-> **Rule:** Never lead with a discount. Players who respond to scarcity don't need one — and early discounts train players to wait for a deal every time.
-
-**Estimated uplift:** +$3,937/year at 30% recovery rate.
-
----
-
-### 2. Capture Players on Day 1 — Welcome Flow
-
-![Player Psychology](part_a_player_psychology.png)
-
-**What the data shows:** Same-day converters are the single largest purchasing group. Over 70% of all eventual buyers make their first purchase within 30 days of joining. After 90 days, conversion probability drops sharply.
-
-**Why it happens:** New players are at peak excitement when they first join. The longer they wait, the more the novelty fades.
-
-**Actions:**
-- Launch a **"Welcome Bonus"** — 15% off any item for the first 48 hours after account creation.
-- Send an automated Discord/in-game nudge at **Day 7** and **Day 28** targeting players who visited the store but have 0 purchases.
-- Tease Legend-rank perks early — Legend players convert fastest of all rank groups.
-
-**Estimated uplift:** +$800–$1,200/year.
-
----
-
-### 3. Wake Up Sleeping Loyalists — Sleeper VIP Campaign
-
-![Targeted Segments](part_b_targeted_segments.png)
-
-**What the data shows:** A subset of Default-rank players sit in the top 30% for both votes and playtime but have never spent a single dollar. They are the most engaged non-paying players on the server.
-
-**Why it happens:** These players love the server and contribute actively (voting, playing), but have never been given a compelling reason to open their wallet.
-
-**Action:** Identify players matching `rank = 'Default' AND total_spent = 0 AND votes ≥ P70 AND playtime ≥ P70`. Send a personalised Discord DM:
-
-> *"Hey [username] — you've been one of our most loyal players. As a thank-you, here's a private offer: VIP Rank + Legendary Crate Key bundle at 40% off. Valid for 72 hours."*
-
-Personalisation and exclusivity outperform broadcast discounts for this segment.
-
-**Estimated uplift:** +$800–$1,500/year.
-
----
-
-### 4. Turn Votes into Revenue — Vote Drive Campaigns
-
-![Server Hype](part_c_server_hype.png)
-
-**What the data shows:** Total votes have the strongest positive correlation with spending of any engagement metric (Pearson r significant at p < 0.05). High-vote players cluster in the same quadrant as high-spend players. Playtime correlates too, but more weakly — heavy grinders prefer earning over buying.
-
-**Why it happens:** Players who vote are already invested in the server's growth. That investment mindset overlaps with willingness to spend.
-
-**Actions:**
-- Run **"Vote Drive" weekends** once or twice a month — double vote rewards, in-game announcements, Discord countdowns. Budget 1–2 staff hours.
-- Target **mid-range playtime players (50–300 hrs)** with purchase nudges — they have skin in the game but haven't gone full grind-mode yet.
-- Recruit the top 10 Legend spenders as **brand ambassadors** — give them a custom tag and a private Discord channel. Their social proof drives conversions from their followers.
-
-**Estimated uplift:** +$1,500–$2,500/year (bundle strategy + ambassador effect).
-
----
-
-### 5. Fill the Product Gaps — New SKUs
-
-![Growth](part_e_growth.png)
-
-**What the data shows:** Perks generate the highest Revenue per Buyer of any category, yet there are only a handful of Perk products. Tags generate the lowest revenue despite having zero inventory cost. The Sellwand ladder has a hard ceiling at Tier 4 — 38 players who already own it have nowhere to upgrade.
-
-**Why it happens:** The product catalogue has not kept pace with player spending willingness. There are clear gaps at the top of every category.
-
-**Suggested new products:**
-
-| Category | Product | Price | Reason |
-|:---|:---|:---|:---|
-| Ranks | **Elite Rank** (above Legend) | $80 | Raises the ceiling; pulls Legend buyers upward |
-| Perks | **XP Booster** (×2 XP, 7 days) | $12 | Weekly repurchase cycle — recurring revenue |
-| Gkits | **Skyblock / Factions Starter Kit** | $8–12 | Game-mode specificity lifts conversion for new players |
-| Crate keys | **Seasonal Key** (Summer / Halloween) | $7.50 | Fills the gap between Common ($5) and Legendary ($10) |
-| Tags | **Custom Tag** (staff-reviewed) | $15 | Near-zero cost, very high perceived value and exclusivity |
-| Sellwands | **Tier5 Sellwand** (×1.5 bonus) | $25 | Natural upsell — 38 current Tier4 owners are the ready audience |
-
-**Estimated uplift:** +$1,900–$2,200/year.
-
----
-
-## Revenue Potential Summary
-
-| Strategy | Estimated Annual Uplift |
-|:---|---:|
-| Cart Recovery (30% conversion) | +$3,937 |
-| Sleeper VIP Activation | +$800–$1,500 |
-| Welcome Flow (15% coupon) | +$800–$1,200 |
-| Bundle Strategy (AOV ×1.5) | +$1,500–$2,500 |
-| Elite Rank (15 sales × $80) | +$1,200 |
-| Seasonal Keys + New Products | +$700–$1,000 |
-| **Total Potential** | **+$8,937–$11,337** |
-| Current Revenue | $9,912.50 |
-| **Full Potential (~×2)** | **~$19,000–$21,000** |
-
----
-
-## Setup & Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-**`requirements.txt`** covers: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`
-
-Open `behaviour.ipynb` in Jupyter and run all cells sequentially. The notebook:
-1. Connects to `craftiverse.db` and loads both tables
-2. Parses all JSON columns into flat fact tables
-3. Executes all 6 KPI queries via `kpi_cheatsheet.sql`
-4. Generates Parts A–E charts (saved as PNG)
-5. Exports `dim_players.csv`, `fact_purchases.csv`, `fact_abandoned_carts.csv` for PowerBI
-
-### Power BI
-
-The `Customer Behaviour PowerBI/CustomerBehaviour.pbip` file already contains the full semantic model with all three tables, relationships, and DAX measures. Simply open the `.pbip` file — no manual import steps needed. If the data source path needs updating, right-click any table in the model view and point it to the CSV files in the project root.
-
----
-
-*Source: `behaviour.ipynb` | Database: `craftiverse.db` | Dashboard: `Customer Behaviour PowerBI/CustomerBehaviour.pbip`*
