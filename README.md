@@ -78,14 +78,13 @@ The two JSON columns are the awkward bit. I unnest them once at the top of the n
 
 KPI #6 looks weird at first - Default rank brings in the most total revenue. But that's volume: there are way more Default-rank players (482 of them) than any other rank. Per player, Legend wins easily.
 
+The Power BI **Executive Summary** page puts these headline numbers and KPIs on one screen:
+
+![Power BI - Executive Summary: revenue, paying players, ARPPU, conversion and cart abandonment](images/dashboard-executive-summary.png)
+
 ## Part A - player psychology
 
 How long does it take a new player to make their first purchase?
-
-![Player psychology - time from joining to first purchase](part_a_player_psychology.png)
-
-*Same-day converters are the largest single group, and ~70% of all eventual buyers convert within 30
-days before it drops off a cliff after 90.*
 
 Approach: filter to paying users with a `last_purchase_date`, compute `days_to_purchase = last_purchase_date - first_join_date`, bucket into segments. One caveat: the schema stores `last_purchase_date`, not `first_purchase_date`. So for single-transaction users the gap is exact, for multi-transaction users it's an upper bound. The fast-converters bucket is therefore more reliable than the slow tail.
 
@@ -103,8 +102,6 @@ What to do about it:
 - One annual "Comeback Event" (double-vote rewards + discounted ranks) is enough to monetise the dormant tail.
 
 ## Part B - targeted segments
-
-![Targeted segments - sleeper VIPs and cart abandoners](part_b_targeted_segments.png)
 
 Two segments I can move with one well-aimed action:
 
@@ -131,10 +128,7 @@ Action: Default players get a broad "you left X behind" nudge 24h after abandonm
 
 Do votes and playtime correlate with spending?
 
-![Server hype - votes and playtime vs spend](part_c_server_hype.png)
-
-*Both correlate positively and significantly (p < 0.05), but votes correlate harder than playtime -
-voting is a proxy for being invested in the server's success.*
+![Power BI - Player Psychology page: playtime-vs-spend scatter and the engagement correlation matrix](images/dashboard-player-psychology.png)
 
 Method: Pearson correlation plus an OLS regression for `total_votes` and `total_playtime_hours` against `total_spent_dollars`, paying players only.
 
@@ -154,10 +148,7 @@ The actionable takeaways:
 
 The scale of the cart-abandonment leak.
 
-![Financials - revenue captured vs abandoned](part_d_financials.png)
-
-*$9,912.50 captured against $13,125.00 left in abandoned carts - a 43.1% revenue capture rate. The
-abandoned pile is bigger than the revenue pile.*
+![Power BI - Lost Revenue Analysis page: abandoned cart value, recoverable revenue and top abandoned items](images/dashboard-lost-revenue.png)
 
 - Actual revenue = `SUM(total_spent_dollars)` = $9,912.50.
 - Abandoned cart value = sum of every `price` in every `cart_items_list` = $13,125.00.
@@ -183,8 +174,6 @@ Iron rule: never lead with the discount. Players who respond to scarcity don't n
 ## Part E - growth and new products
 
 Where should new SKUs go to maximise ARPU?
-
-![Growth - category revenue, units, and revenue per buyer](part_e_growth.png)
 
 *Perks ($3,355) and Ranks ($2,830) lead on revenue per unique buyer, which is where the new-product
 ideas below are aimed.*
